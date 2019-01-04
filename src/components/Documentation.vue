@@ -1,5 +1,5 @@
 <template>
-    <section id="leadin" class="body padded padded-large" style="text-align:left;">
+    <section id="documentation" class="body padded padded-large" style="text-align:left;">
         <section class="docs">
 
             <section class="sidebar" :class="{'show':mobileMenu}">
@@ -113,6 +113,16 @@
 
 <style lang="scss" rel="stylesheet/scss">
     @import "../_variables.scss";
+
+    #documentation {
+        text-align:center;
+        background-image:url('../assets/apps_bg.png');
+        background-size:100%;
+        background-position:top center;
+        min-height:660px;
+        background-repeat:no-repeat;
+        background-color:white;
+    }
 
     .docs {
         margin-top:80px;

@@ -430,10 +430,10 @@ section {
 
     .row {
       margin:6rem auto;
-      max-width:1000px;
+      max-width:1200px;
 
       @media (max-width: $breakpoint-small-desktop) {
-        max-width:800px;
+        max-width:1000px;
         margin:0rem auto;
       }
 

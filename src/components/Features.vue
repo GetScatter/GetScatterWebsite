@@ -4,7 +4,7 @@
         <section class="body">
           <div class="body-text">
             <div class="row">
-              <div class="col-6">
+              <div class="col-4">
                 <h1>Scatter is building<br>features you will love.</h1>
                 <h4>Every part of Scatter is lovingly designed and crafted to meet your daily crypto needs. It is fast, powerful, and functional. 
 
@@ -17,10 +17,13 @@
         <section id="partners" class="body">
             <div class="body-text">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-3">
                         <h2>Integrated App List</h2>
                         <h4>We have worked hard to engage with the community and encouraged them to add their great apps to our list. That means you get to explore and use these amazing pieces of software for no cost.</h4>
-                        <carousel :perPageCustom="[[400,3], [768,3], [1024, 5]]">
+                        <p><a href="/apps" class="button">Check out ScatterApps</a></p>
+                    </div>
+                    <div class="col-3">
+                        <carousel :perPageCustom="[[400,3], [768,3], [1024, 4]]">
                           <slide>
                             <a class="partner" target="_blank" href="https://www.stateofthedapps.com/"><img src="../assets/logos/sotd.jpg"></a>
                           </slide>
@@ -261,7 +264,7 @@
 
         <section id="ledger" class="body">
             <div class="body-text">
-                <div class="row">
+                <div class="row blue-bottom">
                     <div class="col-3">
                         <h2>Hardware wallet support</h2>
                         <p>Because we put your safety first, we’ve included support for Ledger Nanos. We love them and think that you will, too.</p>
@@ -301,11 +304,9 @@
 </template>
 
 <script>
-    import ScatterLogo from './reusable/ScatterLogo.vue'
 
     export default {
-        name: 'Founders',
-        components: {ScatterLogo}
+        name: 'Features'
     }
 
 </script>
@@ -330,8 +331,12 @@
         padding:0;
         list-style:none;
 
+        .VueCarousel {
+            margin-top:85px;
+        }
+
         .VueCarousel-slide {
-          padding:4rem;
+          padding:2rem;
         }
     }
 

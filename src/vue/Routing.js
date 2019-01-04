@@ -7,6 +7,7 @@ import Ridl from '../components/Ridl.vue'
 import Vision from '../components/Vision.vue'
 import Apps from '../components/Apps.vue'
 import Features from '../components/Features.vue'
+import Blockchains from '../components/Blockchains.vue'
 
 
 export const RouteNames = {
@@ -19,6 +20,7 @@ export const RouteNames = {
     Vision:'vision',
     Apps:'apps',
     Features:'features',
+    Blockchains:'blockchains'
 };
 
 const RouteViews = {
@@ -31,6 +33,7 @@ const RouteViews = {
     [RouteNames.Vision]:Vision,
     [RouteNames.Apps]:Apps,
     [RouteNames.Features]:Features,
+    [RouteNames.Blockchains]:Blockchains,
 };
 
 const RoutePaths = {

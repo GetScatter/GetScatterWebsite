@@ -504,7 +504,6 @@
 
 <script>
     import Footer from './Footer.vue'
-    import ScatterLogo from './reusable/ScatterLogo.vue'
     import { Carousel, Slide } from 'vue-carousel';
 
     const LOGOS = [
@@ -513,7 +512,7 @@
 
     export default {
         name: 'Home',
-        components: { Footer, ScatterLogo,Carousel, Slide },
+        components: { Footer,Carousel, Slide },
         data(){return {
           LOGOS,
         }}

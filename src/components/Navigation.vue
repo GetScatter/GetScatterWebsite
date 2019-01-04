@@ -44,23 +44,28 @@
                 links: [
                     {
                         id: 0,
+                        text: 'scatter',
+                        page:'/'
+                    },
+                    {
+                        id: 1,
                         text: 'apps',
                         page:'/apps'
                     },
                     {
-                        id: 1,
+                        id: 2,
                         text: 'features',
                         page:'/features'
                     },
                     {
-                        id: 2,
+                        id: 3,
                         text: 'blockchains',
                         page:'/blockchains'
                     },
                     {
-                        id: 3,
-                        text: 'networks',
-                        page:'/networks'
+                        id: 4,
+                        text: 'developer',
+                        page:'/docs/getting-started'
                     }
                 ],
                 isSideBarOpen: false,
