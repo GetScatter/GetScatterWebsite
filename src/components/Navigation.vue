@@ -1,10 +1,8 @@
 <template>
 	<div id="navigation">
 		<div class="mobile-navigation" :class="{'open':menuOpen}">
-			<a href="/" title="Home">home</a>
 			<router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{routes.text}}</router-link>
 			<a href="https://support.get-scatter.com" title="Get the help you need">support</a>
-			<a href="../../docs/select-type" title="Developer Documentation">documentation</a>
 			<a href="https://medium.com/getscatter" title="Press">press</a>
 			<a class="mobile-close" id="mobileclose" @click="closeMenu">
 				<span></span>
@@ -44,7 +42,7 @@
                 links: [
                     {
                         id: 0,
-                        text: 'scatter',
+                        text: 'home',
                         page:'/'
                     },
                     {
@@ -355,9 +353,8 @@
 		}
 
 		nav {
-			position:absolute;
-			left:50%;
-			top:24px;
+			text-align:center;
+			margin-top:24px;
 
 			a.button {
 				margin-left:20px;
@@ -382,7 +379,6 @@
 		text-decoration:none;
 		color:$darkgrey;
 		position:relative;
-		left:-50%;
 		font-size:2.2rem;
 
         @media(max-width:$breakpoint-small-desktop){
