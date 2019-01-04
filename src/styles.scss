@@ -29,7 +29,7 @@ html {
   font-size: 66.5%;
   box-sizing: border-box;
   @media (max-width:$breakpoint-tablet){
-    font-size: 56%;
+    font-size: 66%;
   }
 }
 
@@ -130,6 +130,8 @@ h4 {
   font-size:2rem;
   margin-bottom:4rem;
   font-weight:400 !important;
+  color:$black;
+
   @media(max-width:$breakpoint-tablet){
     font-size:2.2rem;
   }
@@ -424,7 +426,6 @@ section {
   }
 
   &.body {
-    background-color:$white;
     overflow:auto;
 
     .row {

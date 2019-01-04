@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1283px" height="883px" viewBox="0 0 1283 883" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>features_bg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="features_bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F8F8FA" x="0" y="0" width="1283" height="883"></rect>
+        <path d="M1311.8337,822.181416 C1786.34434,822.367425 2185.2627,594.640286 2508.58878,139 L1387.88806,139 C862.674514,594.26827 837.323062,821.995408 1311.8337,822.181416 Z" id="Path-16" fill="#F2F2F6" transform="translate(1741.294388, 480.590765) scale(1, -1) translate(-1741.294388, -480.590765) "></path>
+        <path d="M195.005945,838.181414 C610.766628,838.371778 960.294238,605.311307 1243.58878,139 L261.643884,139 C-198.542092,604.930578 -220.754738,837.991049 195.005945,838.181414 Z" id="Path-16-Copy" stroke="#00A8FF" stroke-width="3" transform="translate(571.294388, 488.590765) scale(-1, -1) translate(-571.294388, -488.590765) "></path>
+        <path d="M1368,4365.83624 L1368,357.640596 C456,22.9739292 1.8035573e-13,46.3072626 1.5187851e-13,427.640596 C1.5187851e-13,808.973929 1.0125234e-13,2124.63539 0,4374.62497 L1368,4365.83624 Z" id="Path-18" fill="#FFFFFF"></path>
+    </g>
+</svg>

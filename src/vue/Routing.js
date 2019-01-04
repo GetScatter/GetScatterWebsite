@@ -6,6 +6,7 @@ import Press from '../components/Press.vue'
 import Ridl from '../components/Ridl.vue'
 import Vision from '../components/Vision.vue'
 import Apps from '../components/Apps.vue'
+import Features from '../components/Features.vue'
 
 
 export const RouteNames = {
@@ -17,6 +18,7 @@ export const RouteNames = {
     Ridl:'ridl',
     Vision:'vision',
     Apps:'apps',
+    Features:'features',
 };
 
 const RouteViews = {
@@ -28,6 +30,7 @@ const RouteViews = {
     [RouteNames.Ridl]:Ridl,
     [RouteNames.Vision]:Vision,
     [RouteNames.Apps]:Apps,
+    [RouteNames.Features]:Features,
 };
 
 const RoutePaths = {

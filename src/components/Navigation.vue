@@ -231,8 +231,8 @@
 		}
 
 		.mobile-close {
-			width:54px;
-			height:54px;
+			width:44px;
+			height:44px;
 			display:block;
 			z-index:2;
 			position:absolute;
@@ -290,27 +290,30 @@
 
 		.mobile-nav {
 			float:left;
-			width:54px;
-			height:54px;
+			width:44px;
+			height:44px;
 			display:block;
 			position:fixed;
 			right:30px;
 			top:30px;
 			z-index:1000;
+            border:3px solid #F2F2F6;
+            background: $background;
+            border-radius:22px;
 
 			span {
-				display:block;
-				width:24px;
-				height:2px;
-				background-color:$black;
-				position:absolute;
-				top:20px;
-				left:15px;
+				display: block;
+                width: 16px;
+                height: 2px;
+                background-color: #111111;
+                position: absolute;
+                top: 18px;
+                left: 7px;
 
 				&:after {
 					content:'';
 					display:block;
-					width:24px;
+					width:22px;
 					height:2px;
 					background-color:$black;
 					position:absolute;
@@ -320,7 +323,7 @@
 				&:before {
 					content:'';
 					display:block;
-					width:24px;
+					width:22px;
 					height:2px;
 					background-color:$black;
 					position:absolute;

@@ -22,7 +22,7 @@
       </div>
     </section>
 
-    <section id="features" class="body">
+    <section id="features-mini" class="body">
       <div class="row">
         <div class="col-2">
           <svg width="144px" height="145px" viewBox="0 0 144 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -36,7 +36,7 @@
                   </g>
               </g>
           </svg>
-        <h5>ScatterApps</h5>
+          <h5>ScatterApps</h5>
           <p>We bring you choice.</p>
         </div>
         <div class="col-2">
@@ -241,7 +241,7 @@
       <div class="row blue-bottom">
         <div class="col-6">
           <h2>We know what you want.</h2>
-          <a href="" class="button">Learn more about these features</a>
+          <a href="/features" class="button">Learn more about these features</a>
         </div>
       </div>
 
@@ -571,7 +571,7 @@
     }
   }
 
-  #features {
+  #features-mini {
     text-align:center;
 
     svg {
@@ -589,18 +589,7 @@
     }
   }
 
-  #partners {
-    margin:0 auto;
-    padding:0;
-    list-style:none;
-    max-width:920px;
-
-    .VueCarousel-slide {
-      padding:2rem;
-    }
-
-
-  }
+  
 
 
 </style>
