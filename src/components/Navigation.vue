@@ -355,7 +355,13 @@
 				margin-left:20px;
 			}
 
-			
+			@media(max-width:$breakpoint-small-desktop){
+                left:90px;
+            }
+
+            @media(max-width:$breakpoint-tablet){
+                display:none;
+            }
 		}
 
 	}
@@ -370,6 +376,10 @@
 		position:relative;
 		left:-50%;
 		font-size:2.2rem;
+
+        @media(max-width:$breakpoint-small-desktop){
+            left:0;
+        }
 
 		&:hover,
 		&:focus,

@@ -1,6 +1,6 @@
 <template>
-  <div id="Apps">
-    <section id="leadin" class="body padded padded-large">
+  <div id="apps">
+    <section class="body padded padded-large">
       <div class="body-text">
         <div class="row">
           <Search :search-set="Apps" :search-set-title="'Apps'"></Search>
@@ -67,6 +67,10 @@
 </script>
 
 <style lang="scss">
+
+  #apps {
+    text-align:center;
+  }
 
   .app-info {
     max-width:600px;
