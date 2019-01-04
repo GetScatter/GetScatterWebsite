@@ -28,7 +28,7 @@
                 <i class="fal fa-address-card"></i>
                 <h5>Create your<br>EOS Account</h5>
                 <p>Did you know you can create an EOS account from right inside Scatter now?</p>
-                <a class="button">Download Scatter</a>
+                <a class="button" href="/download">Download Scatter</a>
             </div>
             <div class="apps-notice blue">
                 <i class="fal fa-layer-plus"></i>

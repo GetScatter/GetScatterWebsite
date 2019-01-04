@@ -8,6 +8,7 @@ import Vision from '../components/Vision.vue'
 import Apps from '../components/Apps.vue'
 import Features from '../components/Features.vue'
 import Blockchains from '../components/Blockchains.vue'
+import Download from '../components/Download.vue'
 
 
 export const RouteNames = {
@@ -20,7 +21,8 @@ export const RouteNames = {
     Vision:'vision',
     Apps:'apps',
     Features:'features',
-    Blockchains:'blockchains'
+    Blockchains:'blockchains',
+    Download:'download'
 };
 
 const RouteViews = {
@@ -34,6 +36,7 @@ const RouteViews = {
     [RouteNames.Apps]:Apps,
     [RouteNames.Features]:Features,
     [RouteNames.Blockchains]:Blockchains,
+    [RouteNames.Download]:Download,
 };
 
 const RoutePaths = {

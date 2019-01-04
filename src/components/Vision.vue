@@ -1,7 +1,7 @@
 <template>
   <div id="vision">
 
-    <section id="leadin" class="body padded padded-large">
+    <section class="body padded padded-large">
       <div class="body-text">
         <h1>Vision</h1>
         <div class="row">
