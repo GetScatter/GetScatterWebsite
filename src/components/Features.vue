@@ -58,7 +58,7 @@
         </section>
 
 
-        <section id="stablecoins" class="body">
+        <section id="Stable_Coins" class="body">
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
@@ -69,7 +69,7 @@
             </div>
         </section>
 
-        <section id="tokenexchange" class="body">
+        <section id="Token_Exchange" class="body">
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
@@ -128,7 +128,7 @@
             </div>
         </section>
 
-        <section id="tokenexchange" class="body">
+        <section id="RIDL" class="body">
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
@@ -181,7 +181,7 @@
             </div>
         </section>
 
-        <section id="assetmanagement" class="body">
+        <section id="Asset_Management" class="body">
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
@@ -262,7 +262,7 @@
             </div>
         </section>
 
-        <section id="ledger" class="body">
+        <section id="Hardware_Wallets" class="body">
             <div class="body-text">
                 <div class="row blue-bottom">
                     <div class="col-3">
@@ -340,7 +340,7 @@
         }
     }
 
-    #stablecoins {
+    #Stable_Coins {
         background-image:url('../assets/stabilize_bg.png');
         background-position:center;
         min-height:660px;
@@ -358,7 +358,7 @@
         }
     }
 
-    #tokenexchange {
+    #Token_Exchange {
         min-height:460px;
         h2 {
             margin-top: 6rem;
@@ -369,7 +369,7 @@
         }
     }
 
-    #ridl {
+    #RIDL {
         min-height:460px;
         h2 {
             margin-top: 6rem;
@@ -380,7 +380,7 @@
         }
     }
 
-    #assetmanagement {
+    #Asset_Management {
         min-height:460px;
         h2 {
             margin-top: 6rem;
@@ -391,7 +391,7 @@
         }
     }
 
-    #ledger {
+    #Hardware_Wallets {
         min-height:460px;
         h2 {
             margin-top: 2rem;
