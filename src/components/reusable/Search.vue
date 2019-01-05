@@ -142,6 +142,9 @@
 
         .app-wrap {
             clear:both;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
         .app-box {

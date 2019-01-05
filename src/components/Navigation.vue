@@ -1,12 +1,21 @@
 <template>
 	<div id="navigation">
 		<div class="mobile-navigation" :class="{'open':menuOpen}">
-			<router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{routes.text}}</router-link>
+			<!--<router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{routes.text}}</router-link>-->
+
+			<section v-for="link in links" :key="link.page" @click="linkClicked(link)">
+				<figure class="mobile-link">{{link.text}}</figure>
+				<section class="sublinks" :class="{'show':subLink === link.id}">
+					<figure class="mobile-link" v-for="sub in link.subs" @click="subClicked(link, sub)">{{sub.replace('_', ' ')}}</figure>
+				</section>
+			</section>
+
+
 			<a href="https://support.get-scatter.com" title="Get the help you need">support</a>
 			<a href="https://medium.com/getscatter" title="Press">press</a>
-			<a class="mobile-close" id="mobileclose" @click="closeMenu">
+			<figure class="mobile-close" id="mobileclose" @click="closeMenu">
 				<span></span>
-			</a>
+			</figure>
 		</div>
 		<header class="header">
 			
@@ -39,6 +48,7 @@
         name: 'Navigation',
         data() {
             return {
+            	subLink:null,
                 links: [
                     {
                         id: 0,
@@ -53,7 +63,14 @@
                     {
                         id: 2,
                         text: 'features',
-                        page:'/features'
+                        page:'/features',
+	                    subs:[
+	                    	'Stable_Coins',
+		                    'Token_Exchange',
+		                    'RIDL',
+		                    'Asset_Management',
+		                    'Hardware_Wallets',
+	                    ]
                     },
                     {
                         id: 3,
@@ -108,6 +125,31 @@
             }
         },
         methods: {
+	        linkClicked(link){
+	            if(link.hasOwnProperty('subs') && link.subs.length){
+	            	this.subLink = link.id;
+	            } else {
+	            	this.subLink = null;
+	            	this.$router.push(link.page);
+	            	this.closeMenu();
+	            }
+	        },
+	        subClicked(link, sub){
+
+	        	if(this.$route.name === link.text){
+			        window.location.href = `#${sub}`
+		        } else {
+			        this.$router.push({name:link.text, hash:`#${sub}`});
+			        setTimeout(() => {
+				        window.location.href = `#${sub}`
+			        }, 200);
+		        }
+
+		        this.subLink = null;
+		        this.closeMenu();
+
+
+	        },
             openMenu() {
                 this.menuOpen = true;
                 this.$emit('openMenu');
@@ -121,18 +163,19 @@
             closeMenuOnEsc(e) {
                 e = e || window.event;
                 if (e.key === 'Escape' || e.keyCode === 27) {
-                    closeMenu();
+                    this.closeMenu();
                 }
             },
 
             documentClick(e) {
                 let element = document.getElementById("mobilenav");
                 let target = e.target;
-                if (
-                    element !== target &&
-                    !element.contains(target) &&
-                    e.target.className !== 'bm-menu'
-                ) {
+
+                if(!this.menuOpen) return;
+
+                if (this.menuOpen &&  e.target.parentNode.className !== 'mobile-nav' &&  e.target.className !== 'mobile-nav'
+	                &&  e.target.className !== 'mobile-link' && e.target.parentNode.className.indexOf('mobile-navigation') === -1
+	                && e.target.className.indexOf('mobile-navigation') === -1) {
                     this.closeMenu();
                 }
             }
@@ -201,52 +244,77 @@
 		position:fixed;
 		width:320px;
 		height:100vh;
-		background-color:$blue;
 		z-index:1001;
-		padding:2rem;
+		background-color:#60647c;
 		overflow-y:auto;
 		right:-440px;
-		transition: 0.24s ease-in-out;
+		transition: 0.25s ease;
+		transition-property: right, background;
+		padding:20px 0;
 
 		&.open {
-			right:0%;
+			right:0;
 		}
 
-		a {
+		a, .mobile-link {
+			cursor: pointer;
 			margin:0;
-			padding:0;
 			list-style:none;
 			text-align:left;
 			font-size:2.2rem;
 			animation: FadeIn 0.2s ease-in-out;
 			animation-fill-mode: both;
 			display:block;
-			padding: 1.5rem;
+			padding: 16px 40px;
 			text-decoration:none;
-			color:$darkgrey;
+			color:#fff;
 
 			&:hover,
 			&:focus,
 			&:active,
 			&.router-link-exact-active {
 				color: white;
+				background:#696e88;
+			}
+		}
+
+		.sublinks {
+			background:#55586e;
+			max-height:0;
+			overflow:hidden;
+			padding:0;
+			transition: 0.08s ease;
+			transition-property: max-height, padding;
+
+			&.show {
+				max-height:500px;
+			}
+
+			.mobile-link {
+				font-size: 16px;
+				padding:15px 40px;
+
+				&:hover {
+					background:rgba(0,0,0,0.05);
+				}
 			}
 		}
 
 		.mobile-close {
+			cursor: pointer;
 			width:44px;
 			height:44px;
 			display:block;
 			z-index:2;
 			position:absolute;
-			top:16px;
-			right:12px;
+			top:10px;
+			right:20px;
 
 			span {
 				display:block;
 				width:0px;
 				height:0px;
-				background-color:$darkgrey;
+				background-color:#fff;
 				position:absolute;
 				top: 15px;
 				left: 15px;
@@ -257,7 +325,7 @@
 					display:block;
 					width:24px;
 					height:2px;
-					background-color:$darkgrey;
+					background-color:#fff;
 					position:absolute;
 					top:0px;
 				}
@@ -267,7 +335,7 @@
 					display:block;
 					width:24px;
 					height:2px;
-					background-color:$darkgrey;
+					background-color:#fff;
 					position:absolute;
 					top:0px;
 					transform:rotate(90deg);
@@ -289,9 +357,9 @@
 		height:112px;
 		color: white;
 		overflow:auto;
-		transition: 0.1s linear;
 
 		.mobile-nav {
+			cursor: pointer;
 			float:left;
 			width:44px;
 			height:44px;
@@ -345,7 +413,6 @@
 			svg {
 				width:44px;
 				height:44px;
-				transition: 0.1s linear;
 
 			}
 
