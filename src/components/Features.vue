@@ -20,7 +20,7 @@
                     <div class="col-3">
                         <h2>Integrated App List</h2>
                         <h4>We have worked hard to engage with the community and encouraged them to add their great apps to our list. That means you get to explore and use these amazing pieces of software for no cost.</h4>
-                        <p><a href="/apps" class="button">Check out ScatterApps</a></p>
+                        <p><a href="/apps" class="button button-small">Check out ScatterApps</a></p>
                     </div>
                     <div class="col-3">
                         <carousel :perPageCustom="[[400,3], [768,3], [1024, 4]]">
@@ -134,6 +134,7 @@
                     <div class="col-3">
                         <h2>RIDL</h2>
                         <p>Our Reputation and Identity layer solves a key question on the internet: <strong>who can you trust</strong>? We believe in the wisdom of the crowd and are using it in Scatter to make sure that you know when it is ok to allow an action, and when it isn’t.</p>
+                        <p><a href="/ridl" class="button button-small">Learn more about RIDL</a></p>
                     </div>
                     <div class="col-3">
                         <svg width="420px" height="304px" viewBox="0 0 420 304" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -295,6 +296,17 @@
                                 </g>
                             </g>
                         </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="future_is_now" class="body">
+            <div class="body-text">
+                <div class="row">
+                    <div class="col-6 centered">
+                        <h2>The future is now.</h2>
+                        <p><a href="/download" class="button">Download Scatter</a></p>
                     </div>
                 </div>
             </div>

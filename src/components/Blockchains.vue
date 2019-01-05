@@ -13,9 +13,10 @@
             </div>
           </div>
         </section>
+
         <section class="body blockchains_body">
           <div class="body-text">
-            <div class="row">
+            <div class="row blue-bottom">
               <div class="col-4">
                 <h2 class="secondary-header">Scatter is freedom.</h2>
                 <p>The pace that blockchain technology improves and evolves means that it is likely that no one blockchain technology will be king for long. Users shouldn’t have to learn new interfaces just because they want to use an application on a blockchain that they aren’t familiar with. Our goal is to make inter-blockchain access entirely transparent to the end user. </p>
@@ -118,7 +119,16 @@
           </div>
         </section>
 
-        
+        <section id="future_is_now" class="body">
+            <div class="body-text">
+                <div class="row">
+                    <div class="col-6 centered">
+                        <h2>The future is now.</h2>
+                        <p><a href="/download" class="button">Download Scatter</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 </template>
@@ -166,6 +176,14 @@
 
         h2 {
             margin-top: 6rem;
+        }
+
+        .blue-bottom {
+            padding-top:0;
+            margin-top: -1rem !important;
+            @media (max-width: $breakpoint-small-desktop) {
+                margin-top: 0rem !important;
+            }
         }
 
         h5 {

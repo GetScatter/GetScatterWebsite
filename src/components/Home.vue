@@ -14,8 +14,9 @@
             </div> -->
           </div>
           <div class="col-3">
-            <img src="../assets/screenshot2.png" id="screenshot-2" />
-            <img src="../assets/screenshot1.png" id="screenshot-1" />
+            <div class="shadow">
+              <img src="../assets/screenshot1.png" id="screenshot-1" />
+            </div>
           </div>
         </div>
 
@@ -109,9 +110,6 @@
           <h5>Token exchange</h5>
           <p>We bring you liquidity.</p>
         </div>
-      </div>
-
-      <div class="row">
         <div class="col-2">
           <svg width="132px" height="132px" viewBox="0 0 132 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -588,7 +586,67 @@
     }
   }
 
-  
+  .col-3 {
+    perspective: 1000px;
+  }
+
+  .shadow { 
+    height:480px;
+    overflow:visible;
+
+    img {
+      border:1px solid $blue;
+      border-radius:3px;
+      transform: rotate3d(14, -69, 3, 26deg) translateX(-60px) translateY(20px);
+    }
+
+    img:after {
+        width:100%;
+        height:100;
+        content:'';
+        display:block;
+        background-color:$blue;
+      }
+
+    @media (max-width: $breakpoint-small-desktop) {
+      height:400px;
+    }
+  }
+
+  .shadow:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 36px;
+      background: inherit;
+      background-size: cover, cover;
+      background-position: bottom;
+      transform: rotateX(90deg);
+      transform-origin: bottom;
+      @media (max-width: $breakpoint-tablet) {
+        display:none;
+      }
+  }
+
+  .shadow:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+      transition: all 0.5s;
+      opacity: 0.15;
+      transform: rotateX(95deg) translateZ(-40px) scale(0.75) rotateZ(20deg) translateX(-20px);
+      transform-origin: bottom;
+      @media (max-width: $breakpoint-tablet) {
+        display:none;
+      }
+  }
 
 
 </style>

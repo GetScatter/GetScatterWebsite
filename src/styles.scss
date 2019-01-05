@@ -166,15 +166,41 @@ h5 {
 
 .button {
   display: inline-block;
-  padding: 2rem !important;
-  font-weight: normal;
-  border-radius:3px;
-  text-decoration: none;
+  padding: 1.8rem 3rem;
+  background: none;
   border: 3px solid $blue;
-  background: white;
-  cursor: pointer;
-  color:$black;
-  font-weight:bold;
+  border-radius: 5px;
+  color: $black;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+  
+
+  &:after {
+    background-color: $blue;
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.4s;
+    transform-origin: top left;
+    width: 0;
+  }
+
+  &:hover:after {
+    height: 100%;
+    width: 135%;
+    color:$black;
+  }
 
   @media(max-width:$breakpoint-tablet){
     padding: 1.5rem 2rem !important;
@@ -192,6 +218,11 @@ h5 {
     font-size:2rem;
   }
 
+  &.button-small {
+    padding: .8rem 1.2rem !important;
+    font-size:1.4rem;
+  }
+
   &.button-primary {
     background-color: $blue !important;
     color: $white !important;
@@ -202,7 +233,7 @@ h5 {
 
   &:hover {
     transform:scale(1.02);
-    box-shadow:0 10px 14px rgba(0,0,0,0.05);
+    color:$white;
   }
 }
 
@@ -277,7 +308,7 @@ input {
   float:left;
 
   @media (max-width: $breakpoint-tablet) {
-    width:100%;
+    width:50%;
     padding:4rem 0;
   }
 }

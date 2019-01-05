@@ -446,7 +446,7 @@
 		text-decoration:none;
 		color:$darkgrey;
 		position:relative;
-		font-size:2.2rem;
+		font-size:1.8rem;
 
         @media(max-width:$breakpoint-small-desktop){
             left:0;

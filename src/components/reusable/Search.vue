@@ -148,7 +148,7 @@
         }
 
         .app-box {
-            width:25%;
+            width:20%;
             float:left;
             margin:0 auto;
             position:relative;
@@ -170,16 +170,16 @@
 
             .item-logo-wrapper {
                 position:relative;
-                height: 72px;
-                width: 72px;
+                height: 60px;
+                width: 60px;
                 margin: 0 auto;
                 margin: 0 auto;
                 border-radius: 20px;
                 overflow: hidden;
 
                 .item-logo {
-                    height:72px;
-                    width:72px;
+                    height:60px;
+                    width:60px;
                     background-image:url('../../assets/default.png');
                     background-repeat:no-repeat;
                     background-size: contain;
@@ -241,11 +241,11 @@
 
         &.list {
             .app-box {
-                width:100%;
+                width:50%;
                 height:auto;
-                border-bottom:1px solid rgba(0,0,0,.12);
-                padding:20px 0;
+                padding:2rem;
                 margin:0;
+                border-radius:0;
 
                 .item-wrapper {
                     text-align: left;
@@ -267,8 +267,12 @@
                         margin: 0 0 8px 60px;
                     }
 
-                    .item-desc {
-                        margin: 0 0 0 60px;
+                    .item-type {
+                        margin: 0 0 8px 60px;
+                    }
+
+                    .item-blockchain {
+                        margin: 0 0 8px 60px;
                     }
                 }
 
