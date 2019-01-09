@@ -405,6 +405,12 @@
   
 
   #leadin {
+    background-image:url('../assets/apps_bg.png');
+    background-size:100%;
+    background-position:top center;
+    min-height:660px;
+    background-repeat:no-repeat;
+    background-color:white;
     text-align: center;
     padding:6rem 6rem 18rem;
     border-bottom:6px solid $blue;
