@@ -247,6 +247,10 @@
                 margin:0;
                 border-radius:0;
 
+                @media (max-width: $breakpoint-mobile) {
+                    width:100%;
+                }
+
                 .item-wrapper {
                     text-align: left;
 
@@ -292,6 +296,14 @@
         transition:all 0.12s ease-in-out;
         border-radius:60px;
         border: 3px solid $very-light-blue;
+
+        @media (max-width: $breakpoint-tablet) {
+            line-height:44px;
+            padding:6px 24px;
+            font-size:2.4rem;
+            margin-bottom:-2rem;
+            font-size:1.8rem;
+        }
 
         &:hover,
         &:active,

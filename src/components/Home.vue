@@ -4,26 +4,50 @@
     <section id="leadin" class="body">
       <div class="body-text">
         <div class="row">
-          <div class="col-3">
+          <div class="col-6">
             <h1>It's your blockchain.</h1>
             <p>Scatter10 provides seamless inter-blockchain functionality in a simple to use interface.</p>
             <a class="button" :href="downloadLink">Download Scatter</a>
+            <p class="dimmed" style="margin-top:2rem">
+              Available for Windows, MacOS, and Linux. <br>
+              Looking for Mobile? <router-link class="nav-link" to="/vision">It's on our roadmap.</router-link>
+            </p>
             <!-- <div class="secondary-buttons">
               <router-link class="button button-text" to="/Ridl">Read about RIDL</router-link>
               <router-link class="button button-text" to="/docs/getting-started">Get started with our SDKs</router-link>
             </div> -->
-          </div>
-          <div class="col-3">
-            <div class="shadow">
-              <img src="../assets/screenshot1.png" id="screenshot-1" />
-            </div>
           </div>
         </div>
 
       </div>
     </section>
 
+    <section id="screenshots">
+      <carousel-3d :height="480" :width="540">
+        <slide :index="0">
+          <img src="../assets/screenshot1.png" />
+        </slide>
+        <slide :index="1">
+          <img src="../assets/screenshot2.png" />
+        </slide>
+        <slide :index="2">
+          <img src="../assets/screenshot3.png" />
+        </slide>
+        <slide :index="3">
+          <img src="../assets/screenshot4.png" />
+        </slide>
+        <slide :index="4">
+          <img src="../assets/screenshot4.png" />
+        </slide>
+      </carousel-3d>
+    </section>
+
     <section id="features-mini" class="body">
+      <div class="row">
+        <div class="col-6">
+          <h2>Featuring</h2>
+        </div>
+      </div>
       <div class="row">
         <div class="col-2">
           <svg width="144px" height="145px" viewBox="0 0 144 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -238,17 +262,15 @@
 
       <div class="row blue-bottom">
         <div class="col-6">
-          <h2>We know what you want.</h2>
           <a href="/features" class="button">Learn more about these features</a>
         </div>
       </div>
 
-      <div id="blockchains" class="row blue-bottom">
+      <div id="blockchains" class="row padded">
         <div class="col-6">
-          <h2>Scatter hooks you up.</h2>
-          <h4>Ever wondered why you need more than one wallet? So did we. That’s why we support multiple blockchains and their networks. Do what you want, when you want. It’s cool, it’s on us.</h4>
-          <carousel :perPageCustom="[[768,3], [1024, 5]]">
-              <slide>   
+          <h2 class="enterprise">Scatter Enterprise</h2>
+          <h4>It is our mission to connect our users to emerging blockchains and networks.</h4>
+              <div class="single">   
                 <svg width="63px" height="92px" viewBox="0 0 63 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
                         <g id="gs_home_v2_01_white" transform="translate(-259.000000, -2163.000000)" stroke="#00A8FF" stroke-width="3">
@@ -262,8 +284,8 @@
                     </g>
                 </svg>
                 <h5>EOS</h5>
-              </slide>
-              <slide> 
+              </div>
+              <div class="single"> 
                 <svg width="62px" height="92px" viewBox="0 0 62 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
                         <g id="gs_home_v2_01_white" transform="translate(-439.000000, -2163.000000)" stroke="#00A8FF" stroke-width="3">
@@ -277,8 +299,8 @@
                     </g>
                 </svg>
                 <h5>Ethereum</h5>
-              </slide>
-              <slide>
+              </div>
+              <div class="single">
                 <svg width="78px" height="79px" viewBox="0 0 78 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
                         <g id="gs_home_v2_01_white" transform="translate(-621.000000, -2170.000000)" stroke="#00A8FF" stroke-width="3">
@@ -293,8 +315,8 @@
                     </g>
                 </svg>
                 <h5>Tron</h5>
-              </slide>
-              <slide>
+              </div>
+              <div class="single">
                 <svg width="76px" height="82px" viewBox="0 0 76 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
                         <g id="gs_home_v2_01_white" transform="translate(-786.000000, -2165.000000)" stroke="#00A8FF" stroke-width="3">
@@ -312,8 +334,8 @@
                     </g>
                 </svg>
                 <h5>Telos</h5>
-              </slide>
-              <slide>   
+              </div>
+              <div class="single">   
                 <svg width="87px" height="86px" viewBox="0 0 87 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
                         <g id="gs_home_v2_01_white" transform="translate(-943.000000, -2160.000000)" stroke="#00A8FF" stroke-width="3">
@@ -335,174 +357,26 @@
                     </g>
                 </svg>
                 <h5>WORBLI</h5>
-              </slide>
-            </carousel>
-          <p><a href="" class="button">Add your network</a> Let’s work together to bring your network to the right users. <strong>Our users.</strong></p>
+              </div>
+          <p><a href="" class="button enterprise">Add your network</a></p>
         </div>
       </div>
 
       <div id="blockchains" class="row padded padded-large">
         <div class="col-6">
-          <h2>Get started building with Scatter.</h2>
+          <h3>Get started building with Scatter.</h3>
           <h4>Leveraging the flexibility and extensibility of Scatter’s SDK, we have already integrated EOS, Telos, WORBLI, Ethereum, and Tron. As each new network comes online we are expanding the base capabilities of Scatter as a platform.</h4>
           <p><a href="" class="button">Go to the SDK documentation</a></p>
         </div>
       </div>  
 
     </section>
-<!-- 
-    <section id="partner-logos" class="dimmed padded padded-large">
-      <div class="row">
-        <div class="col-6">
-          <h2>Partners and Apps</h2>
-          <p style="margin-top:-30px; margin-bottom:40px;">
-            <router-link class="button button-text" to="/Apps">You can find a full list of Apps using Scatter by clicking here</router-link>
-          </p>
-          <ul id="partners">
-            <carousel :perPageCustom="[[768,4], [1024, 6]]">
-              <slide>
-                <a class="partner" target="_blank" href="https://www.stateofthedapps.com/"><img src="../assets/logos/sotd.jpg"></a>
-              </slide>
-              <slide>
-                <a class="partner" target="_blank" href="https://eos.bancor.network/"><img src="../assets/logos/bancorX.png"></a>
-              </slide>
-              <slide>
-                <a class="partner" target="_blank" href="https://bloks.io/"><img src="../assets/logos/logo1.png"></a>
-              </slide>
-              <slide>
-                <a class="partner" target="_blank" href="https://www.alohaeos.com/"><img src="../assets/logos/aloha.png"></a>
-              </slide>
-              <slide>
-                <a class="partner" target="_blank" href="https://eostoolkit.io/"><img src="../assets/logos/eostoolkit.png"></a>
-              </slide>
-              <slide>
-                <a class="partner" target="_blank" href="https://everipedia.org/"><img src="../assets/logos/logo4.png"></a>
-              </slide>
-              <slide>
-                <a class="partner" target="_blank" href="https://www.chintai.io/"><img src="../assets/logos/chintai.png"></a>
-              </slide>
-              <slide>
-                <a class="partner" target="_blank" href="https://dice.eosbet.io/"><img src="../assets/logos/eosbet.png"></a>
-              </slide>
-              <slide>
-                <a class="partner" target="_blank" href="https://tronbet.io/"><img src="../assets/logos/tronbet.png"></a>
-              </slide>
-            </carousel>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <section id="why-users" class="body padded padded-large">
-      <div class="row">
-        <div class="col-6">
-          <h2>Because it is easy for our users,</h2>
-          <img src="../assets/users_mobile.png" class="mobile-only">
-        </div>
-      </div>
-      <div class="row centered-vertically">
-        <div class="col-3 desktop-only">
-          <img src="../assets/gs_home_users_sig.png" class="desktop-only">
-        </div>
-        <div class="col-3">
-          <h4>Digital Signatures made easy.</h4>
-          <p>Signing transactions on a blockchain can be a daunting task for users. Scatter makes it easy for anyone to do, whether they know about blockchain or not.</p>
-        </div>
-      </div>
-      <div class="row centered-vertically">
-        <div class="col-3">
-          <h4>You Own Your Data. Period.</h4>
-          <p>Everything in your Scatter is held on your own device. Scatter actively warns you about applications that are known to leak your data, so you can be aware of the risks of giving your information to them. </p>
-        </div>
-        <div class="col-3 desktop-only">
-          <img src="../assets/gs_home_users_data.png" class="desktop-only">
-        </div>
-      </div>
-      <div class="row centered-vertically">
-        <div class="col-3 desktop-only">
-          <img src="../assets/gs_home_users_signon.png" class="desktop-only">
-        </div>
-        <div class="col-3">
-          <h4>Single Sign-on for apps.</h4>
-          <p>Scatter provides Single Sign-on (SSO) using asymmetric encryption to log you into applications without passwords. Keep hackers at bay by never even giving them the pieces they need to hack your accounts.
-          </p>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-    <section id="why-devs" class="body padded padded-large">
-      <div class="row">
-        <div class="col-6">
-          <h2>And easy for our developers.</h2>
-          <img src="../assets/devs_mobile.png" class="mobile-only">
-        </div>
-      </div>
-      <div class="row centered-vertically">
-        <div class="col-3">
-          <h4>Streamlined Use.</h4>
-          <p>Scatter’s SDKs are easy to implement. Developers can tap into them with libraries they already know such as `eosjs` and `web3`. With a few lines of code you have full web, desktop, and mobile support for your application.</p>
-        </div>
-        <div class="col-3 desktop-only">
-          <img src="../assets/gs_home_devs_streamlined.png" class="desktop-only">
-        </div>
-      </div>
-      <div class="row centered-vertically">
-        <div class="col-3 desktop-only">
-          <img src="../assets/gs_home_devs_code.png" class="desktop-only">
-        </div>
-        <div class="col-3 desktop-only">
-          <h4>Write code once. Use it everywhere.</h4>
-          <p>Every developer’s dream: Scatter’s SDKs are cross platform compatible. You write the code once and instantly support Desktop and Mobile devices. Even better, you are future proof as we can add other devices, like gaming consoles, in the future.
-          </p>
-        </div>
-      </div>
-      <div class="row centered-vertically">
-        <div class="col-3">
-          <h4>Multi-Blockchain Support</h4>
-          <p>We don’t believe any single blockchain will be the last. That’s why we are continuously adding support for new blockchains. We take a focus on Smart-Contract centric blockchains and provide a singular API that developers can use no matter what chain they are developing for.</p>
-        </div>
-        <div class="col-3 desktop-only">
-          <img src="../assets/gs_home_devs_blockchains.png" class="desktop-only">
-        </div>
-      </div>
-      <br><br>
-      <div class="row">
-        <div class="col-6">
-          <h4>Get Started Now</h4>
-          <p>Check out the <a href="/docs/select-type">Developer Documentation</a> to find out how to import Scatter’s SDKs into your projects. We are constantly adding more SDKs to support more languages and help the ecosystem grow further. </p>
-
-          <p>Come join our very active Scatter Developers telegram channel as well, where we take a hands-on approach to helping get every project off the ground.</p>
-
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="get-started" class="body dimmed padded padded-large">
-      <div class="row">
-        <div class="col-3">
-          <h3>Learn more about RIDL.</h3>
-          <a class="button button-primary" href="https://docs.google.com/document/d/1cDcERQUAA3W21XtJhHlqfL2LauiELmOE_b5J2Q3acJg/view">Read the Whitepaper</a>
-        </div>
-        <div class="col-3">
-          <h3>Scatter is available now!</h3>
-          <a class="button button-primary" :href="downloadLink">Download Scatter</a>
-        </div>
-      </div>
-    </section> -->
   </div>
 </template>
 
 <script>
     import Footer from './Footer.vue'
-    import { Carousel, Slide } from 'vue-carousel';
+    import { Carousel3d, Slide3d } from 'vue-carousel-3d';
 
     const LOGOS = [
         {url:''}
@@ -510,7 +384,7 @@
 
     export default {
         name: 'Home',
-        components: { Footer,Carousel, Slide },
+        components: { Footer, Carousel3d, Slide3d },
         data(){return {
           LOGOS,
         }}
@@ -521,54 +395,30 @@
 <style lang="scss">
   @import "../variables";
 
+  @media (max-width: $breakpoint-mobile) {
+      #home {
+        h1 {
+          margin-top:-3rem;
+        }
+      }
+  }
+  
+
   #leadin {
-    text-align: left;
-    padding:0 3rem;
-    background-image:url('../assets/home_bg.svg');
-    background-size:100%;
-    background-position:bottom center;
-    height:660px;
-    background-repeat:no-repeat;
-    background-color:$background;
-
-    @media (max-width: $breakpoint-small-desktop) {
-        height:520px;
-    }
-
-    @media (max-width: $breakpoint-tablet) {
-        height:860px;
-    }
-
-    @media (max-width: $breakpoint-mobile) {
-        height:660px;
-    }
+    text-align: center;
+    padding:6rem 6rem 18rem;
+    border-bottom:6px solid $blue;
 
     p {
       margin:0 0 2rem;
     }
 
-    .row {
-      overflow: visible;
-    }
-
-    #screenshot-1 {
-      width:80%;
-      height:auto;
-      position:absolute;
-      top:0px;
-      right:0px;
-    }
-
-    #screenshot-2 {
-      width:80%;
-      height:auto;
-      position:absolute;
-      top:40px;
-      left:20px;
-    }
   }
 
   #features-mini {
+
+    padding-top:6rem;
+
     text-align:center;
 
     svg {
@@ -577,75 +427,48 @@
   }
 
   #blockchains {
-    .VueCarousel {
-        width: 80%;
-        margin: 0 auto 6rem;
-    }
-    .button {
-      margin-right:2rem;
-    }
-  }
 
-  .col-3 {
-    perspective: 1000px;
-  }
-
-  .shadow { 
-    height:480px;
-    overflow:visible;
-
-    img {
-      border:1px solid $blue;
-      border-radius:3px;
-      transform: rotate3d(14, -69, 3, 26deg) translateX(-60px) translateY(20px);
+    h4 {
+      text-align:center;
+      width:80%;
+      margin: 0 auto 3rem;
     }
 
-    img:after {
-        width:100%;
-        height:100;
-        content:'';
-        display:block;
-        background-color:$blue;
+    .single {
+      float:left;
+      width:20%;
+      margin-bottom:3rem;
+    }
+
+    svg {
+      height:140px;
+
+      g {
+        stroke:$darkgrey;  
       }
 
-    @media (max-width: $breakpoint-small-desktop) {
-      height:400px;
+      @media (max-width: $breakpoint-mobile) {
+        height:44px;
+      }
+    }
+
+    h5 {
+      @media (max-width: $breakpoint-mobile) {
+        font-size:80%;
+      }
     }
   }
 
-  .shadow:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 36px;
-      background: inherit;
-      background-size: cover, cover;
-      background-position: bottom;
-      transform: rotateX(90deg);
-      transform-origin: bottom;
-      @media (max-width: $breakpoint-tablet) {
-        display:none;
-      }
-  }
+  #screenshots {
+    margin-top:-18rem;
 
-  .shadow:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-      transition: all 0.5s;
-      opacity: 0.15;
-      transform: rotateX(95deg) translateZ(-40px) scale(0.75) rotateZ(20deg) translateX(-20px);
-      transform-origin: bottom;
-      @media (max-width: $breakpoint-tablet) {
-        display:none;
-      }
+    .carousel-3d-slide {
+      border:3px solid $blue;
+      box-shadow:0 4px 14px rgba(0,0,0,0.12);
+      border-radius: 4px;
+      padding: .3rem;
+      background: white;
+    }
   }
 
 

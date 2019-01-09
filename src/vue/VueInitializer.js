@@ -4,6 +4,7 @@ import VueHighlightJS from 'vue-highlightjs'
 import App from '../App.vue'
 import VueYouTubeEmbed from 'vue-youtube-embed'
 import VueCarousel from 'vue-carousel'
+import Carousel3d from 'vue-carousel-3d'
 
 Vue.productionTip = false;
 Vue.devtools = false
@@ -45,6 +46,7 @@ export default class VueInitializer {
         Vue.use(VueHighlightJS);
         Vue.use(VueYouTubeEmbed);
         Vue.use(VueCarousel);
+        Vue.use(Carousel3d);
     }
 
     registerComponents(components){

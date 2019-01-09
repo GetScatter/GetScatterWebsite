@@ -246,6 +246,7 @@
 		height:100vh;
 		z-index:1001;
 		background-color:#60647c;
+        background-image:$dark-blue-gradient;
 		overflow-y:auto;
 		right:-440px;
 		transition: 0.25s ease;
@@ -268,13 +269,15 @@
 			padding: 16px 40px;
 			text-decoration:none;
 			color:#fff;
+            transition:all 0.24s ease-in-out;
 
 			&:hover,
 			&:focus,
 			&:active,
 			&.router-link-exact-active {
 				color: white;
-				background:#696e88;
+				background:#blue;
+                background-image:$blue-gradient;
 			}
 		}
 
@@ -309,6 +312,7 @@
 			position:absolute;
 			top:10px;
 			right:20px;
+            display:none;
 
 			span {
 				display:block;
@@ -368,7 +372,7 @@
 			right:30px;
 			top:30px;
 			z-index:1000;
-            border:3px solid #F2F2F6;
+            border:3px solid transparent;
             background: $background;
             border-radius:22px;
 

@@ -5,7 +5,7 @@
           <div class="body-text">
             <div class="row">
               <div class="col-4">
-                <h1>Scatter is building<br>features you will love.</h1>
+                <h1>Scatter is building<br>features that you will love.</h1>
                 <h4>Every part of Scatter is lovingly designed and crafted to meet your daily crypto needs. It is fast, powerful, and functional. 
 
                 <br<br><br>Read on to learn about some of our favorite features.</h4>
@@ -18,40 +18,40 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h2>Integrated App List</h2>
+                        <h3>Integrated App List</h3>
                         <h4>We have worked hard to engage with the community and encouraged them to add their great apps to our list. That means you get to explore and use these amazing pieces of software for no cost.</h4>
                         <p><a href="/apps" class="button button-small">Check out ScatterApps</a></p>
                     </div>
                     <div class="col-3">
-                        <carousel :perPageCustom="[[400,3], [768,3], [1024, 4]]">
-                          <slide>
+                        <carousel-3d :autoplay="1" :autoplayHoverPause="1" :display="7" :height="120" :width="120" :controlsVisible="1">
+                          <slide :index="0">
                             <a class="partner" target="_blank" href="https://www.stateofthedapps.com/"><img src="../assets/logos/sotd.jpg"></a>
                           </slide>
-                          <slide>
+                          <slide :index="1">
                             <a class="partner" target="_blank" href="https://eos.bancor.network/"><img src="../assets/logos/bancorX.png"></a>
                           </slide>
-                          <slide>
+                          <slide :index="2">
                             <a class="partner" target="_blank" href="https://bloks.io/"><img src="../assets/logos/logo1.png"></a>
                           </slide>
-                          <slide>
+                          <slide :index="3">
                             <a class="partner" target="_blank" href="https://www.alohaeos.com/"><img src="../assets/logos/aloha.png"></a>
                           </slide>
-                          <slide>
+                          <slide :index="4">
                             <a class="partner" target="_blank" href="https://eostoolkit.io/"><img src="../assets/logos/eostoolkit.png"></a>
                           </slide>
-                          <slide>
+                          <slide :index="5">
                             <a class="partner" target="_blank" href="https://everipedia.org/"><img src="../assets/logos/logo4.png"></a>
                           </slide>
-                          <slide>
+                          <slide :index="6">
                             <a class="partner" target="_blank" href="https://www.chintai.io/"><img src="../assets/logos/chintai.png"></a>
                           </slide>
-                          <slide>
+                          <slide :index="7">
                             <a class="partner" target="_blank" href="https://dice.eosbet.io/"><img src="../assets/logos/eosbet.png"></a>
                           </slide>
-                          <slide>
+                          <slide :index="8">
                             <a class="partner" target="_blank" href="https://tronbet.io/"><img src="../assets/logos/tronbet.png"></a>
                           </slide>
-                        </carousel>
+                        </carousel-3d>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h2>Stablecoins</h2>
+                        <h3>Stablecoins</h3>
                         <p>The fluctuations of the market should not impact your wealth. We have integrated a fantastic new way for you to ensure that you ride out price volatility with the least impact to your portfolio possible. Stabilize your tokens today!</p>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h2>Token Exchange</h2>
+                        <h3>Token Exchange</h3>
                         <p>Your funds become liquidity with our <strong>built-in token exchange</strong> mechanism. Never again will you have to go to an external exchange to swap BTC, TUSD, EOS, ETH, TRX, or DAI.</p>
                     </div>
                     <div class="col-3">
@@ -132,7 +132,7 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h2>RIDL</h2>
+                        <h3>RIDL</h3>
                         <p>Our Reputation and Identity layer solves a key question on the internet: <strong>who can you trust</strong>? We believe in the wisdom of the crowd and are using it in Scatter to make sure that you know when it is ok to allow an action, and when it isn’t.</p>
                         <p><a href="/ridl" class="button button-small">Learn more about RIDL</a></p>
                     </div>
@@ -186,7 +186,7 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h2>Asset Manangement</h2>
+                        <h3>Asset Manangement</h3>
                         <p>New in Scatter10 is a whole new way to manage your crypto assets. Search, filter, and see how your <strong>portfolio has changed</strong> with our fantastic historical charts!</p>
                     </div>
                     <div class="col-3">
@@ -317,8 +317,11 @@
 
 <script>
 
+    import { Carousel3d, Slide3d } from 'vue-carousel-3d';
+
     export default {
-        name: 'Features'
+        name: 'Features',
+        components: { Carousel3d, Slide3d },
     }
 
 </script>
@@ -343,12 +346,17 @@
         padding:0;
         list-style:none;
 
-        .VueCarousel {
-            margin-top:85px;
+        .carousel-3d-container {
+          margin-top:225px;
+          @media (max-width: $breakpoint-tablet) {
+            margin-top:0px;
+          }
         }
 
-        .VueCarousel-slide {
-          padding:2rem;
+        .carousel-3d-slide {
+          border-radius:80px;
+          background:$lightgrey;
+          border:0;
         }
     }
 
@@ -365,15 +373,15 @@
             background-position:center bottom;
         }
 
-        h2 {
+        h3 {
             margin-top: 12rem;
         }
     }
 
     #Token_Exchange {
         min-height:460px;
-        h2 {
-            margin-top: 6rem;
+        h3 {
+            margin-top: 3rem;
         }
 
         .col-3:nth-child(2) {
@@ -383,8 +391,8 @@
 
     #RIDL {
         min-height:460px;
-        h2 {
-            margin-top: 6rem;
+        h3 {
+            margin-top: 3rem;
         }
 
         .col-3:nth-child(2) {
@@ -394,8 +402,8 @@
 
     #Asset_Management {
         min-height:460px;
-        h2 {
-            margin-top: 6rem;
+        h3 {
+            margin-top: 0rem;
         }
 
         .col-3:nth-child(2) {
@@ -405,12 +413,16 @@
 
     #Hardware_Wallets {
         min-height:460px;
-        h2 {
+        h3 {
             margin-top: 2rem;
         }
 
         .col-3:nth-child(2) {
             text-align:center;
+        }
+
+        svg {
+          margin-top:6rem;
         }
     }
 

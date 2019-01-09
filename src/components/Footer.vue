@@ -129,7 +129,19 @@ export default {
 		float:left;
 		margin-right:20px;
 		margin-bottom: 140px;
+
+        @media (max-width: $breakpoint-tablet) {
+            float:none;
+            margin-right:0px;
+            margin-bottom: 3rem;
+        }
 	}
+
+    .col-quarter {
+        @media (max-width: $breakpoint-tablet) {
+            text-align:center;
+        }
+    }
 }
 
 
@@ -144,6 +156,12 @@ export default {
     max-width:920px;
     margin:0 auto;
     padding:12rem 0;
+
+    @media (max-width: $breakpoint-tablet) {
+        .col-3 {
+            text-align:center;
+        }
+    }
 
     h3 {
     	padding-bottom:0.4em;
@@ -173,6 +191,10 @@ export default {
 		line-height: 1rem;
 		display: block;
 		text-align: left;
+
+        @media (max-width: $breakpoint-tablet) {
+            text-align: center;
+        }
 
 		&:hover {
 			color:$blue;

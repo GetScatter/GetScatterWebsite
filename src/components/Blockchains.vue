@@ -165,6 +165,12 @@
             }
         }
 
+        @media (max-width: $breakpoint-mobile) {
+            h1 {
+                margin-top: 0rem;
+            }
+        }
+
         @media (max-width: $breakpoint-tablet) {
             background-image:url('../assets/apps_bg.png');
         }
@@ -182,7 +188,7 @@
             padding-top:0;
             margin-top: -1rem !important;
             @media (max-width: $breakpoint-small-desktop) {
-                margin-top: 0rem !important;
+                margin-top: 3rem !important;
             }
         }
 
