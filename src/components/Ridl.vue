@@ -5,7 +5,7 @@
       <div class="body-text">
         <div class="row">
           <div class="col-4">
-            <h1>Reputation &amp; <br>Identity Layer</h1>
+            <h2>Reputation &amp; <br>Identity Layer</h2>
             <a href="https://ridl.get-scatter.com/" class="button" target="_blank">Donate with Scatter</a>
           </div>
         </div>
@@ -45,11 +45,11 @@
     <br>
     <br>
 
-    <section id="get-started" class="body dimmed padded padded-large">
+    <section id="get-started" class="body padded padded-large">
       <div class="row">
         <div class="col-4">
           <h3>Want to learn more about RIDL?</h3>
-          <a class="button button-primary" href="https://docs.google.com/document/d/1cDcERQUAA3W21XtJhHlqfL2LauiELmOE_b5J2Q3acJg/view">Read the Whitepaper</a>
+          <a class="button" href="https://docs.google.com/document/d/1cDcERQUAA3W21XtJhHlqfL2LauiELmOE_b5J2Q3acJg/view">Read the Whitepaper</a>
         </div>
       </div>
     </section>

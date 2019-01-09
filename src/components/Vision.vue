@@ -3,9 +3,9 @@
 
     <section class="body padded padded-large">
       <div class="body-text">
-        <h1>Vision</h1>
         <div class="row">
           <div class="col-6">
+            <h1>Vision</h1>
             <h4>Scatter has grown, matured, and seen a meteoric uptake in use within the blockchain community. There are huge opportunities on the horizon, especially with the extensive development of and soaring interest in decentralized blockchain apps.</h4>
             <h5>Roadmap</h5>
             <div class="scatter-vision-badge">
@@ -39,11 +39,11 @@
             <div class="vision-line"></div>
             <div class="vision-item"><h5><b>Up Next:</b></h5></div>
             <div class="vision-dash"></div>
-            <div class="vision-item"><p class="title">Unity3d Scatter SDK + <b>Best Scatter Desktop Game Competition</b></p><p class="date">Q4 2018</p></div>
+            <div class="vision-item"><p class="title">Unity3d Scatter SDK + <b>Best Scatter Desktop Game Competition</b></p><p class="date">Q1 2019</p></div>
             <div class="vision-dash"></div>
-            <div class="vision-item"><p class="title">RIDL System Testnet + Mainnet Airdrop</p><p class="date">Q4 2018</p></div>
+            <div class="vision-item"><p class="title">RIDL System Testnet + Mainnet Airdrop</p><p class="date">Q1 2019</p></div>
             <div class="vision-dash"></div>
-            <div class="vision-item"><h5><b>Coming Next Year:</b></h5></div>
+            <div class="vision-item"><h5><b>Coming this Year:</b></h5></div>
             <div class="vision-dash"></div>
             <div class="vision-item"><p class="title"><b>More Blockchains</b>, Scatter for Android Production Release, Scatter for iOS Alpha, RIDL System Mainnet</p><p class="date">Q1 - Q2 2019</p></div>
             <br><br>
@@ -53,15 +53,15 @@
       </div>
     </section>
 
-    <section id="get-started" class="body dimmed padded padded-large">
+    <section id="get-started" class="body padded padded-large">
       <div class="row">
         <div class="col-3">
           <h3>Learn more about RIDL.</h3>
-          <a class="button button-primary" href="https://docs.google.com/document/d/1cDcERQUAA3W21XtJhHlqfL2LauiELmOE_b5J2Q3acJg/view">Read the Whitepaper</a>
+          <a class="button" href="https://docs.google.com/document/d/1cDcERQUAA3W21XtJhHlqfL2LauiELmOE_b5J2Q3acJg/view">Read the Whitepaper</a>
         </div>
         <div class="col-3">
           <h3>Scatter is available now!</h3>
-          <a class="button button-primary" :href="downloadLink">Download Scatter</a>
+          <a class="button" :href="downloadLink">Download Scatter</a>
         </div>
       </div>
     </section>
@@ -70,7 +70,7 @@
 
 <script>
 export default {
-  name: 'Vision' //this is the name of the component
+  name: 'Vision'
 }
 
 </script>
@@ -78,6 +78,13 @@ export default {
 <style lang="scss">
 
 #vision {
+  background-image:url('../assets/apps_bg.png');
+  background-size:100%;
+  background-position:top center;
+  min-height:660px;
+  background-repeat:no-repeat;
+  background-color:white;
+  text-align:center;
 
   .scatter-vision-badge {
     width:140px;

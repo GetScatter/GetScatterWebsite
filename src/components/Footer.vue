@@ -39,7 +39,7 @@
   				<h5>Links</h5>
   				<div class="site-links">
 	  				<a href="/founders">founders</a>
-	  				<a href="/contact">vision</a>
+	  				<a href="/vision">vision</a>
 	  				<a href="/developer/documentation">documentation</a>
 	  				<!-- <a href="/press">articles</a> -->
 	  				<a href="/apps">apps</a>
@@ -124,6 +124,15 @@ export default {
 	background-size:contain;
 	background-repeat:no-repeat;
 	min-height:400px;
+
+    h3 {
+        color:$black !important;
+        font-size:4rem;
+        margin-top:1rem;
+        background-image:initial;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+    }
 
 	svg {
 		float:left;

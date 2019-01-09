@@ -4,8 +4,8 @@
         <section class="body">
           <div class="body-text">
             <div class="row">
-              <div class="col-4">
-                <h1>Scatter is building<br>features that you will love.</h1>
+              <div class="col-3">
+                <h2>Scatter is building<br>features that you will love.</h2>
                 <h4>Every part of Scatter is lovingly designed and crafted to meet your daily crypto needs. It is fast, powerful, and functional. 
 
                 <br<br><br>Read on to learn about some of our favorite features.</h4>
@@ -18,7 +18,7 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h3>Integrated App List</h3>
+                        <h3>Integrated <br>App List</h3>
                         <h4>We have worked hard to engage with the community and encouraged them to add their great apps to our list. That means you get to explore and use these amazing pieces of software for no cost.</h4>
                         <p><a href="/apps" class="button button-small">Check out ScatterApps</a></p>
                     </div>
@@ -267,7 +267,7 @@
             <div class="body-text">
                 <div class="row blue-bottom">
                     <div class="col-3">
-                        <h2>Hardware wallet support</h2>
+                        <h3>Hardware wallet support</h3>
                         <p>Because we put your safety first, we’ve included support for Ledger Nanos. We love them and think that you will, too.</p>
                     </div>
                     <div class="col-3">
@@ -336,7 +336,7 @@
         background-color:$white;
         text-align:left;
 
-        h1 {
+        h2 {
             margin-top: 12rem;
         }
     }
@@ -390,7 +390,7 @@
     }
 
     #RIDL {
-        min-height:460px;
+        min-height:560px;
         h3 {
             margin-top: 3rem;
         }
@@ -422,7 +422,7 @@
         }
 
         svg {
-          margin-top:6rem;
+          margin-top:3rem;
         }
     }
 

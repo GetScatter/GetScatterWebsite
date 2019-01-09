@@ -4,7 +4,7 @@
           <div class="body-text">
             <div class="row">
               <div class="col-4">
-                <h1>All together now.</h1>
+                <h2>All together now.</h2>
                 <h4>We believe that all blockchains have something to offer, whether it be experience, speed, ease-of-use, commercial success, or community. </h4>
                 <h4>Scatter currently offers access to the EOS, Tron, and Ethereum blockchains. We have built in support for the Telos and WORBLI networks.</h4>
                 <h4>Part of our mission is to expand access to other blockchains and their networks, because we believe that a unified user experience is critical for mass adoption.</h4>
@@ -113,7 +113,7 @@
                 <p>Open Scatter, log in to your favorite app on your preferred blockchain and network, and off you go. </p>
                 <h2>Join Scatter.</h2>
                 <p>If you are a blockchain developer and would like to see your favorite blockchain integrated into Scatter, we’d love to hear about how we can help.  </p>
-                <p><a href="" class="button">Add your blockchain or network to Scatter</a></p>
+                <p><a href="mailto:business@get-scatter.com" class="button">Add your blockchain or network to Scatter</a></p>
               </div>
             </div>
           </div>
