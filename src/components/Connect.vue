@@ -24,7 +24,7 @@
                   <slide>   
                     <svg width="63px" height="92px" viewBox="0 0 63 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                            <g id="gs_home_v2_01_white" transform="translate(-259.000000, -2163.000000)" stroke="#00A8FF" stroke-width="3">
+                            <g id="gs_home_v2_01_white" transform="translate(-259.000000, -2163.000000)" stroke="#00A8FF" stroke-width="1">
                                 <g id="Group-25" transform="translate(253.000000, 1944.000000)">
                                     <g id="Group-4" transform="translate(8.000000, 221.000000)">
                                         <polygon id="Path-2" points="28.1111111 0 48.1904762 26.7361111 58.6666667 66.8402778 29.3333333 88 0 66.8402778 8.03174603 26.7361111"></polygon>
@@ -39,7 +39,7 @@
                   <slide> 
                     <svg width="62px" height="92px" viewBox="0 0 62 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                            <g id="gs_home_v2_01_white" transform="translate(-439.000000, -2163.000000)" stroke="#00A8FF" stroke-width="3">
+                            <g id="gs_home_v2_01_white" transform="translate(-439.000000, -2163.000000)" stroke="#00A8FF" stroke-width="1">
                                 <g id="Group-25" transform="translate(253.000000, 1944.000000)">
                                     <g id="Group-5" transform="translate(188.000000, 221.000000)">
                                         <polygon id="Path" points="28.8 0 0 43.4285714 28.8 60.8 57.6 43.4285714"></polygon>
@@ -54,7 +54,7 @@
                   <slide>
                     <svg width="78px" height="79px" viewBox="0 0 78 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                            <g id="gs_home_v2_01_white" transform="translate(-621.000000, -2170.000000)" stroke="#00A8FF" stroke-width="3">
+                            <g id="gs_home_v2_01_white" transform="translate(-621.000000, -2170.000000)" stroke="#00A8FF" stroke-width="1">
                                 <g id="Group-25" transform="translate(253.000000, 1944.000000)">
                                     <g id="Group-14" transform="translate(370.000000, 228.000000)">
                                         <polygon id="Path-5" points="0 -7.10542736e-15 32 75 74 24 62 10"></polygon>
@@ -70,7 +70,7 @@
                   <slide>
                     <svg width="76px" height="82px" viewBox="0 0 76 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                            <g id="gs_home_v2_01_white" transform="translate(-786.000000, -2165.000000)" stroke="#00A8FF" stroke-width="3">
+                            <g id="gs_home_v2_01_white" transform="translate(-786.000000, -2165.000000)" stroke="#00A8FF" stroke-width="1">
                                 <g id="Group-25" transform="translate(253.000000, 1944.000000)">
                                     <g id="Group-13" transform="translate(535.000000, 223.000000)">
                                         <polygon id="Path-8" points="48.8873239 7.14084507 72.2323944 39.5492958 69.7605634 53.8309859 55.4788732 56.5774648 53.8309859 61.5211268 38.4507042 72.5070423 10.9859155 78 1.64788732 51.6338028 1.64788732 34.056338 4.94366197 29.6619718 5.68434189e-14 16.4788732 9.33802817 7.14084507"></polygon>
@@ -89,7 +89,7 @@
                   <slide>   
                     <svg width="87px" height="86px" viewBox="0 0 87 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                            <g id="gs_home_v2_01_white" transform="translate(-943.000000, -2160.000000)" stroke="#00A8FF" stroke-width="3">
+                            <g id="gs_home_v2_01_white" transform="translate(-943.000000, -2160.000000)" stroke="#00A8FF" stroke-width="1">
                                 <g id="Group-25" transform="translate(253.000000, 1944.000000)">
                                     <g id="Group-17" transform="translate(690.000000, 216.000000)">
                                         <path d="M22,38 C30.0807062,38 27.5107422,48 33,48 C38.4892578,48 37.0429688,38 43,38 C48.9570312,38 46.8398438,48 53,48 C59.1601562,48 57.3076887,38 63,38" id="Path-14"></path>

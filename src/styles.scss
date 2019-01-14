@@ -205,7 +205,7 @@ h5 {
   display: inline-block;
   padding: 1.8rem 3rem;
   background: none;
-  border: 3px solid $blue;
+  border: 1px solid $blue;
   border-radius: 5px;
   color: $black;
   text-decoration: none;
@@ -214,7 +214,7 @@ h5 {
   overflow: hidden;
 
   &.enterprise {
-    border: 3px solid $darkgrey;
+    border: 1px solid $darkgrey;
   }
 
   @media (max-width: $breakpoint-mobile) {
