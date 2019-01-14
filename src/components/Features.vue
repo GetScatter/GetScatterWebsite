@@ -4,12 +4,6 @@
 
         <div class="row">
 
-          <!-- <section class="sidebar" :class="{'show':mobileMenu}">
-              <section class="links">
-                  <feature-menu-link :key="feature.route" v-for="feature in menu.features" :feature="feature" :active="activeLinks" v-on:clicked="clickedMenuLink"></feature-menu-link>
-              </section>
-          </section> -->
-
           <section class="page">
               <component v-if="pageComponent" :is="pageComponent"></component>
           </section>
