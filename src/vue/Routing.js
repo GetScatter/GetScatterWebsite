@@ -7,7 +7,7 @@ import Ridl from '../components/Ridl.vue'
 import Vision from '../components/Vision.vue'
 import Apps from '../components/Apps.vue'
 import Features from '../components/Features.vue'
-import Blockchains from '../components/Blockchains.vue'
+import Connect from '../components/Connect.vue'
 import Download from '../components/Download.vue'
 
 
@@ -21,7 +21,7 @@ export const RouteNames = {
     Vision:'vision',
     Apps:'apps',
     Features:'features',
-    Blockchains:'blockchains',
+    Connect:'connect',
     Download:'download'
 };
 
@@ -35,13 +35,14 @@ const RouteViews = {
     [RouteNames.Vision]:Vision,
     [RouteNames.Apps]:Apps,
     [RouteNames.Features]:Features,
-    [RouteNames.Blockchains]:Blockchains,
+    [RouteNames.Connect]:Connect,
     [RouteNames.Download]:Download,
 };
 
 const RoutePaths = {
     [RouteNames.Home]:'/',
     [RouteNames.Docs]:'/docs/:doc',
+    [RouteNames.Features]:'/features/:feature',
 };
 
 export class Routing {

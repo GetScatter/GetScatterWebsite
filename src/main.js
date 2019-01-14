@@ -9,6 +9,7 @@ import Toggle from './components/reusable/Toggle';
 
 import Footer from './components/Footer.vue'
 import DocumentationMenuLink from './components/reusable/DocumentationMenuLink.vue'
+import FeatureMenuLink from './components/reusable/FeatureMenuLink.vue'
 
 // DOCUMENTATION FRAGMENTS
 import SettingUpForWebApps from './components/docs/SettingUpForWebApps.vue'
@@ -39,6 +40,10 @@ import NativePairing from './components/docs/native/NativePairing.vue'
 import NativeCatchingResponses from './components/docs/native/NativeCatchingResponses.vue'
 import NativeSendingRequests from './components/docs/native/NativeSendingRequests.vue'
 import NativePromises from './components/docs/native/NativePromises.vue'
+
+// FEATURES FRAGMENTS
+import FeaturesOverview from './components/features/Overview.vue'
+import FeaturesStablecoins from './components/features/Stablecoins.vue'
 
 
 class Main {
@@ -76,6 +81,9 @@ class Main {
             {tag:'dev-native-catching-responses', vue:NativeCatchingResponses},
             {tag:'dev-native-sending-requests', vue:NativeSendingRequests},
             {tag:'dev-native-promises', vue:NativePromises},
+            {tag:'features-overview', vue:FeaturesOverview},
+            {tag:'features-stablecoins', vue:FeaturesStablecoins},
+            {tag:'feature-menu-link', vue:FeatureMenuLink},
             {tag:'Search', vue:Search},
             {tag:'SearchFilter', vue:SearchFilter},
             {tag:'Toggle', vue:Toggle}

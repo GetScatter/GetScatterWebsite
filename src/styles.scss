@@ -14,9 +14,18 @@
   opacity: 0;
 }
 
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
 
-
-
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 *, *:before, *:after {
   margin: 0;
@@ -137,7 +146,7 @@ h2 {
 
 h3 {
   font-size:6rem;
-  line-height:6rem;
+  line-height:6.6rem;
   margin-bottom:3rem;
   background: $blue-gradient;
   -webkit-background-clip: text;
@@ -156,9 +165,10 @@ h3 {
 
 h4 {
   font-size:2rem;
-  margin-bottom:6rem;
+  margin-bottom:3rem;
   font-weight:400 !important;
   color:$black;
+  line-height:2.8rem;
 
   @media(max-width:$breakpoint-tablet){
     font-size:2.2rem;
@@ -225,7 +235,7 @@ h5 {
   &:after {
     background-color: $blue;
     height: 100%;
-    left: -35%;
+    left: -55%;
     top: 0;
     transform: skew(50deg);
     transition-duration: 0.4s;
@@ -235,8 +245,8 @@ h5 {
 
   &:hover:after {
     height: 100%;
-    width: 135%;
-    color:$black;
+    width: 200%;
+    color:white;
   }
 
   @media(max-width:$breakpoint-tablet){
@@ -315,6 +325,10 @@ input {
 
 .centered-vertically {
   align-items:center;
+}
+
+.white {
+  color:white;
 }
 
 .col-1 {
@@ -531,7 +545,7 @@ section {
   }
 
   &.body {
-    overflow:auto;
+    overflow:hidden;
 
     .row {
       margin:6rem auto;
@@ -548,6 +562,7 @@ section {
 
       p {
         color:$darkgrey;
+        margin-bottom:3rem;
       }
     }
 
@@ -587,4 +602,11 @@ section {
   .link {
     display:table;
   }
+}
+
+.package-name {
+  padding:.4rem .8rem;
+  background-color:$background;
+  color:$blue;
+  border-radius:2px;
 }

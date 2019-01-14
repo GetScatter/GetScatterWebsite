@@ -63,7 +63,7 @@
                     {
                         id: 2,
                         text: 'features',
-                        page:'/features',
+                        page:'/features/overview',
 	                    subs:[
 	                    	'Stable_Coins',
 		                    'Token_Exchange',
@@ -74,8 +74,8 @@
                     },
                     {
                         id: 3,
-                        text: 'blockchains',
-                        page:'/blockchains'
+                        text: 'connect',
+                        page:'/connect'
                     },
                     {
                         id: 4,

@@ -5,6 +5,8 @@ import App from '../App.vue'
 import VueYouTubeEmbed from 'vue-youtube-embed'
 import VueCarousel from 'vue-carousel'
 import Carousel3d from 'vue-carousel-3d'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 Vue.productionTip = false;
 Vue.devtools = false
@@ -47,6 +49,7 @@ export default class VueInitializer {
         Vue.use(VueYouTubeEmbed);
         Vue.use(VueCarousel);
         Vue.use(Carousel3d);
+        AOS.init();
     }
 
     registerComponents(components){
@@ -60,7 +63,13 @@ export default class VueInitializer {
     }
 
     setupVue(router){
-        const app = new Vue({router, template:'<App/>'});
+        const app = new Vue({
+            router, 
+            created () {
+                AOS.init()
+            },
+            template:'<App/>'
+        });
         app.$mount('#scatter');
     }
 

@@ -28,7 +28,7 @@
 				</svg>
 				<h3>GetScatter Ltd.</h3>
 				<p>Copyright © 2018 GetScatter, Ltd.</p>
-				<p><a href="/terms">Terms of Use</a> and <a href="/privacy">Privacy Policy</a></p>
+				<!-- <p><a href="/terms">Terms of Use</a> and <a href="/privacy">Privacy Policy</a></p> -->
 				<div class="footer-links">
 					<a class="footer-link" href="https://twitter.com/Get_Scatter"><i class="fab fa-twitter"></i></a>
 					<a class="footer-link" href="https://github.com/GetScatter"><i class="fab fa-github"></i></a>
@@ -38,12 +38,12 @@
   			<div class="col-quarter">
   				<h5>Links</h5>
   				<div class="site-links">
-	  				<a href="/founders">founders</a>
-	  				<a href="/vision">vision</a>
-	  				<a href="/developer/documentation">documentation</a>
+	  				<router-link to="/founders">founders</router-link>
+	  				<router-link to="/vision">vision</router-link>
+	  				<router-link to="/docs/getting-started">documentation</router-link>
 	  				<!-- <a href="/press">articles</a> -->
-	  				<a href="/apps">apps</a>
-	  				<a href="/contact">contact</a>
+	  				<router-link to="/apps">apps</router-link>
+	  				<!-- <router-link to="/contact">contact</router-link> -->
   				</div>
   			</div>
   			<div class="col-quarter">

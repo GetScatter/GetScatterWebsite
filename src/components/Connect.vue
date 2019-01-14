@@ -5,10 +5,10 @@
             <div class="row">
               <div class="col-4">
                 <h2>All together now.</h2>
-                <h4>We believe that all blockchains have something to offer, whether it be experience, speed, ease-of-use, commercial success, or community. </h4>
-                <h4>Scatter currently offers access to the EOS, Tron, and Ethereum blockchains. We have built in support for the Telos and WORBLI networks.</h4>
-                <h4>Part of our mission is to expand access to other blockchains and their networks, because we believe that a unified user experience is critical for mass adoption.</h4>
-                <h4>If your network is ready for primetime, let’s talk about how we can help you integrate into the most innovative solution available today.</h4>
+                <h4>We believe that all blockchains, networks, and wallets have something to offer, whether it be experience, speed, ease-of-use, commercial success, or community. </h4>
+                <p>Scatter currently offers access to the EOS, Tron, and Ethereum blockchains. We have built in support for the Telos and WORBLI networks.</p>
+                <p>Part of our mission is to expand access to other blockchains and their networks, because we believe that a unified user experience is critical for mass adoption.</p>
+                <p>If your network is ready for primetime, let’s talk about how we can help you integrate into the most innovative solution available today.</p>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@
     import { Carousel, Slide } from 'vue-carousel';
 
     export default {
-        name: 'Blockchains',
+        name: 'Connect',
         components: { Footer,Carousel, Slide },
     }
 

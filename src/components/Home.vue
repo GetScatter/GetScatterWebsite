@@ -1,28 +1,24 @@
 <template>
   <div id="home">
 
-    <section id="leadin" class="body">
+    <section id="leadin" class="body" data-aos="fade-down">
       <div class="body-text">
         <div class="row">
           <div class="col-6">
-            <h1>It's your blockchain.</h1>
+            <h1>It's your blockchain</h1>
             <p>Scatter10 provides seamless inter-blockchain functionality in a simple to use interface.</p>
-            <a class="button" :href="downloadLink">Download Scatter</a>
+            <router-link class="button" to="/download">Download Scatter</router-link>
             <p class="dimmed" style="margin-top:2rem">
               Available for Windows, MacOS, and Linux. <br>
               Looking for Mobile? <router-link class="nav-link" to="/vision">It's on our roadmap.</router-link>
             </p>
-            <!-- <div class="secondary-buttons">
-              <router-link class="button button-text" to="/Ridl">Read about RIDL</router-link>
-              <router-link class="button button-text" to="/docs/getting-started">Get started with our SDKs</router-link>
-            </div> -->
           </div>
         </div>
 
       </div>
     </section>
 
-    <section id="screenshots">
+    <section id="screenshots" data-aos="fade-up">
       <carousel-3d :height="480" :width="540">
         <slide :index="0">
           <img src="../assets/screenshot1.png" />
@@ -45,11 +41,12 @@
     <section id="features-mini" class="body">
       <div class="row">
         <div class="col-6">
-          <h2>Featuring</h2>
+          <h3 data-aos="fade-up">What can Scatter do for you?</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-2">
+        <div class="col-2" data-aos="zoom-out">
+          <router-link to="apps">
           <svg width="144px" height="145px" viewBox="0 0 144 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="gs_home_v2_01_white" transform="translate(-243.000000, -828.000000)" stroke-width="3">
@@ -61,10 +58,12 @@
                   </g>
               </g>
           </svg>
+          </router-link>
           <h5>ScatterApps</h5>
           <p>We bring you choice.</p>
         </div>
-        <div class="col-2">
+        <div class="col-2" data-aos="zoom-out">
+          <router-link to="features/stablecoins">
           <svg width="236px" height="113px" viewBox="0 0 236 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="gs_home_v2_01_white" transform="translate(-522.000000, -858.000000)" stroke-width="3">
@@ -79,10 +78,12 @@
                   </g>
               </g>
           </svg>
+          </router-link>
           <h5>Stablecoins</h5>
           <p>We bring you stability.</p>
         </div>
-        <div class="col-2">
+        <div class="col-2" data-aos="zoom-out" data-aos-offset="200">
+          <router-link to="features/tokenexchange">
           <svg width="176px" height="185px" viewBox="0 0 176 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                   <linearGradient x1="38.5078482%" y1="20.9756233%" x2="50%" y2="100%" id="linearGradient-1">
@@ -131,10 +132,12 @@
                   </g>
               </g>
           </svg>
+          </router-link>
           <h5>Token exchange</h5>
           <p>We bring you liquidity.</p>
         </div>
-        <div class="col-2">
+        <div class="col-2" data-aos="zoom-out" data-aos-offset="200">
+          <router-link to="ridl">
           <svg width="132px" height="132px" viewBox="0 0 132 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="gs_home_v2_01_white" transform="translate(-254.000000, -1164.000000)">
@@ -154,10 +157,12 @@
                   </g>
               </g>
           </svg>
+          </router-link>
           <h5>RIDL</h5>
           <p>We bring you trust.</p>
         </div>
-        <div class="col-2">  
+        <div class="col-2" data-aos="zoom-out" data-aos-offset="200"> 
+          <router-link to="features/assetmanagement"> 
           <svg width="236px" height="128px" viewBox="0 0 236 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                   <path d="M0,52 C0,80.7188038 23.2811962,104 52,104 C80.7188038,104 104,80.7188038 104,52 C104,23.2811962 80.7188038,0 52,0 C23.2811962,0 0,23.2811962 0,52 Z" id="path-1"></path>
@@ -226,10 +231,12 @@
                   </g>
               </g>
           </svg>
+          </router-link>
           <h5>Asset management</h5>
           <p>We bring you freedom.</p>
         </div>
-        <div class="col-2">
+        <div class="col-2" data-aos="zoom-out" data-aos-offset="200">
+          <router-link to="features/hardwarewallets">
           <svg width="193px" height="135px" viewBox="0 0 193 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                   <linearGradient x1="38.5078482%" y1="20.9756233%" x2="50%" y2="100%" id="linearGradient-1">
@@ -255,6 +262,7 @@
                   </g>
               </g>
           </svg>
+          </router-link>
           <h5>Hardware wallets</h5>
           <p>We bring you safety.</p>
         </div>
@@ -262,13 +270,13 @@
 
       <div class="row blue-bottom">
         <div class="col-6">
-          <a href="/features" class="button">Learn more about these features</a>
+          <a href="/features/overview" class="button">Learn more about these features</a>
         </div>
       </div>
 
-      <div id="blockchains" class="row padded">
+      <div id="blockchains" class="row padded" data-aos="fade">
         <div class="col-6">
-          <h2 class="enterprise">Scatter Enterprise</h2>
+          <h2 class="enterprise">Get connected</h2>
           <h4>It is our mission to connect our users to emerging blockchains and networks.</h4>
               <div class="single">   
                 <svg width="63px" height="92px" viewBox="0 0 63 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -362,11 +370,29 @@
         </div>
       </div>
 
-      <div id="blockchains" class="row padded padded-large">
+      <div id="strategic-partners" data-aos="fade-up">
+        <div class="col-2">
+          <h2 class="white">Partnered Wallets</h2>
+          <p class="white"><span class="package-name">Scatter-js</span> allows some of your favorite wallets to seamlessly interact with any application who uses our platform.</p>
+          <a class="button" href="mailto:business@get-scatter.com">Add your wallet</a>
+        </div>
+        <div class="col-4">
+          <div class="partners">
+            <div class="partner"><img src="../assets/tokenpocket.png" alt="TokenPocket" /></div>
+            <div class="partner"><img src="../assets/imtoken.png" alt="imToken" /></div>
+            <div class="partner"><img src="../assets/lynx.png" alt="EOS Lynx" /></div>
+            <div class="partner"><img src="../assets/more.png" alt="More" /></div>
+            <div class="partner"><img src="../assets/nova.png" alt="NOVA" /></div>
+            <div class="partner"><img src="../assets/meetone.png" alt="MEET.ONE" /></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="blockchains" class="row padded padded-large" data-aos="fade-up">
         <div class="col-6">
-          <h3>Get started building with Scatter.</h3>
-          <h4>Leveraging the flexibility and extensibility of Scatter’s SDK, we have already integrated EOS, Telos, WORBLI, Ethereum, and Tron. As each new network comes online we are expanding the base capabilities of Scatter as a platform.</h4>
-          <p><a href="" class="button">Go to the SDK documentation</a></p>
+          <h3>Developers</h3>
+          <h4>Scatter makes it easy to connect your application to EOS, Ethereum, and Tron <strong>and</strong> to our partnered wallets. Just add our widely used <span class="package-name">scatter-js</span> or the innovative <span class="package-name">scatter-c#</span>, select your network and wallet plugins, and off you go.</h4>
+          <p><router-link to="docs/getting-started" class="button">Go to the developer center</router-link></p>
         </div>
       </div>  
 
@@ -422,13 +448,16 @@
   }
 
   #features-mini {
-
     padding-top:6rem;
-
     text-align:center;
 
     svg {
       height:200px;
+      transition:all .22s ease-in-out;
+
+      &:hover {
+        transform:scale(1.06);
+      }
     }
   }
 
@@ -463,6 +492,68 @@
         font-size:80%;
       }
     }
+  }
+
+  #strategic-partners {
+    background-image:$blue-gradient;
+    overflow:auto;
+    text-align: left;
+    padding: 9rem;
+    margin: 9rem;
+
+    .button {
+      color:white;
+      margin-top:3rem;
+    }
+
+    @media(max-width:$breakpoint-small-desktop){
+      text-align: center;
+      padding: 6rem;
+      margin: 6rem;
+
+      .col-2,
+      .col-4 {
+        width:100%;
+      }
+
+      .col-4 {
+        padding-top:6rem;
+      }
+    }
+
+    h2 {
+      font-size:4rem;
+      margin:0 0 2rem;
+      line-height:4.2rem;
+      background:transparent;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
+    }
+
+    .partners {
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      align-items:baseline;
+
+      .partner {
+        height:90px;
+        width:50%;
+        overflow:auto;
+        float:left;
+        text-align: center;
+        img {
+          width:auto;
+          max-width:90%;
+        }
+        @media(max-width:$breakpoint-tablet){
+          width:100%;
+        }
+      }
+    }
+
+    
   }
 
   #screenshots {

@@ -5,9 +5,9 @@
           <div class="body-text">
             <div class="row">
               <div class="col-4">
-                <h1>Download Scatter<br>
-                    10.1.0
-                </h1>
+                <h2>Download<br>
+                  10.1.0
+                </h2>
                 <h4>Scatter connects you to blockchains in a simple and straightforward package. It is internationalized, sleek, and powerful.</h4>
                 <a href="" class="button">
                   <svg width="19px" height="24px" viewBox="0 0 19 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -118,7 +118,7 @@
           margin-left: -1em;
         }
 
-        h1 {
+        h2 {
             margin-top: 12rem;
         }
 

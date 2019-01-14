@@ -1,7 +1,7 @@
 <template>
     <div class="app-wrapper" :class="{ list: viewType }">
-        <input type="text" name="search-component" class="search-component" v-model="searchterms" placeholder="Search" />
-        <div class="col-4">
+        <input type="text" name="search-component" class="search-component" v-model="searchterms" placeholder="Search" data-aos="fade-up" />
+        <div class="col-4" data-aos="fade-up">
             <div class="header-wrap">
                 <h4>{{ searchSetTitle }}</h4>
                 <Toggle v-on:toggle-view-type="setViewTypeClass"></Toggle>
@@ -23,26 +23,27 @@
                 </div>
             </div>
         </div>
-        <div class="col-2">
+        <div class="col-2" data-aos="fade-up">
             <div class="apps-notice blue">
                 <i class="fal fa-address-card"></i>
                 <h5>Create your<br>EOS Account</h5>
                 <p>Did you know you can create an EOS account from right inside Scatter now?</p>
-                <a class="button" href="/download">Download Scatter</a>
+                <router-link class="button" to="/download">Download Scatter</router-link>
             </div>
             <div class="apps-notice blue">
                 <i class="fal fa-layer-plus"></i>
                 <h5>Add your App</h5>
                 <p>If you would like to add your project here, we have an easy way for you to do it! Just add a pull request to our github repository.</p>
-                <a class="button">Submit your App</a>
+                <a class="button" href="https://github.com/GetScatter/ScatterApps">Submit your App</a>
             </div>
             <div class="header-wrap">
                 <h4>Tools</h4>
             </div>
             <div class="tool-box">
-                <ul>
-                    <li><a href="">EOS Toolkit</a></li>
-                </ul>
+                <a href="https://eostoolkit.io/home"><span class="title">Bloks.io</span><span class="desc">EOS Block Explorer</span></a>
+                <a href="https://cpuemergency.com/"><span class="title">CPU Emergency</span><span class="desc">Where to get some spare CPU or NET if you are stuck.</span></a>
+                <a href="https://eostoolkit.io/home"><span class="title">EOS Toolkit</span><span class="desc">Grab your airdrops, manage your EOS account.</span></a>
+                <a href="https://eosvotes.io/"><span class="title">EOS Votes</span><span class="desc">Help decide what EOS will be.</span></a>
             </div>
         </div>
     </div>
@@ -115,7 +116,6 @@
             }
 
             .button {
-                color:$black;
                 border-color:$blue;
                 margin-top:2rem;
             }  
@@ -148,7 +148,7 @@
         }
 
         .app-box {
-            width:20%;
+            width:25%;
             float:left;
             margin:0 auto;
             position:relative;
@@ -173,9 +173,6 @@
                 height: 60px;
                 width: 60px;
                 margin: 0 auto;
-                margin: 0 auto;
-                border-radius: 20px;
-                overflow: hidden;
 
                 .item-logo {
                     height:60px;
@@ -184,9 +181,14 @@
                     background-repeat:no-repeat;
                     background-size: contain;
                     background-position:center;
-                    background-color: #f7f7f7;
-                    
+                    border-radius:70px;
+                    background-size:100%;
+                    transition: background-size 0.24s ease-in-out;
                 }
+            }
+
+            &:hover .item-logo {
+                background-size:110% !important;
             }
             
             .item-name {
@@ -311,4 +313,26 @@
             border-color:$blue;
         }
     }
+
+    .tool-box {
+        a {
+            display:block;
+            padding:1rem 0;
+            text-align:left;
+            text-decoration:none;
+
+            .title {
+                font-size:17.5px;
+                line-height:24px;
+                display:block;
+            }
+            .desc {
+                font-size:14px;
+                opacity:0.44;
+                display:block;
+                color:$black;
+            }
+        }
+    }
+
 </style>
