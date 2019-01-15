@@ -373,7 +373,7 @@
       <div id="strategic-partners" data-aos="fade-up">
         <div class="col-2">
           <h2 class="white">Partnered Wallets</h2>
-          <p class="white"><span class="package-name">Scatter-js</span> allows some of your favorite wallets to seamlessly interact with any application who uses our platform.</p>
+          <p class="white"><span class="package-name">ScatterJS</span> allows some of your favorite wallets to seamlessly interact with any application who uses our platform.</p>
           <a class="button" href="mailto:business@get-scatter.com">Add your wallet</a>
         </div>
         <div class="col-4">
@@ -391,7 +391,7 @@
       <div id="blockchains" class="row padded padded-large" data-aos="fade-up">
         <div class="col-6">
           <h3>Developers</h3>
-          <h4>Scatter makes it easy to connect your application to EOS, Ethereum, and Tron <strong>and</strong> to our partnered wallets. Just add our widely used <span class="package-name">scatter-js</span> or the innovative <span class="package-name">scatter-c#</span>, select your network and wallet plugins, and off you go.</h4>
+          <h4>Scatter makes it easy to connect your application to EOS, Ethereum, and Tron <strong>and</strong> to our partnered wallets. Just add our widely used <span class="package-name">scatter-js</span> or the innovative <span class="package-name">scatter-sharp</span> ( C# / Unity3d ), select your network and wallet plugins, and off you go.</h4>
           <p><router-link to="docs/getting-started" class="button">Go to the developer center</router-link></p>
         </div>
       </div>  

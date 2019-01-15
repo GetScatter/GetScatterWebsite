@@ -23,7 +23,7 @@
                         <p><a href="/apps" class="button button-small">Check out ScatterApps</a></p>
                     </div>
                     <div class="col-3">
-                        <carousel-3d :autoplay="1" :autoplayHoverPause="1" :display="7" :height="120" :width="120" :controlsVisible="1">
+                        <carousel-3d :autoplay="true" :autoplayHoverPause="true" :display="7" :height="120" :width="120" :controlsVisible="true">
                           <slide :index="0">
                             <a class="partner" target="_blank" href="https://www.stateofthedapps.com/"><img src="../../assets/logos/sotd.jpg"></a>
                           </slide>
