@@ -1,11 +1,9 @@
 <template>
 	<div id="navigation">
 		<div class="mobile-navigation" :class="{'open':menuOpen}">
-			<!--<router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{routes.text}}</router-link>-->
-
 			<section v-for="link in links" :key="link.page" @click="linkClicked(link)">
 				<figure class="mobile-link">{{link.text}}</figure>
-				<section class="sublinks" :class="{'show':subLink === link.id}">
+				<section class="sublinks" :class="{'show':subLink === link.text}">
 					<figure class="mobile-link" v-for="sub in link.subs" @click="subClicked(link, sub)">{{sub.replace('_', ' ')}}</figure>
 				</section>
 			</section>
@@ -32,7 +30,7 @@
 				</svg>
 			</a>
 			<nav>
-				<router-link class="spacing" v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{routes.text}}</router-link>
+				<router-link class="spacing" v-for="routes in links" v-bind:key="routes.text" :to="`${routes.page}`">{{routes.text}}</router-link>
 				<a class="spacing" href="https://support.get-scatter.com" title="Get the help you need">support</a>
 			</nav>
 			<a class="mobile-nav" id="mobilenav" @click="openMenu">
@@ -51,17 +49,14 @@
             	subLink:null,
                 links: [
                     {
-                        id: 0,
                         text: 'home',
                         page:'/'
                     },
                     {
-                        id: 1,
                         text: 'apps',
                         page:'/apps'
                     },
                     {
-                        id: 2,
                         text: 'features',
                         page:'/features/overview',
 	                    subs:[
@@ -72,13 +67,15 @@
 		                    'Hardware_Wallets',
 	                    ]
                     },
+	                {
+		                text: 'bridge',
+		                page:'/bridge'
+	                },
                     {
-                        id: 3,
                         text: 'connect',
                         page:'/connect'
                     },
                     {
-                        id: 4,
                         text: 'developer',
                         page:'/docs/getting-started'
                     }
@@ -127,7 +124,7 @@
         methods: {
 	        linkClicked(link){
 	            if(link.hasOwnProperty('subs') && link.subs.length){
-	            	this.subLink = link.id;
+	            	this.subLink = link.text;
 	            } else {
 	            	this.subLink = null;
 	            	this.$router.push(link.page);
