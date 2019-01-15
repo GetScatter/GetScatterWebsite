@@ -107,10 +107,6 @@
   @import "../variables";
 
   #features {
-      background-image:url('../assets/apps_bg.png');
-      background-size:100%;
-      background-position:top center;
-      background-repeat:no-repeat;
       background-color:$white;
       text-align:left;
 
@@ -119,7 +115,7 @@
       }
 
       h2 {
-        margin-top:6rem;
+
       }
 
       .sidebar {

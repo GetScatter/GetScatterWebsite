@@ -1,10 +1,10 @@
 <template>
     <div id="features_overview">
 
-        <section class="doc-page" data-aos="fade-up" >
+        <section class="body" data-aos="fade-up" >
           <div class="body-text">
-            <div class="row">
-              <div class="col-6">
+            <div class="">
+              <div class="single-column">
                 <h2>Scatter is building<br>features that you will love.</h2>
                 <h4>Every part of Scatter is lovingly designed and crafted to meet your daily crypto needs. It is fast, powerful, and functional. </h4>
 
@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-3">
                         <h3>Integrated <br>App List</h3>
-                        <h4>We have worked hard to engage with the community and encouraged them to add their great apps to our list. That means you get to explore and use these amazing pieces of software for no cost.</h4>
+                        <p>We have worked hard to engage with the community and encouraged them to add their great apps to our list. That means you get to explore and use these amazing pieces of software for no cost.</p>
                         <p><a href="/apps" class="button button-small">Check out ScatterApps</a></p>
                     </div>
                     <div class="col-3">

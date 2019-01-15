@@ -67,10 +67,6 @@ export default {
     @import "../variables";
 
 #ridl {
-  background-image:url('../assets/apps_bg.png');
-  background-size:100%;
-  background-position:top center;
-  min-height:660px;
   background-repeat:no-repeat;
   background-color:white;
 

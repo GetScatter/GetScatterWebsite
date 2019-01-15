@@ -166,8 +166,8 @@ h3 {
 h4 {
   font-size:2rem;
   margin-bottom:3rem;
-  font-weight:400 !important;
-  color:$black;
+  font-weight:bold !important;
+  color:darken($dark-blue, 45%);
   line-height:2.8rem;
 
   @media(max-width:$breakpoint-tablet){
@@ -193,6 +193,10 @@ h5 {
 
 .body-text h5 {
   margin-top:6rem;
+}
+
+.align-left {
+  text-align: left !important;
 }
 
 .centered {
@@ -329,6 +333,16 @@ input {
 
 .white {
   color:white;
+}
+
+.single-column {
+  width:720px;
+  margin:0 auto;
+
+  @media (max-width: $breakpoint-tablet) {
+    width:90%;
+    padding:4rem 0;
+  }
 }
 
 .col-1 {

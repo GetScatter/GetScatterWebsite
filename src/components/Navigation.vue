@@ -39,6 +39,10 @@
 				<span></span>
 			</a>
 		</header>
+        <div class="ocean">
+              <div class="wave"></div>
+              <div class="wave"></div>
+        </div>
 	</div>
 </template>
 
@@ -81,6 +85,11 @@
                         id: 4,
                         text: 'developer',
                         page:'/docs/getting-started'
+                    },
+                    {
+                        id: 5,
+                        text: 'vision',
+                        page:'/vision'
                     }
                 ],
                 isSideBarOpen: false,
@@ -241,6 +250,10 @@
 <style lang="scss">
 	@import "../variables";
 
+    #navigation {
+        position:relative;
+    }
+
 	.mobile-navigation {
 		position:fixed;
 		width:320px;
@@ -359,7 +372,7 @@
 	.mobile-navigation.open a:nth-child(8) { animation-delay: .85s }
 
 	.header {
-		height:112px;
+		height:172px;
 		color: white;
 		overflow:auto;
 
@@ -515,5 +528,48 @@
 			margin-left:2rem;
 		}
 	}
+
+    .ocean { 
+      height: 80px;
+      width:100%;
+      position:absolute;
+      bottom:0;
+      left:0;
+      background: $background;
+    }
+
+    .wave {
+      background: url(../assets/wave.svg) repeat-x; 
+      position: absolute;
+      top: 20px;
+      width: 6400px;
+      height: 60px;
+      animation: wave 12s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .wave:nth-of-type(2) {
+      top: 20px;
+      animation: wave 14s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+      opacity: 0.5;
+    }
+
+    @keyframes wave {
+      0% {
+        margin-left: 0;
+      }
+      100% {
+        margin-left: -1600px;
+      }
+    }
+
+    @keyframes swell {
+      0%, 100% {
+        transform: translate3d(0,-25px,0);
+      }
+      50% {
+        transform: translate3d(0,5px,0);
+      }
+    }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="apps">
-    <section class="body padded padded-large">
+    <section class="body">
       <div class="body-text">
         <div class="row">
           <Search :search-set="Apps" :search-set-title="'Apps'"></Search>
@@ -70,11 +70,7 @@
 
   #apps {
     text-align:center;
-    background-image:url('../assets/apps_bg.png');
-    background-size:100%;
-    background-position:top center;
     min-height:660px;
-    background-repeat:no-repeat;
     background-color:white;
   }
 

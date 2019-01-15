@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-6">
             <h1>It's your blockchain</h1>
-            <p>Scatter10 provides seamless inter-blockchain functionality in a simple to use interface.</p>
+            <p class="leadin-text">Connect to applications on EOS, Ethereum, and Tron. Exchange tokens with ease. Manage your assets safely. All in a simple to use interface.</p>
             <router-link class="button" to="/download">Download Scatter</router-link>
             <p class="dimmed" style="margin-top:2rem">
               Available for Windows, MacOS, and Linux. <br>
@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-2" data-aos="zoom-out">
+        <div class="col-2" data-aos="fade-up">
           <router-link to="apps">
           <svg width="144px" height="145px" viewBox="0 0 144 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -268,13 +268,13 @@
         </div>
       </div>
 
-      <div class="row blue-bottom">
+      <div class="row blue-bottom" data-aos="fade-up">
         <div class="col-6">
           <a href="/features/overview" class="button">Learn more about these features</a>
         </div>
       </div>
 
-      <div id="blockchains" class="row padded" data-aos="fade">
+      <div id="blockchains" class="row padded" data-aos="fade-up">
         <div class="col-6">
           <h2 class="enterprise">Get connected</h2>
           <h4>It is our mission to connect our users to emerging blockchains and networks.</h4>
@@ -431,15 +431,15 @@
   
 
   #leadin {
-    background-image:url('../assets/apps_bg.png');
-    background-size:100%;
-    background-position:top center;
-    min-height:660px;
-    background-repeat:no-repeat;
     background-color:white;
     text-align: center;
-    padding:6rem 6rem 18rem;
-    border-bottom:6px solid $blue;
+    padding:0rem 6rem 18rem;
+
+    .leadin-text {
+      margin: 0 auto 3rem;
+      font-size: 2.4rem;
+      max-width: 600px;
+    }
 
     p {
       margin:0 0 2rem;
