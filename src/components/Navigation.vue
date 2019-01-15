@@ -139,7 +139,7 @@
 	        	if(this.$route.name === link.text){
 			        window.location.href = `#${sub}`
 		        } else {
-			        this.$router.push({name:link.text, hash:`#${sub}`});
+			        this.$router.push({path:link.page, hash:`#${sub}`});
 			        setTimeout(() => {
 				        window.location.href = `#${sub}`
 			        }, 200);
@@ -147,6 +147,7 @@
 
 		        this.subLink = null;
 		        this.closeMenu();
+
 
 
 	        },

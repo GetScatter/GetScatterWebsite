@@ -59,7 +59,13 @@ export default class VueInitializer {
     }
 
     setupRouting(routes){
-        return new VueRouter({routes, mode: 'history'});
+        return new VueRouter({
+	        scrollBehavior() {
+		        return { x: 0, y: 0 };
+	        },
+            routes,
+            mode: 'history'
+        });
     }
 
     setupVue(router){
