@@ -78,16 +78,21 @@
                     },
                     {
                         id: 3,
+                        text: 'bridge',
+                        page:'/bridge'
+                    },
+                    {
+                        id: 4,
                         text: 'connect',
                         page:'/connect'
                     },
                     {
-                        id: 4,
+                        id: 5,
                         text: 'developer',
                         page:'/docs/getting-started'
                     },
                     {
-                        id: 5,
+                        id: 6,
                         text: 'vision',
                         page:'/vision'
                     }

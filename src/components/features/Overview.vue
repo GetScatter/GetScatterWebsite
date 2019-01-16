@@ -7,8 +7,6 @@
               <div class="single-column">
                 <h2>Scatter is building<br>features that you will love.</h2>
                 <h4>Every part of Scatter is lovingly designed and crafted to meet your daily crypto needs. It is fast, powerful, and functional. </h4>
-
-                <h4>Read on to learn about some of our favorite features.</h4>
               </div>
             </div>
           </div>
@@ -64,7 +62,7 @@
                     <div class="col-3">
                         <h3>Stablecoins</h3>
                         <p>The fluctuations of the market should not impact your wealth. We have integrated a fantastic new way for you to ensure that you ride out price volatility with the least impact to your portfolio possible. Stabilize your tokens today!</p>
-                        <router-link class="button button-small" to="/features/stablecoins">Read more</router-link>
+                        <router-link class="button button-small" :to="{path:'/features/stablecoins'}">Read more</router-link>
                     </div>
                 </div>
             </div>

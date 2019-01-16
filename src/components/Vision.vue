@@ -66,34 +66,6 @@ export default {
     margin-top:11rem;
   }
 
-  .separator {
-    background-image:$blue-gradient;
-    overflow:auto;
-    text-align: left;
-    padding: 3rem 9rem;
-
-    h3 {
-      background:initial;
-      -webkit-background-clip: initial;
-      -webkit-text-fill-color:initial;
-    }
-
-    @media(max-width:$breakpoint-small-desktop){
-      text-align: center;
-      padding: 6rem;
-      margin: 6rem;
-
-      .col-2,
-      .col-4 {
-        width:100%;
-      }
-
-      .col-4 {
-        padding-top:6rem;
-      }
-    }
-  }
-
   .row {
     
     p {

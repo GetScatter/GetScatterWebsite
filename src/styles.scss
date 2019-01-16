@@ -136,7 +136,7 @@ h2 {
 
   @media(max-width:$breakpoint-tablet){
     font-size:3.2rem;
-    line-height:4rem;
+    line-height:3.4rem;
   }
 }
 
@@ -153,8 +153,8 @@ h3 {
   -webkit-text-fill-color: transparent;
 
   @media(max-width:$breakpoint-tablet){
-    font-size:4rem;
-    line-height:4rem;
+    font-size:3rem;
+    line-height:3.2rem;
   }
 }
 
@@ -167,11 +167,12 @@ h4 {
   font-size:2rem;
   margin-bottom:3rem;
   font-weight:bold !important;
-  color:darken($dark-blue, 45%);
-  line-height:2.8rem;
+  color:darken($dark-blue, 25%);
+  line-height:4.4rem;
 
   @media(max-width:$breakpoint-tablet){
-    font-size:2.2rem;
+    font-size:1.8rem;
+    line-height:2.4rem;
   }
 }
 
@@ -202,6 +203,49 @@ h5 {
 .centered {
   text-align: center !important;
 }
+
+.highlight {
+  background:rgba( $dark-blue, .3 );
+  color:white;
+  padding:3px 6px;
+  border-radius:2px;
+}
+
+.separator {
+    background-image:$blue-gradient;
+    overflow:auto;
+    text-align: left;
+    padding: 3rem 9rem;
+
+    h3 {
+      background:initial;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color:initial;
+      color:white;
+    }
+
+    h4 {
+      background:initial;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color:initial;
+      color:white;
+    }
+
+    @media(max-width:$breakpoint-small-desktop){
+      text-align: center;
+      padding: 3rem;
+      margin: 6rem 0rem;
+
+      .col-2,
+      .col-4 {
+        width:100%;
+      }
+
+      .col-4 {
+        padding-top:6rem;
+      }
+    }
+  }
 
 /* Elements */
 
