@@ -1,9 +1,9 @@
 <template>
     <div class="features_single">
-        <section class="single-feature doc-page">
+        <section class="doc-page">
           <div class="body-text">
-            <div class="row">
-              <div class="col-6">
+            <div class="">
+              <div class="single-column">
                 <h2 class="centered" data-aos="fade-up">Stablecoins</h2>
                 <div class="inner_navigation">
                   <router-link class="previous" to="">

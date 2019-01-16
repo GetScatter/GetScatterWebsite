@@ -135,7 +135,7 @@
 
         .header-wrap {
             clear:both;
-            border-bottom:3px solid $very-light-blue;
+            border-bottom:1px solid $very-light-blue;
             margin-bottom:2.4rem;
             overflow:auto;
         }
@@ -297,7 +297,7 @@
         margin-bottom:6rem;
         transition:all 0.12s ease-in-out;
         border-radius:60px;
-        border: 3px solid $very-light-blue;
+        border: 1px solid $very-light-blue;
 
         @media (max-width: $breakpoint-tablet) {
             line-height:44px;

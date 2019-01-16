@@ -166,8 +166,8 @@ h3 {
 h4 {
   font-size:2rem;
   margin-bottom:3rem;
-  font-weight:400 !important;
-  color:$black;
+  font-weight:bold !important;
+  color:darken($dark-blue, 45%);
   line-height:2.8rem;
 
   @media(max-width:$breakpoint-tablet){
@@ -195,6 +195,10 @@ h5 {
   margin-top:6rem;
 }
 
+.align-left {
+  text-align: left !important;
+}
+
 .centered {
   text-align: center !important;
 }
@@ -205,7 +209,7 @@ h5 {
   display: inline-block;
   padding: 1.8rem 3rem;
   background: none;
-  border: 3px solid $blue;
+  border: 1px solid $blue;
   border-radius: 5px;
   color: $black;
   text-decoration: none;
@@ -214,7 +218,7 @@ h5 {
   overflow: hidden;
 
   &.enterprise {
-    border: 3px solid $darkgrey;
+    border: 1px solid $darkgrey;
   }
 
   @media (max-width: $breakpoint-mobile) {
@@ -329,6 +333,16 @@ input {
 
 .white {
   color:white;
+}
+
+.single-column {
+  width:720px;
+  margin:0 auto;
+
+  @media (max-width: $breakpoint-tablet) {
+    width:90%;
+    padding:4rem 0;
+  }
 }
 
 .col-1 {

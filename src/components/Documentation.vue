@@ -116,23 +116,13 @@
 
     #documentation {
         text-align:center;
-        background-image:url('../assets/apps_bg.png');
-        background-size:100%;
-        background-position:top center;
-        min-height:660px;
-        background-repeat:no-repeat;
         background-color:white;
     }
 
     .docs {
-        margin-top:80px;
         width:100%;
         height:100%;
         min-height:800px;
-
-        font-size: 20px;
-        color: #363636;
-        line-height: 30px;
 
         .sidebar {
             /*position: fixed;*/
