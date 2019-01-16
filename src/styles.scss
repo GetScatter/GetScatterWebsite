@@ -236,6 +236,10 @@ h5 {
       color:white;
     }
 
+    p {
+      color:white !important;
+    }
+
     @media(max-width:$breakpoint-small-desktop){
       text-align: center;
       padding: 3rem;

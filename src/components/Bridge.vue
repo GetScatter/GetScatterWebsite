@@ -13,7 +13,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="separator" id="continued"> 
+              <div class="separator"> 
                 <div id="bridge-diagram">
                     <figure>  
                         <svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -145,7 +145,7 @@
 
             <div class="row">
               <div class="single-column blockchains_body">
-                <h3 class="secondary-header">Safety & Limits.</h3>
+                <h3 class="secondary-header">Safety &amp; Limits.</h3>
                 <p>
                     Most bridge accounts (depending on blockchain) are multi-sig accounts. We control one key and the user controls the other key.
                     Users can recover their keys if they lose them at any point in time using their original registration method.
@@ -160,6 +160,33 @@
                     your account or it's assets than you are willing to give it.
                 </p>
               </div>
+            </div>
+
+            <div class="row">
+                <div class="separator"> 
+                    <h3 class="secondary-header">Bridge accounts are easy to fund</h3>
+                    <p>
+                        Each Bridge account is an actual blockchain account/address. These aren't fake accounts waiting to be created, but
+                        fully functional ones. You can easily send funds to your accounts from <b>any exchange</b>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="single-column blockchains_body">
+                    <h3 class="secondary-header">Take ownership.</h3>
+                <p>
+                    The goal of the Scatter Bridge service isn't to keep users using the service. Instead, it is meant as the middle-ground between
+                    first using a blockchain and learning about how to keep your assets safe.
+                </p>
+                <p>
+                    We believe the best way to educate users about blockchain is to get them using it first, and give them a reason to educate themselves.</b>
+                </p>
+                <p>
+                    We offer clear and easy steps that a user can take to export their accounts from bridge right into Scatter Desktop with a single file once they
+                    are ready to take the leap to full ownership of their private keys.
+                </p>
+                </div>
             </div>
           </div>
         </section>
