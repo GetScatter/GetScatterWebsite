@@ -401,8 +401,8 @@
                 height: 1px;
                 background-color: #111111;
                 position: absolute;
-                top: 18px;
-                left: 7px;
+                top: 20px;
+                left: 9px;
                 transition:all 0.22s ease-in-out;
 
 				&:after {
@@ -435,8 +435,8 @@
                     height: 1px;
                     background-color: $blue;
                     position: absolute;
-                    top: 18px;
-                    left: 7px;
+                    top: 20px;
+                    left: 9px;
 
                     &:after {
                         content:'';

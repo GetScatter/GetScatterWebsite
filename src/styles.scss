@@ -152,6 +152,11 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+  &.secondary-header {
+    font-size:4rem;
+    line-height:4.4rem;
+  }
+
   @media(max-width:$breakpoint-tablet){
     font-size:3rem;
     line-height:3.2rem;
@@ -244,6 +249,11 @@ h5 {
       .col-4 {
         padding-top:6rem;
       }
+    }
+
+    @media(max-width:$breakpoint-tablet){
+        padding: 1rem;
+        margin: 3rem 0rem;
     }
   }
 

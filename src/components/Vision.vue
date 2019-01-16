@@ -1,7 +1,7 @@
 <template>
   <div id="vision">
 
-    <section class="body padded padded-large">
+    <section class="body">
       <div class="body-text">
         <div class="row">
           <div class="col-3 align-left">

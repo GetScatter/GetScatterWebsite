@@ -9,10 +9,13 @@
                 <p>Scatter currently offers access to the EOS, Tron, and Ethereum blockchains. We have built in support for the Telos and WORBLI networks.</p>
                 <p>Part of our mission is to expand access to other blockchains and their networks, because we believe that a unified user experience is critical for mass adoption.</p>
                 <p>If your network is ready for primetime, let’s talk about how we can help you integrate into the most innovative solution available today.</p>
-
-                <h3 class="secondary-header">Connect to blockchains</h3>
-                <p>The pace that blockchain technology improves and evolves means that it is likely that no one blockchain technology will be king for long. Users shouldn’t have to learn new interfaces just because they want to use an application on a blockchain that they aren’t familiar with. Our goal is to make inter-blockchain access entirely transparent to the end user. </p>
-                <carousel :perPageCustom="[[400,3],[768,3], [1024, 5]]">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 blockchains_body">
+                <h3 class="secondary-header">Blockchains</h3>
+                <p>Blockchain technology moves fast and it is likely that no one blockchain technology will be king for long. Users shouldn’t have to learn new interfaces. We make access entirely transparent to the end user. </p>
+                <carousel :perPageCustom="[[400,3],[768,3], [1024, 3]]">
                   <slide>   
                     <svg width="63px" height="92px" viewBox="0 0 63 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
@@ -60,10 +63,11 @@
                     <h5>Tron</h5>
                   </slide>
                 </carousel>
-
-                <h3 class="secondary-header">Connect to networks</h3>
+            </div>
+            <div class="col-3 blockchains_body">
+                <h3 class="secondary-header">Networks</h3>
                 <p>Development of new side-chains and sister chains continues at breakneck speed. We believe that the future of the market lies in accessing multiple networks on multiple blockchains and we are ready for that now.</p>
-                <carousel :perPageCustom="[[400,3],[768,3], [1024, 5]]">
+                <carousel :perPageCustom="[[400,3],[768,3], [1024, 3]]">
                   <slide>
                     <svg width="76px" height="82px" viewBox="0 0 76 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
@@ -122,7 +126,10 @@
                     <h5>EOSforce</h5>
                   </slide>
                 </carousel>
-                
+              </div>
+            </div>
+            <div class="row">
+              <div class="single-column">
                 <h3 class="sub-header enterprise">Connect with Scatter</h3>
                 <p>If you are a blockchain developer and would like to see your favorite blockchain or network integrated into Scatter, we’d love to hear about how we can help.  </p>
                 <p><a href="mailto:business@get-scatter.com" class="button button-small">Add your blockchain or network to Scatter</a></p>

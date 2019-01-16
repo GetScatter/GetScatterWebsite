@@ -85,7 +85,7 @@
               </div>
             </div>
 
-            <div class="row">
+            <div class="row bridge-image">
                 <div class="col-3">
                     <h3>Anytime, anywhere.</h3>
                     <p>
@@ -98,7 +98,7 @@
                         can use on all Scatter supported apps. The barrier to entry for a user simply disappears.
                     </p>
                 </div>
-                <div class="col-3 bridge-image">
+                <div class="col-3">
                     <svg width="354px" height="176px" viewBox="0 0 354 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="gs_features_stablecoins-copy" transform="translate(-212.000000, -479.000000)">
@@ -195,6 +195,10 @@
 
         h4.bridge-diagram-title {
             margin:3rem 9rem 9rem;
+
+            @media(max-width:$breakpoint-tablet){
+                margin:3rem;
+            }
         }
 
         .bridge-image {
@@ -221,11 +225,23 @@
                 text-align:center;
                 margin-top:9rem;
 
+                @media(max-width:$breakpoint-mobile){
+                    width:100px;
+
+                    h5 {
+                        font-size:90%;
+                    }
+                }
+
                 &.arrow {
                     width:73px;
                     margin-top: 0px;
                     top: -4.2rem;
                     position: relative;
+
+                    @media(max-width:$breakpoint-tablet){
+                        display:none;
+                    }
                 }
 
                 h5 {
