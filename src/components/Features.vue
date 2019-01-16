@@ -4,9 +4,14 @@
 
         <div class="row">
 
-          <section class="page">
-              <component v-if="pageComponent" :is="pageComponent"></component>
-          </section>
+            <Overview v-if="$route.params.feature === 'overview'" />
+            <Stablecoins v-if="$route.params.feature === 'stablecoins'" />
+
+
+
+          <!--<section class="page">-->
+              <!--<component v-if="pageComponent" :is="pageComponent"></component>-->
+          <!--</section>-->
 
         </div>
 
@@ -15,6 +20,8 @@
 </template>
 
 <script>
+    import Overview from '../components/features/Overview';
+    import Stablecoins from '../components/features/Stablecoins';
 
     const findRoute = (features, route) => {
         let res = null;
@@ -56,6 +63,10 @@
             activeLinks:[],
             mobileMenu:false,
         }},
+        components:{
+	        Overview,
+	        Stablecoins
+        },
         computed:{
             breadcrumbs(){
                 let crumbs = [];
