@@ -366,7 +366,7 @@
                 </svg>
                 <h5>WORBLI</h5>
               </div>
-          <p><a href="" class="button enterprise">Add your network</a></p>
+          <p><a href="mailto:business@get-scatter.com" class="button enterprise">Add your network</a></p>
         </div>
       </div>
 
