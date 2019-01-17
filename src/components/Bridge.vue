@@ -3,7 +3,7 @@
         <section class="body">
           <div class="body-text">
             <div class="row">
-              <div class="single-column blockchains_body">
+              <div class="single-column blockchains_body" data-aos="fade-up">
                 <h2>Scatter Bridge</h2>
                 <h4>We understand that all wallets are roadblocks to mass adoption&mdash;even Scatter. We have a solution.</h4>
                 <p>
@@ -13,8 +13,8 @@
               </div>
             </div>
             <div class="row">
-              <div class="separator"> 
-                <div id="bridge-diagram">
+              <div class="separator" data-aos="fade-up"> 
+                <div id="bridge-diagram" data-aos="fade-up">
                     <figure>  
                         <svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -81,12 +81,12 @@
                         <h5>Application</h5>
                     </figure>
                 </div>          
-                <h4 class="centered bridge-diagram-title">The only thing your users will need in order to use your application is an <span class="highlight">email address</span>, a <span class="highlight">mobile phone number</span>, or a social account like <span class="highlight">Facebook</span>.</h4>
+                <h4 class="centered bridge-diagram-title" data-aos="fade-up">The only thing your users will need in order to use your application is an <span class="highlight">email address</span>, a <span class="highlight">mobile phone number</span>, or a social account like <span class="highlight">Facebook</span>.</h4>
               </div>
             </div>
 
             <div class="row bridge-image">
-                <div class="col-3">
+                <div class="col-3" data-aos="fade-up">
                     <h3>Anytime, anywhere.</h3>
                     <p>
                         Because Scatter Bridge is a fully custodial service it allows users to use apps with their accounts <b>anywhere</b>.
@@ -98,7 +98,7 @@
                         can use on all Scatter supported apps. The barrier to entry for a user simply disappears.
                     </p>
                 </div>
-                <div class="col-3">
+                <div class="col-3" data-aos="fade-up">
                     <svg width="354px" height="176px" viewBox="0 0 354 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="gs_features_stablecoins-copy" transform="translate(-212.000000, -479.000000)">
@@ -143,7 +143,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="fade-up">
               <div class="single-column blockchains_body">
                 <h3 class="secondary-header">Safety &amp; Limits.</h3>
                 <p>
@@ -162,7 +162,7 @@
               </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="separator"> 
                     <h3 class="secondary-header">Bridge accounts are easy to fund</h3>
                     <p>
@@ -172,7 +172,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="single-column blockchains_body">
                     <h3 class="secondary-header">Take ownership.</h3>
                 <p>

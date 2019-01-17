@@ -4,17 +4,16 @@
           <div class="body-text">
             <div class="">
               <div class="single-column">
-                <h2 class="centered" data-aos="fade-up">Stablecoins</h2>
+                <h2 class="centered" data-aos="fade-up">Hardware Wallets</h2>
                 <div class="inner_navigation">
                   <router-link class="list" to="/features/overview">
                     Back to Overview
                   </router-link>
                 </div>
-                <img data-aos="fade-up" data-aos-offset="200" src="../../assets/screenshot_stabilize.png" alt="Stabilize your currency." />
+                <img data-aos="fade-up" data-aos-offset="200" src="../../assets/hardwarewallet.png" alt="Stabilize your currency." />
                 <section data-aos="fade-up" data-aos-offset="200">
-                  <h3 class="secondary-header centered"><small>Ride out market volatility</small></h3>
-                  <p>In our new token panel, you’ll find an exciting feature which we are calling <strong>Stabilize</strong>. As a byproduct of our built in token exchange, we can now swap your tokens for a stable coin of equal value.</p>
-                  <p>This means that you get to ride out the market volatility by swapping to a stable currency when you think the time is right. After things settle down, and the currency is back on the rise, simply swap back.</p>
+                  <h3 class="secondary-header centered"><small>Keep your private keys private.</small></h3>
+                  <p>We at Scatter are big fans of hardware wallets and believe them to be a great way to keep our funds safe. They add a welcome extra layer of protection for your precious accounts.</p>
                 </section>
               </div>
             </div>
@@ -27,7 +26,7 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-6 centered">
-                        <h3 class="secondary-header centered">Stablize your tokens</h3>
+                        <h3 class="secondary-header centered">Stay safer with Scatter</h3>
                         <p><a href="/download" class="button">Download Scatter</a></p>
                     </div>
                 </div>

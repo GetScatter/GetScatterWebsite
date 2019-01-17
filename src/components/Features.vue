@@ -4,9 +4,15 @@
 
         <div class="row">
 
-          <section class="page">
+          <Overview v-if="$route.params.feature === 'overview'" />
+          <Stablecoins v-if="$route.params.feature === 'stablecoins'" />
+          <Assetmanagement v-if="$route.params.feature === 'assetmanagement'" />
+          <Hardwarewallets v-if="$route.params.feature === 'hardwarewallets'" />
+          <Tokenexchange v-if="$route.params.feature === 'tokenexchange'" />
+
+          <!-- <section class="page">
               <component v-if="pageComponent" :is="pageComponent"></component>
-          </section>
+          </section> -->
 
         </div>
 
@@ -15,6 +21,12 @@
 </template>
 
 <script>
+
+    import Overview from '../components/features/Overview';
+    import Stablecoins from '../components/features/Stablecoins';
+    import Assetmanagement from '../components/features/Assetmanagement';
+    import Hardwarewallets from '../components/features/Hardwarewallets';
+    import Tokenexchange from '../components/features/Tokenexchange';
 
     const findRoute = (features, route) => {
         let res = null;
@@ -56,6 +68,13 @@
             activeLinks:[],
             mobileMenu:false,
         }},
+        components:{
+          Overview,
+          Stablecoins,
+          Assetmanagement,
+          Hardwarewallets,
+          Tokenexchange
+        },
         computed:{
             breadcrumbs(){
                 let crumbs = [];

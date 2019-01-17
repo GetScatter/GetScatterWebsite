@@ -4,17 +4,16 @@
           <div class="body-text">
             <div class="">
               <div class="single-column">
-                <h2 class="centered" data-aos="fade-up">Stablecoins</h2>
+                <h2 class="centered" data-aos="fade-up">Asset Managment</h2>
                 <div class="inner_navigation">
                   <router-link class="list" to="/features/overview">
                     Back to Overview
                   </router-link>
                 </div>
-                <img data-aos="fade-up" data-aos-offset="200" src="../../assets/screenshot_stabilize.png" alt="Stabilize your currency." />
+                <img data-aos="fade-up" data-aos-offset="200" src="../../assets/screenshot2.png" alt="Asset Managment." />
                 <section data-aos="fade-up" data-aos-offset="200">
-                  <h3 class="secondary-header centered"><small>Ride out market volatility</small></h3>
-                  <p>In our new token panel, you’ll find an exciting feature which we are calling <strong>Stabilize</strong>. As a byproduct of our built in token exchange, we can now swap your tokens for a stable coin of equal value.</p>
-                  <p>This means that you get to ride out the market volatility by swapping to a stable currency when you think the time is right. After things settle down, and the currency is back on the rise, simply swap back.</p>
+                  <h3 class="secondary-header centered"><small>Play smart.</small></h3>
+                  <p>Another feature that we know you all have been clamoring for is an easy way to manage your assets intelligently. We’ve added a fantastic graph and token overview that let you better understand which tokens are worth HODLing and which are just shitcoins.</p>
                 </section>
               </div>
             </div>
@@ -27,7 +26,7 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-6 centered">
-                        <h3 class="secondary-header centered">Stablize your tokens</h3>
+                        <h3 class="secondary-header centered">Manage your assets</h3>
                         <p><a href="/download" class="button">Download Scatter</a></p>
                     </div>
                 </div>

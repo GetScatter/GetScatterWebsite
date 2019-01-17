@@ -44,6 +44,9 @@ import NativePromises from './components/docs/native/NativePromises.vue'
 // FEATURES FRAGMENTS
 import FeaturesOverview from './components/features/Overview.vue'
 import FeaturesStablecoins from './components/features/Stablecoins.vue'
+import FeaturesAssetmanagement from './components/features/Assetmanagement.vue'
+import FeaturesTokenexchange from './components/features/Tokenexchange.vue'
+import FeaturesHardwarewallets from './components/features/Hardwarewallets.vue'
 
 
 class Main {
@@ -83,6 +86,9 @@ class Main {
             {tag:'dev-native-promises', vue:NativePromises},
             {tag:'features-overview', vue:FeaturesOverview},
             {tag:'features-stablecoins', vue:FeaturesStablecoins},
+            {tag:'features-assetmanagement', vue:FeaturesAssetmanagement},
+            {tag:'features-hardwarewallets', vue:FeaturesHardwarewallets},
+            {tag:'features-tokenexchange', vue:FeaturesTokenexchange},
             {tag:'feature-menu-link', vue:FeatureMenuLink},
             {tag:'Search', vue:Search},
             {tag:'SearchFilter', vue:SearchFilter},

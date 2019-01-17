@@ -15,7 +15,6 @@
     import Footer from './components/Footer'
     import ScatterLogo from './components/reusable/ScatterLogo.vue'
     import RIDLLogo from './components/reusable/RIDLLogo.vue'
-    import Herocircles from './components/reusable/Herocircles.vue'
 
     export default {
         name: 'app',
@@ -23,8 +22,7 @@
             Navigation,
             Footer,
             ScatterLogo,
-            RIDLLogo,
-            Herocircles
+            RIDLLogo
         },
         computed: {
             route(){

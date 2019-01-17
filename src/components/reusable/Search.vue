@@ -177,7 +177,6 @@
                 .item-logo {
                     height:60px;
                     width:60px;
-                    background-image:url('../../assets/default.png');
                     background-repeat:no-repeat;
                     background-size: contain;
                     background-position:center;
@@ -294,7 +293,7 @@
         font-size:2.4rem;
         clear:both;
         width:100%;
-        margin-bottom:6rem;
+        margin:6rem auto;
         transition:all 0.12s ease-in-out;
         border-radius:60px;
         border: 1px solid $very-light-blue;

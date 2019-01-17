@@ -3,7 +3,7 @@
         <section class="body" id="blockchains_main">
           <div class="body-text">
             <div class="row">
-              <div class="single-column blockchains_body">
+              <div class="single-column blockchains_body" data-aos="fade-up">
                 <h2>All together now.</h2>
                 <h4>We believe that all blockchains, networks, and wallets have something to offer, whether it be experience, speed, ease-of-use, commercial success, or community. </h4>
                 <p>Scatter currently offers access to the EOS, Tron, and Ethereum blockchains. We have built in support for the Telos and WORBLI networks.</p>
@@ -12,7 +12,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-3 blockchains_body">
+              <div class="col-3 blockchains_body" data-aos="fade-up">
                 <h3 class="secondary-header">Blockchains</h3>
                 <p>Blockchain technology moves fast and it is likely that no one blockchain technology will be king for long. Users shouldn’t have to learn new interfaces. We make access entirely transparent to the end user. </p>
                 <carousel :perPageCustom="[[400,3],[768,3], [1024, 3]]">
@@ -64,7 +64,7 @@
                   </slide>
                 </carousel>
             </div>
-            <div class="col-3 blockchains_body">
+            <div class="col-3 blockchains_body" data-aos="fade-up">
                 <h3 class="secondary-header">Networks</h3>
                 <p>Development of new side-chains and sister chains continues at breakneck speed. We believe that the future of the market lies in accessing multiple networks on multiple blockchains and we are ready for that now.</p>
                 <carousel :perPageCustom="[[400,3],[768,3], [1024, 3]]">
@@ -128,7 +128,7 @@
                 </carousel>
               </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
               <div class="single-column">
                 <h3 class="sub-header enterprise">Connect with Scatter</h3>
                 <p>If you are a blockchain developer and would like to see your favorite blockchain or network integrated into Scatter, we’d love to hear about how we can help.  </p>
@@ -201,10 +201,6 @@
             h1 {
                 margin-top: 0rem;
             }
-        }
-
-        @media (max-width: $breakpoint-tablet) {
-            background-image:url('../assets/apps_bg.png');
         }
 
     }

@@ -5,8 +5,29 @@
           <div class="body-text">
             <div class="">
               <div class="single-column">
-                <h2>Scatter is building<br>features that you will love.</h2>
-                <h4>Every part of Scatter is lovingly designed and crafted to meet your daily crypto needs. It is fast, powerful, and functional. </h4>
+                <h2>Build it and they will come.</h2>
+                <h4>Scatter is fast, powerful, and functional. </h4>
+                <p>Every part is lovingly designed and crafted to meet your daily crypto needs. Manage your assets, exchange tokens, keep your keys safe with your Ledger, and play the best games.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="body scrollme" data-aos="fade-up" >
+          <div class="body-text">
+            <div class="">
+              <div class="single-column">
+                <svg width="44px" height="103px" viewBox="0 0 44 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="gs_features_stablecoins-copy" transform="translate(-871.000000, -490.000000)" stroke="#00A8FF">
+                            <rect id="Rectangle" x="872" y="491" width="42" height="67" rx="21"></rect>
+                            <rect id="wheel" transform="translate(893.000000, 508.500000) scale(-1, 1) translate(-893.000000, -508.500000) " x="890" y="501" width="6" height="15" rx="3"></rect>
+                            <path d="M893,492 L893,501" id="Path-33"></path>
+                            <path d="M893.5,563 L893.5,593" id="Path-34"></path>
+                            <polyline id="Path-35" points="900.240074 586 893.620037 592.620037 887 586"></polyline>
+                        </g>
+                    </g>
+                </svg>
               </div>
             </div>
           </div>
@@ -16,7 +37,7 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h3>Integrated <br>App List</h3>
+                        <h3 class="secondary-header">Integrated App List</h3>
                         <p>We have worked hard to engage with the community and encouraged them to add their great apps to our list. That means you get to explore and use these amazing pieces of software for no cost.</p>
                         <p><a href="/apps" class="button button-small">Check out ScatterApps</a></p>
                     </div>
@@ -60,7 +81,7 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h3>Stablecoins</h3>
+                        <h3 class="secondary-header">Stablecoins</h3>
                         <p>The fluctuations of the market should not impact your wealth. We have integrated a fantastic new way for you to ensure that you ride out price volatility with the least impact to your portfolio possible. Stabilize your tokens today!</p>
                         <router-link class="button button-small" :to="{path:'/features/stablecoins'}">Read more</router-link>
                     </div>
@@ -72,8 +93,9 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h3>Token Exchange</h3>
+                        <h3 class="secondary-header">Token Exchange</h3>
                         <p>Your funds become liquidity with our <strong>built-in token exchange</strong> mechanism. Never again will you have to go to an external exchange to swap BTC, TUSD, EOS, ETH, TRX, or DAI.</p>
+                        <router-link class="button button-small" :to="{path:'/features/tokenexchange'}">Read more</router-link>
                     </div>
                     <div class="col-3">
                         <svg width="312px" height="328px" viewBox="0 0 312 328" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -131,7 +153,7 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h3>RIDL</h3>
+                        <h3 class="secondary-header">RIDL</h3>
                         <p>Our Reputation and Identity layer solves a key question on the internet: <strong>who can you trust</strong>? We believe in the wisdom of the crowd and are using it in Scatter to make sure that you know when it is ok to allow an action, and when it isn’t.</p>
                         <p><a href="/ridl" class="button button-small">Learn more about RIDL</a></p>
                     </div>
@@ -185,8 +207,9 @@
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
-                        <h3>Asset Management</h3>
+                        <h3 class="secondary-header">Asset Management</h3>
                         <p>New in Scatter10 is a whole new way to manage your crypto assets. Search, filter, and see how your <strong>portfolio has changed</strong> with our fantastic historical charts!</p>
+                        <router-link class="button button-small" :to="{path:'/features/assetmanagement'}">Read more</router-link>
                     </div>
                     <div class="col-3">
                         <svg width="387px" height="206px" viewBox="0 0 387 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -266,8 +289,9 @@
             <div class="body-text">
                 <div class="row blue-bottom">
                     <div class="col-3">
-                        <h3>Hardware wallet support</h3>
+                        <h3 class="secondary-header">Hardware wallet support</h3>
                         <p>Because we put your safety first, we’ve included support for Ledger Nanos. We love them and think that you will, too.</p>
+                        <router-link class="button button-small" :to="{path:'/features/hardwarewallets'}">Read more</router-link>
                     </div>
                     <div class="col-3">
                         <svg width="332px" height="231px" viewBox="0 0 332 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -411,7 +435,5 @@
           margin-top:3rem;
         }
     }
-
-
 
 </style>
