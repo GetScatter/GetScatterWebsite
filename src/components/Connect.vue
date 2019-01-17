@@ -14,7 +14,7 @@
             <div class="row">
               <div class="col-3 blockchains_body" data-aos="fade-up">
                 <h3 class="secondary-header">Blockchains</h3>
-                <p>Blockchain technology moves fast and it is likely that no one blockchain technology will be king for long. Users shouldn’t have to learn new interfaces. We make access entirely transparent to the end user. </p>
+                <p>Blockchain technology moves fast and it is likely that no one blockchain technology will be king for long. One wallet for all blockchains means that users don't have to learn a new interface to connect to the applications they want to use. </p>
                 <carousel :perPageCustom="[[400,3],[768,3], [1024, 3]]">
                   <slide>   
                     <svg width="63px" height="92px" viewBox="0 0 63 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
