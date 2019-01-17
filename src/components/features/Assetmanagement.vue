@@ -4,7 +4,7 @@
           <div class="body-text">
             <div class="">
               <div class="single-column">
-                <h2 class="centered" data-aos="fade-up">Asset Managment</h2>
+                <h2 class="centered" data-aos="fade-up">Asset Management</h2>
                 <div class="inner_navigation">
                   <router-link class="list" to="/features/overview">
                     Back to Overview
