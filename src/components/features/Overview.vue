@@ -39,7 +39,7 @@
                     <div class="col-3">
                         <h3 class="secondary-header">Integrated App List</h3>
                         <p>We have worked hard to engage with the community and encouraged them to add their great apps to our list. That means you get to explore and use these amazing pieces of software for no cost.</p>
-                        <p><a href="/apps" class="button button-small">Check out ScatterApps</a></p>
+                        <p><router-link to="/apps" class="button button-small">Check out ScatterApps</router-link></p>
                     </div>
                     <div class="col-3">
                         <carousel-3d :autoplay="true" :autoplayHoverPause="true" :display="7" :height="120" :width="120" :controlsVisible="true">
@@ -155,7 +155,7 @@
                     <div class="col-3">
                         <h3 class="secondary-header">RIDL</h3>
                         <p>Our Reputation and Identity layer solves a key question on the internet: <strong>who can you trust</strong>? We believe in the wisdom of the crowd and are using it in Scatter to make sure that you know when it is ok to allow an action, and when it isn’t.</p>
-                        <p><a href="/ridl" class="button button-small">Learn more about RIDL</a></p>
+                        <p><router-link to="/ridl" class="button button-small">Learn more about RIDL</router-link></p>
                     </div>
                     <div class="col-3">
                         <svg width="420px" height="304px" viewBox="0 0 420 304" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

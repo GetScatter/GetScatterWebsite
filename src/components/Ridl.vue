@@ -1,16 +1,16 @@
 <template>
   <div id="ridl">
 
-    <section class="body padded padded-large">
+    <section class="body">
       <div class="body-text">
         <div class="row">
-          <div class="col-4">
+          <div class="single-column">
             <h2>Reputation &amp; <br>Identity Layer</h2>
             <a href="https://ridl.get-scatter.com/" class="button" target="_blank">Donate with Scatter</a>
           </div>
         </div>
         <div class="row secondary-buttons">
-          <div class="col-4">
+          <div class="single-column">
             <p>Reputation inside an anonymous and trust-less system lays the foundation for more robust systems to be built on top of that trust. Every entity on a blockchain is unique, even the duplicates; and can have reputation assigned to them. These entities can be domains, blockchain addresses, public keys or accounts, decentralized or centralized applications, users of specific applications, or any other type of entity known by a unique identifier or name.</p>
 
             <p>One of the basic use-cases of RIDL is an exchange known not to release funds. Such an exchange will have a poor reputation designated by a low rating, which generates an alert that you shouldn’t trust them. The community members can hold not only one another accountable but also applications; providing a safer and more trustworthy environment both on the blockchain and off of it.</p>
@@ -32,7 +32,7 @@
     <section class="body padded padded-large">
       <div class="body-text">
         <div class="row">
-          <div class="col-4">
+          <div class="single-column">
             <p>In contrast to a curated list (which is what so many other platforms are offering), this warning system is fully decentralized, dynamic, and guided by the users that use the applications.</p>
 
             <p>Reputations aren’t forever though. Just because an exchange is the most trusted exchange today doesn’t mean it will be two months from now. With RIDL, reputations are based on the network as a whole. As other entities gain or lose reputation all other reputations reflect that impact. If an exchange was used avidly by users for only a single month and then did something users didn’t like that made them switch to another exchange their reputation would slowly degrade as the other exchange’s reputation grows in comparison. This allows for a truly free market which is powered by users and not monopolies.</p>
@@ -47,7 +47,7 @@
 
     <section id="get-started" class="body padded padded-large">
       <div class="row">
-        <div class="col-4">
+        <div class="single-column">
           <h3>Want to learn more about RIDL?</h3>
           <a class="button" href="https://docs.google.com/document/d/1cDcERQUAA3W21XtJhHlqfL2LauiELmOE_b5J2Q3acJg/view">Read the Whitepaper</a>
         </div>
