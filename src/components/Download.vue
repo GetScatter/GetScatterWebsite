@@ -4,12 +4,10 @@
         <section class="body">
           <div class="body-text">
             <div class="row">
-              <div class="col-4">
-                <h2>Download<br>
-                  10.1.0
-                </h2>
+              <div class="single-column">
+                <h2>Download 10.1.1</h2>
                 <h4>Scatter connects you to blockchains in a simple and straightforward package. It is internationalized, sleek, and powerful.</h4>
-                <a href="" class="button">
+                <a href="https://github.com/GetScatter/ScatterDesktop/releases/download/10.1.1/mac-scatter-10.1.1.dmg" class="button">
                   <svg width="19px" height="24px" viewBox="0 0 19 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="gs_home_v2_01_download" transform="translate(-203.000000, -582.000000)" fill="#111111" fill-rule="nonzero">
@@ -21,7 +19,7 @@
                   </svg>
                   MacOS
                 </a>
-                <a href="" class="button">  
+                <a href="https://github.com/GetScatter/ScatterDesktop/releases/download/10.1.1/win-scatter-10.1.1.exe" class="button">  
                   <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="gs_home_v2_01_download" transform="translate(-359.000000, -583.000000)" fill="#111111" fill-rule="nonzero">
@@ -31,7 +29,7 @@
                   </svg>
                   Windows 64-bit
                 </a>
-                <a href="" class="button"> 
+                <a href="https://github.com/GetScatter/ScatterDesktop/releases/download/10.1.1/linux-scatter-10.1.1-x86_64.AppImage" class="button"> 
                   <svg width="20px" height="25px" viewBox="0 0 20 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="gs_home_v2_01_download" transform="translate(-563.000000, -581.000000)">
@@ -46,7 +44,7 @@
                   </svg>
                   Linux Appimage
                 </a>
-                <p><small>Make sure to read our Privacy Policy and Terms of Use.</small></p>
+                <!-- <p><small>Make sure to read our Privacy Policy and Terms of Use.</small></p> -->
               </div>
             </div>
           </div>
@@ -55,26 +53,28 @@
         <section class="body">
           <div class="body-text">
             <div class="row">
-              <div class="col-4">
-                <h3>This is a patch release for Scatter 10.</h3>
-                <p>This release only adds a few key features for sites that need it.</p>
-                <ul class="release-notes">
+              <div class="single-column">
+                <h3 class="secondary-header">Patch release for Scatter 10.1.0</h3>
+                <p>This is just a small patch to fix an issue with the Token Selector panel which is used in the "exchange" and "send" panels. Refer to the <a href="https://github.com/GetScatter/ScatterDesktop/releases/tag/10.1.0">release notes for 10.1.0</a> for all the goodies.</p>
+                <p><a class="button button-small" href="https://github.com/GetScatter/ScatterDesktop/releases/">Review the source</a></p>
+                <!-- <ul class="release-notes">
                   <li>Returns chainId and isHardware on accounts so that websites can know which methods will work with an account's keys ( for instance authenticate and getArbitrarySignature don't work with hardware wallets )</li>
                   <li>Allows authenticate to work with given data + specified key to prove ownership of a key securely without exposing the user to possible buffer transfers ( triple hashing of data + nonce prevents this )</li>
-                </ul>
+                </ul> -->
 
                 <h3 class="checksum-title">SHA256 Checksums</h3>
+                <p><small>Not sure what these are? <a href="https://support.get-scatter.com/article/34-how-to-download-scatter">Read our support article</a>.</small></p>
                 <div class="checksum">
                   <strong>MacOS</strong><br>
-                  359d28ded1ec6889d0b0e51c2486f883035e7f5a7f614cf3b3bb1b4700178147
+                  1441c00e630b8ec56eee99714c0cf6248e86816ee04136a7ee5516c7117da8f1
                 </div>
                 <div class="checksum">
                   <strong>Windows</strong><br>
-                  359d28ded1ec6889d0b0e51c2486f883035e7f5a7f614cf3b3bb1b4700178147
+                  c6d150e24a1f2888a8791a59321124da9f558cdf8df8290d777819aa834698f5
                 </div>
                 <div class="checksum">
                   <strong>Linux</strong><br>
-                  359d28ded1ec6889d0b0e51c2486f883035e7f5a7f614cf3b3bb1b4700178147
+                  e9776142c48edfffb2bf0b81e9967a7c7738a67802b16b614fc3bf68e61e4926
                 </div>
               </div>
             </div>
@@ -95,10 +95,6 @@
     @import "../variables";
 
     #download {
-        background-image:url('../assets/features_bg.png');
-        background-size:100%;
-        background-position:top center;
-        background-repeat:no-repeat;
         background-color:$white;
         text-align:left;
 
@@ -118,10 +114,6 @@
           margin-left: -1em;
         }
 
-        h2 {
-            margin-top: 12rem;
-        }
-
         .button {
           margin:0 10px 3rem 0;
           svg {
@@ -139,7 +131,9 @@
           border:3px solid $black;
           border-radius:3px;
           margin-bottom:2rem;
+          font-size:90%;
           line-height:1.8rem;
+          word-break: break-all;
         }
     }
 
