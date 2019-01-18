@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-6">
             <h1>It's your blockchain</h1>
-            <p class="leadin-text">Connect to applications on EOS, Ethereum, and Tron. Exchange tokens with ease. Manage your assets safely. All in a simple to use interface.</p>
+            <h4>Connect to applications on EOS, Ethereum, and Tron. Exchange tokens with ease. Manage your assets safely. All in a simple to use interface.</h4>
             <router-link class="button" to="/download">Download Scatter</router-link>
             <p class="dimmed" style="margin-top:2rem">
               Available for Windows, MacOS, and Linux. <br>
@@ -75,7 +75,7 @@
           <h5>ScatterApps</h5>
           <p>We bring you choice.</p>
         </div>
-        <div class="col-2" data-aos="zoom-out">
+        <div class="col-2" data-aos="fade-up">
           <router-link to="features/stablecoins">
           <svg width="236px" height="113px" viewBox="0 0 236 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -95,7 +95,7 @@
           <h5>Stablecoins</h5>
           <p>We bring you stability.</p>
         </div>
-        <div class="col-2" data-aos="zoom-out" data-aos-offset="200">
+        <div class="col-2" data-aos="fade-up" data-aos-offset="200">
           <router-link to="features/tokenexchange">
           <svg width="176px" height="185px" viewBox="0 0 176 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
@@ -149,7 +149,7 @@
           <h5>Token exchange</h5>
           <p>We bring you liquidity.</p>
         </div>
-        <div class="col-2" data-aos="zoom-out" data-aos-offset="200">
+        <div class="col-2" data-aos="fade-up" data-aos-offset="200">
           <router-link to="ridl">
           <svg width="132px" height="132px" viewBox="0 0 132 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -174,7 +174,7 @@
           <h5>RIDL</h5>
           <p>We bring you trust.</p>
         </div>
-        <div class="col-2" data-aos="zoom-out" data-aos-offset="200"> 
+        <div class="col-2" data-aos="fade-up" data-aos-offset="200"> 
           <router-link to="features/assetmanagement"> 
           <svg width="236px" height="128px" viewBox="0 0 236 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
@@ -248,7 +248,7 @@
           <h5>Asset management</h5>
           <p>We bring you freedom.</p>
         </div>
-        <div class="col-2" data-aos="zoom-out" data-aos-offset="200">
+        <div class="col-2" data-aos="fade-up" data-aos-offset="200">
           <router-link to="features/hardwarewallets">
           <svg width="193px" height="135px" viewBox="0 0 193 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
@@ -446,12 +446,16 @@
   #leadin {
     background-color:white;
     text-align: center;
-    padding:0rem 6rem 18rem;
+    padding:0rem 0rem 18rem;
 
-    .leadin-text {
+    @media (max-width: $breakpoint-tablet) {
+
+    }
+
+    h4 {
       margin: 0 auto 3rem;
-      font-size: 2.4rem;
       max-width: 600px;
+      text-align:center;
     }
 
     p {
@@ -532,6 +536,11 @@
       .col-4 {
         padding-top:6rem;
       }
+    }
+
+    @media(max-width:$breakpoint-tablet){
+      padding: 2rem;
+      margin: 0rem;
     }
 
     h2 {

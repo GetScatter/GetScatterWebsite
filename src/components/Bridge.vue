@@ -5,7 +5,7 @@
             <div class="row">
               <div class="single-column blockchains_body" data-aos="fade-up">
                 <h2>Scatter Bridge</h2>
-                <h4>We understand that all wallets are roadblocks to mass adoption&mdash;even Scatter. We have a solution.</h4>
+                <h4>We understand that all wallets are roadblocks to mass adoption&mdash;even Scatter. <span class="highlight">We have a solution.</span></h4>
                 <p>
                     Our SDKs offer a fallback service called <b>Scatter Bridge</b> that facilitates a blockchain-less experience
                     for your users, without any modifications to your existing code if your users don't have any compatible wallets.

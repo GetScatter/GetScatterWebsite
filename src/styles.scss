@@ -108,10 +108,12 @@ h1 {
   -webkit-text-fill-color: transparent;
 
   @media(max-width:$breakpoint-tablet){
-    font-size:4rem;
-    line-height:4rem;
+    font-size:9rem;
+    line-height:9rem;
   }
   @media(max-width:$breakpoint-mobile){
+    font-size:4rem;
+    line-height:4rem;
     margin-top:0;
   }
 }
@@ -179,6 +181,12 @@ h4 {
     font-size:1.8rem;
     line-height:2.4rem;
   }
+
+  @media(max-width:$breakpoint-mobile){
+    font-size:1.4rem;
+    line-height:2rem;
+    margin-top:0;
+  }
 }
 
 .body-text h4 {
@@ -210,7 +218,7 @@ h5 {
 }
 
 .highlight {
-  background:rgba( $dark-blue, .3 );
+  background:$blue;
   color:white;
   padding:3px 6px;
   border-radius:2px;
