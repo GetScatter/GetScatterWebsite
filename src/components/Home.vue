@@ -11,7 +11,20 @@
             <p class="dimmed" style="margin-top:2rem">
               Available for Windows, MacOS, and Linux. <br>
               Looking for Mobile? <router-link class="nav-link" to="/vision">It's on our roadmap.</router-link>
-            </p>
+            </p> 
+            <svg id="scrollplz" width="23px" height="52px" viewBox="0 0 23 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="gs_features_stablecoins-copy" transform="translate(-993.000000, -490.000000)" stroke="#111111">
+                        <g id="Group-22" transform="translate(994.000000, 491.000000)">
+                            <rect id="Rectangle-Copy-16" x="0" y="0" width="21" height="33.5" rx="10.5"></rect>
+                            <rect id="Rectangle-Copy-15" transform="translate(10.500000, 8.750000) scale(-1, 1) translate(-10.500000, -8.750000) " x="9" y="5" width="3" height="7.5" rx="1.5"></rect>
+                            <path d="M10.75,0.5 L10.75,5" id="Path-33-Copy"></path>
+                            <path d="M10.75,36 L10.75,51" id="Path-34-Copy"></path>
+                            <polyline id="Path-35-Copy" points="14.1200372 47.5 10.8100186 50.8100186 7.5 47.5"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </svg>
           </div>
         </div>
 
@@ -566,6 +579,10 @@
       padding: .3rem;
       background: white;
     }
+  }
+
+  #scrollplz {
+    margin:3rem auto 0;
   }
 
 
