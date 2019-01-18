@@ -124,6 +124,7 @@ export default {
 	background-size:contain;
 	background-repeat:no-repeat;
 	min-height:400px;
+    padding-top:12rem;
 
     h3 {
         color:$black !important;
