@@ -11,6 +11,13 @@
                 <p>If your network is ready for primetime, let’s talk about how we can help you integrate into the most innovative solution available today.</p>
               </div>
             </div>
+
+            <section data-aos="fade-up" >
+              <div class="image">
+                <img src="../assets/connected.png" alt="scatter is connected" />
+              </div>
+            </section>
+
             <div class="row">
               <div class="col-3 blockchains_body" data-aos="fade-up">
                 <h3 class="secondary-header">Blockchains</h3>
@@ -189,6 +196,10 @@
 
         h1 {
             margin-top: 2rem;
+        }
+
+        .image {
+            text-align:center;
         }
 
         @media (max-width: $breakpoint-small-desktop) {
