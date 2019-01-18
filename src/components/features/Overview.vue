@@ -17,17 +17,7 @@
           <div class="body-text">
             <div class="">
               <div class="single-column">
-                <svg width="44px" height="103px" viewBox="0 0 44 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="gs_features_stablecoins-copy" transform="translate(-871.000000, -490.000000)" stroke="#00A8FF">
-                            <rect id="Rectangle" x="872" y="491" width="42" height="67" rx="21"></rect>
-                            <rect id="wheel" transform="translate(893.000000, 508.500000) scale(-1, 1) translate(-893.000000, -508.500000) " x="890" y="501" width="6" height="15" rx="3"></rect>
-                            <path d="M893,492 L893,501" id="Path-33"></path>
-                            <path d="M893.5,563 L893.5,593" id="Path-34"></path>
-                            <polyline id="Path-35" points="900.240074 586 893.620037 592.620037 887 586"></polyline>
-                        </g>
-                    </g>
-                </svg>
+                <img src="../../assets/buildit.png" alt="scatter's ecosystem" />
               </div>
             </div>
           </div>

@@ -401,6 +401,11 @@ input {
     width:90%;
     padding:4rem 0;
   }
+
+  @media (max-width: $breakpoint-mobile) {
+    width:100%;
+    padding:0;
+  }
 }
 
 .col-1 {
