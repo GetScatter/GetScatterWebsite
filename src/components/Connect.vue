@@ -145,23 +145,7 @@
           </div>
         </section>
 
-        <div id="strategic-partners" data-aos="fade-up">
-            <div class="col-2">
-              <h2 class="white">Partnered Wallets</h2>
-              <p class="white"><span class="package-name">ScatterJS</span> allows some of your favorite wallets to seamlessly interact with any application who uses our platform.</p>
-              <a class="button" href="mailto:business@get-scatter.com">Add your wallet</a>
-            </div>
-            <div class="col-4">
-              <div class="partners">
-                <div class="partner"><img src="../assets/tokenpocket.png" alt="TokenPocket" /></div>
-                <div class="partner"><img src="../assets/imtoken.png" alt="imToken" /></div>
-                <div class="partner"><img src="../assets/lynx.png" alt="EOS Lynx" /></div>
-                <div class="partner"><img src="../assets/more.png" alt="More" /></div>
-                <div class="partner"><img src="../assets/nova.png" alt="NOVA" /></div>
-                <div class="partner"><img src="../assets/meetone.png" alt="MEET.ONE" /></div>
-              </div>
-            </div>
-        </div>
+        <Partners></Partners>
 
         <section id="future_is_now" class="body">
             <div class="body-text">
@@ -179,11 +163,12 @@
 
 <script>
     import Footer from './Footer.vue'
+    import Partners from './reusable/Partners.vue'
     import { Carousel, Slide } from 'vue-carousel';
 
     export default {
         name: 'Connect',
-        components: { Footer,Carousel, Slide },
+        components: { Footer,Carousel, Slide,Partners },
     }
 
 </script>

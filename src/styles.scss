@@ -171,9 +171,9 @@ h3 {
 }
 
 h4 {
-  font-size:2rem;
+  font-size:2.2rem;
   margin-bottom:3rem;
-  font-weight:bold !important;
+  font-weight:normal !important;
   color:darken($dark-blue, 25%);
   line-height:4.4rem;
 
@@ -235,6 +235,10 @@ h5 {
       -webkit-background-clip: initial;
       -webkit-text-fill-color:initial;
       color:white;
+
+      @media(max-width:$breakpoint-small-desktop){
+        text-align: center;
+      }
     }
 
     h4 {
@@ -250,7 +254,7 @@ h5 {
 
     @media(max-width:$breakpoint-small-desktop){
       text-align: center;
-      padding: 3rem;
+      padding: 3rem 3rem 6rem;
       margin: 6rem 0rem;
 
       .col-2,
@@ -264,8 +268,13 @@ h5 {
     }
 
     @media(max-width:$breakpoint-tablet){
-        padding: 1rem;
+        padding: 3rem 3rem 6rem;
         margin: 3rem 0rem;
+    }
+
+    @media(max-width:$breakpoint-mobile){
+        padding: 3rem 3rem 6rem;
+        margin: 0rem;
     }
   }
 
@@ -338,6 +347,11 @@ h5 {
   &.button-small {
     padding: .8rem 1.2rem !important;
     font-size:1.4rem;
+  }
+
+  &.button-white {
+    border: 1px solid white;
+    color: white;
   }
 
   &.button-primary {

@@ -21,7 +21,7 @@
           </div>
         </div> 
         <div class="row">
-          <div class="col-6 align-left separator" id="continued">           
+          <div class="col-6 align-left separator" id="continued">       
             <div class="vision-item"><h3 class="white">Full steam ahead</h3></div>
           </div>
         </div>

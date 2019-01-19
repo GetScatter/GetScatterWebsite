@@ -164,6 +164,7 @@
 
             <div class="row" data-aos="fade-up">
                 <div class="separator"> 
+                    <div id="accounts"></div>
                     <h3 class="secondary-header">Bridge accounts are easy to fund</h3>
                     <p>
                         Each Bridge account is an actual blockchain account/address. These aren't fake accounts waiting to be created, but
@@ -219,6 +220,23 @@
     @import "../variables";
 
     #bridge {
+
+        #accounts {
+            margin:-6rem -9rem 6rem;
+            height:40rem;
+            background-color:$background;
+            background-image:url('../assets/piggy.jpg');
+            background-size:cover;
+            background-position:center;
+
+            @media(max-width:$breakpoint-small-desktop){
+                margin:-6rem -3rem 6rem;
+            }
+
+            @media(max-width:$breakpoint-tablet){
+                margin:-6rem -3rem 6rem;
+            }
+        }
 
         h4.bridge-diagram-title {
             margin:3rem 9rem 9rem;

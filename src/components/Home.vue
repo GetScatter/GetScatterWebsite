@@ -287,6 +287,8 @@
         </div>
       </div>
 
+      <Partners></Partners>
+
       <div id="blockchains" class="row padded" data-aos="fade-up">
         <div class="col-6">
           <h2 class="enterprise">Get connected</h2>
@@ -383,24 +385,6 @@
         </div>
       </div>
 
-      <div id="strategic-partners" data-aos="fade-up">
-        <div class="col-2">
-          <h2 class="white">Partnered Wallets</h2>
-          <p class="white"><span class="package-name">ScatterJS</span> allows some of your favorite wallets to seamlessly interact with any application who uses our platform.</p>
-          <a class="button" href="mailto:business@get-scatter.com">Add your wallet</a>
-        </div>
-        <div class="col-4">
-          <div class="partners">
-            <div class="partner"><img src="../assets/tokenpocket.png" alt="TokenPocket" /></div>
-            <div class="partner"><img src="../assets/imtoken.png" alt="imToken" /></div>
-            <div class="partner"><img src="../assets/lynx.png" alt="EOS Lynx" /></div>
-            <div class="partner"><img src="../assets/more.png" alt="More" /></div>
-            <div class="partner"><img src="../assets/nova.png" alt="NOVA" /></div>
-            <div class="partner"><img src="../assets/meetone.png" alt="MEET.ONE" /></div>
-          </div>
-        </div>
-      </div>
-
       <div id="blockchains" class="row padded padded-large" data-aos="fade-up">
         <div class="col-6">
           <h3>Developers</h3>
@@ -415,6 +399,7 @@
 
 <script>
     import Footer from './Footer.vue'
+    import Partners from './reusable/Partners.vue'
     import { Carousel3d, Slide3d } from 'vue-carousel-3d';
 
     const LOGOS = [
@@ -423,7 +408,7 @@
 
     export default {
         name: 'Home',
-        components: { Footer, Carousel3d, Slide3d },
+        components: { Footer, Carousel3d, Slide3d, Partners },
         data(){return {
           LOGOS,
         }}
@@ -484,6 +469,7 @@
       text-align:center;
       width:80%;
       margin: 0 auto 3rem;
+      color:#111111;
     }
 
     .single {
@@ -511,72 +497,7 @@
     }
   }
 
-  #strategic-partners {
-    background-image:$blue-gradient;
-    overflow:auto;
-    text-align: left;
-    padding: 9rem;
-    margin: 9rem;
-
-    .button {
-      color:white;
-      margin-top:3rem;
-    }
-
-    @media(max-width:$breakpoint-small-desktop){
-      text-align: center;
-      padding: 6rem;
-      margin: 6rem;
-
-      .col-2,
-      .col-4 {
-        width:100%;
-      }
-
-      .col-4 {
-        padding-top:6rem;
-      }
-    }
-
-    @media(max-width:$breakpoint-tablet){
-      padding: 2rem;
-      margin: 0rem;
-    }
-
-    h2 {
-      font-size:4rem;
-      margin:0 0 2rem;
-      line-height:4.2rem;
-      background:transparent;
-      -webkit-background-clip: initial;
-      -webkit-text-fill-color: initial;
-    }
-
-    .partners {
-      display:flex;
-      flex-direction:row;
-      flex-wrap:wrap;
-      justify-content:space-between;
-      align-items:baseline;
-
-      .partner {
-        height:90px;
-        width:50%;
-        overflow:auto;
-        float:left;
-        text-align: center;
-        img {
-          width:auto;
-          max-width:90%;
-        }
-        @media(max-width:$breakpoint-tablet){
-          width:100%;
-        }
-      }
-    }
-
-    
-  }
+  
 
   #screenshots {
     margin-top:-18rem;
