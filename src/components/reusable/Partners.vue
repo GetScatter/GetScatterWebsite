@@ -12,12 +12,14 @@
           </div>
           <div class="col-4">
             <div class="partners">
-              <div class="partner"><img src="../../assets/tokenpocket.png" alt="TokenPocket" /></div>
-              <div class="partner"><img src="../../assets/imtoken.png" alt="imToken" /></div>
-              <div class="partner"><img src="../../assets/lynx.png" alt="EOS Lynx" /></div>
-              <div class="partner"><img src="../../assets/more.png" alt="More" /></div>
-              <div class="partner"><img src="../../assets/nova.png" alt="NOVA" /></div>
-              <div class="partner"><img src="../../assets/meetone.png" alt="MEET.ONE" /></div>
+              <img src="../../assets/meetone.png" alt="MEET.ONE" class="partner" />
+              <img src="../../assets/lynx.png" alt="EOS Lynx" class="partner" />
+              <img src="../../assets/pocketeos.png" alt="EOS Lynx" class="partner" />
+              <img src="../../assets/tokenpocket.png" alt="TokenPocket" class="partner" />
+              <img src="../../assets/bitpie.png" alt="More" class="partner" />
+              <img src="../../assets/nova.png" alt="NOVA" class="partner" />
+              <img src="../../assets/imtoken.png" alt="imToken" class="partner" />
+              <img src="../../assets/more.png" alt="More" class="partner" />
             </div>
           </div>
         </div>
@@ -122,21 +124,11 @@
           flex-direction:row;
           flex-wrap:wrap;
           justify-content:space-between;
-          align-items:baseline;
+          align-items:center;
 
           .partner {
-            height:90px;
-            width:50%;
-            overflow:auto;
-            float:left;
-            text-align: center;
-            img {
-              width:auto;
-              max-width:90%;
-            }
-            @media(max-width:$breakpoint-tablet){
-              width:100%;
-            }
+            margin:3rem;
+
           }
         }
 
