@@ -13,7 +13,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="separator" data-aos="fade-up"> 
+              <div class="separator" data-aos="fade-up" style="overflow-y:hidden;">
                 <div id="bridge-diagram" data-aos="fade-up">
                     <figure>  
                         <svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
