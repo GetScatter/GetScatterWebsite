@@ -51,7 +51,7 @@
   				<div class="site-links">
 	  				<a href="https://t.me/Scatter">@Scatter</a>
 	  				<a href="https://t.me/ScatterDevelopers">@ScatterDevelopers</a>
-	  				<a href="https://t.me/Scatter10">@Scatter10</a>
+	  				<!-- <a href="https://t.me/Scatter10">@Scatter10</a> -->
 	  				<a href="https://support.get-scatter.com">Support desk</a>
 	  				<a href="mailto:support@get-scatter.com">Email us directly</a>
   				</div>
