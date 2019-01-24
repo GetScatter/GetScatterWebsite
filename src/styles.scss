@@ -280,6 +280,10 @@ h5 {
 
 /* Elements */
 
+.button + .button {
+  margin-left:8px;
+}
+
 .button {
   display: inline-block;
   padding: 1.8rem 3rem;
@@ -413,6 +417,11 @@ input {
 
 .white {
   color:white;
+}
+
+.row ul {
+  margin-left: 2rem;
+  margin-bottom:3rem;
 }
 
 .single-column {

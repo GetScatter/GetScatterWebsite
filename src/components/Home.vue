@@ -7,7 +7,8 @@
           <div class="col-6">
             <h1>It's your blockchain</h1>
             <h4>Connect to applications on EOS, Ethereum, and Tron. Exchange tokens with ease. Manage your assets safely. All in a simple to use interface.</h4>
-            <router-link class="button" to="/download">Download Scatter</router-link>
+            <router-link class="button button-primary" to="/download">Download Scatter</router-link>
+            <a class="button" href="https://ridl.get-scatter.com/#/">Donate to Scatter</a>
             <p class="dimmed" style="margin-top:2rem">
               Available for Windows, MacOS, and Linux. <br>
               Looking for Mobile? <router-link class="nav-link" to="/vision">It's on our roadmap.</router-link>
