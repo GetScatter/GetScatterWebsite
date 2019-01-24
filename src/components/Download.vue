@@ -5,9 +5,9 @@
           <div class="body-text">
             <div class="row">
               <div class="single-column">
-                <h2>Download 10.1.2</h2>
+                <h2>Download {{release.version}}</h2>
                 <h4>Scatter connects you to blockchains in a simple and straightforward package. It is internationalized, sleek, and powerful.</h4>
-                <a href="https://github.com/GetScatter/ScatterDesktop/releases/download/10.1.2/mac-scatter-10.1.2.dmg" class="button">
+                <a :href="release.mac" class="button">
                   <svg width="19px" height="24px" viewBox="0 0 19 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="gs_home_v2_01_download" transform="translate(-203.000000, -582.000000)" fill="#111111" fill-rule="nonzero">
@@ -19,7 +19,7 @@
                   </svg>
                   MacOS
                 </a>
-                <a href="https://github.com/GetScatter/ScatterDesktop/releases/download/10.1.2/win-scatter-10.1.2.exe" class="button">  
+                <a :href="release.win" class="button">
                   <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="gs_home_v2_01_download" transform="translate(-359.000000, -583.000000)" fill="#111111" fill-rule="nonzero">
@@ -29,7 +29,7 @@
                   </svg>
                   Windows 64-bit
                 </a>
-                <a href="https://github.com/GetScatter/ScatterDesktop/releases/download/10.1.2/linux-scatter-10.1.2-x86_64.AppImage" class="button"> 
+                <a :href="release.linux" class="button">
                   <svg width="20px" height="25px" viewBox="0 0 20 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="gs_home_v2_01_download" transform="translate(-563.000000, -581.000000)">
@@ -54,42 +54,29 @@
           <div class="body-text">
             <div class="row">
               <div class="single-column">
-                <h3 class="secondary-header">Patch release</h3>
-                <h4>Changes</h4>
-                <ul>
-                    <li>"Danger" displays for dangerous actions like "updateauth".</li>
-                    <li>Changed whitelist overlay to be more prominent as an overlay</li>
-                    <li>Changed signature popup display to show the contract -> action title more prominently</li>
-                </ul>
-                <h4>Bugfixes</h4>
-                <ul>
-                    <li>Migration seed issue fix for 9.0.0.js</li>
-                    <li>App Login Issues due to appkeys stalling</li>
-                    <li>data corruption during password change fix</li>
-                    <li>fixed issue with adding erc20 tokens after exchanging to them</li>
-                    <li>fixed removal of appkeys when signing out</li>
-                    <li>fixed socket service error with applying appkeys async</li>
-                </ul>
+                <h3 class="secondary-header">{{release.name}}</h3>
+                <section v-for="d in details">
+                    <h4>{{d.title}}</h4>
+                    <ul>
+                        <li v-for="p in d.desc">{{p}}</li>
+                    </ul>
+                </section>
 
                 <p><a class="button button-small" href="https://github.com/GetScatter/ScatterDesktop/releases/">Review the source</a></p>
-                <!-- <ul class="release-notes">
-                  <li>Returns chainId and isHardware on accounts so that websites can know which methods will work with an account's keys ( for instance authenticate and getArbitrarySignature don't work with hardware wallets )</li>
-                  <li>Allows authenticate to work with given data + specified key to prove ownership of a key securely without exposing the user to possible buffer transfers ( triple hashing of data + nonce prevents this )</li>
-                </ul> -->
 
                 <h3 class="checksum-title">SHA256 Checksums</h3>
                 <p><small>Not sure what these are? <a href="https://support.get-scatter.com/article/34-how-to-download-scatter">Read our support article</a>.</small></p>
                 <div class="checksum">
                   <strong>MacOS</strong><br>
-                  eb1ed55cc58dba547cd73810a52ec8f396f0f6cea0ede2f100301eb6c5fe7e84
+                    {{checksums.macos}}
                 </div>
                 <div class="checksum">
                   <strong>Windows</strong><br>
-                  4176deeb1f87a38e297e3b1d0a81bbd9bcb3e498bc1b97b670cb04afb7e4b6c6
+                    {{checksums.win}}
                 </div>
                 <div class="checksum">
                   <strong>Linux</strong><br>
-                  03e09d1aeaf8eb55c38bff6bb31ca4d48976622b9d66e6a63babc4c13d9b2bc9
+                    {{checksums.linux}}
                 </div>
               </div>
             </div>
@@ -102,7 +89,53 @@
 <script>
 
     export default {
-        name: 'Features'
+        name: 'Features',
+        data(){return {
+	        release:{},
+        }},
+        computed:{
+            details(){
+            	if(!this.release.details) return [];
+
+            	const parts = this.release.details.split('## SHA256')[0].split('## ');
+	            return parts.map(part => {
+            		const desc = part.split('\r\n').map(x => x.replace('- ', '')).filter(x => x.length);
+            		const title = desc.shift();
+            		return {
+            			title, desc
+                    }
+                });
+            },
+            checksums(){
+	            if(!this.release.details) return [];
+	            const parts = this.release.details.split('## SHA256')[1].split('\r\n').map(x => x.replace('- ', ''));
+
+	            const getHash = needle => parts.find(x => x.toLowerCase().indexOf(needle+':') > -1).split(':')[1].trim();
+
+	            return {
+	            	macos:getHash('macos'),
+	            	win:getHash('windows'),
+	            	linux:getHash('linux'),
+                }
+            }
+        },
+        created(){
+            this.init();
+        },
+        methods:{
+        	init(){
+		        fetch(`https://api.get-scatter.com/v1/version`).then(x => x.json()).then(res => {
+		        	this.release = res;
+		        }).catch(err => {
+		        	console.error(err);
+		        	this.release = {
+		        		details:'',
+                        name:'Error fetching version',
+
+                    }
+                })
+            }
+        }
     }
 
 </script>
