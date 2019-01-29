@@ -7,6 +7,7 @@ import VueCarousel from 'vue-carousel'
 import Carousel3d from 'vue-carousel-3d'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import VueClazyLoad from 'vue-clazy-load'
 
 Vue.productionTip = false;
 Vue.devtools = false
@@ -45,6 +46,7 @@ export default class VueInitializer {
 
     setupVuePlugins(){
         Vue.use(VueRouter);
+        Vue.use(VueClazyLoad);
         Vue.use(VueHighlightJS);
         Vue.use(VueYouTubeEmbed);
         Vue.use(VueCarousel);

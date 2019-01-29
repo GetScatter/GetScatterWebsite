@@ -27,7 +27,11 @@
 				    </g>
 				</svg>
 				<h3>GetScatter Ltd.</h3>
-				<p>Copyright © 2018 GetScatter, Ltd.</p>
+                <p>Depiro Point, Block A, No.2,<br>
+                Mons. G. Depiro Street, <br>
+                Sliema, SLM 2033 Malta</p>
+                <p>Tel. +35627782694</p>
+				<p><small>Copyright © 2018 GetScatter, Ltd.</small></p>
 				<!-- <p><a href="/terms">Terms of Use</a> and <a href="/privacy">Privacy Policy</a></p> -->
 				<div class="footer-links">
 					<a class="footer-link" href="https://twitter.com/Get_Scatter"><i class="fab fa-twitter"></i></a>
@@ -148,8 +152,10 @@ export default {
 	}
 
     .col-quarter {
+        padding-top:7rem;
         @media (max-width: $breakpoint-tablet) {
             text-align:center;
+            padding-top:0rem;
         }
     }
 }
@@ -179,7 +185,7 @@ export default {
     }
 
     p {
-    	margin:0 0 0.2rem;
+    	margin:0 0 1rem;
     	font-size:1.2rem;
     }
 

@@ -1,7 +1,6 @@
 <template>
 	<div id="navigation">
 		<div class="mobile-navigation" :class="{'open':menuOpen}">
-			<!--<router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{routes.text}}</router-link>-->
 
 			<section v-for="link in links" :key="link.page" @click="linkClicked(link)">
 				<figure class="mobile-link">{{link.text}}</figure>
@@ -10,7 +9,7 @@
 				</section>
 			</section>
 
-
+            <router-link to="/careers">careers</router-link>
 			<a href="https://support.get-scatter.com" title="Get the help you need">support</a>
 			<a href="https://medium.com/getscatter" title="Press">press</a>
 			<figure class="mobile-close" id="mobileclose" @click="closeMenu">
