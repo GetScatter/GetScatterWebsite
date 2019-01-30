@@ -11,7 +11,12 @@
                     <a target="_blank" :href="item.url" class="item-wrapper">
                         <div class="">
                             <div class="item-logo-wrapper">
-                                <div class="item-logo" v-if="item.hasOwnProperty('hasimage')" :style="{ backgroundImage: `url(https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg)` }"></div>
+                                <!--<div class="item-logo" v-if="item.hasOwnProperty('hasimage')" :style="{ backgroundImage: `url(https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg)` }"></div>-->
+                                <div class="item-logo" v-if="item.hasOwnProperty('hasimage')">
+                                    <clazy-load :src="`https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg`">
+                                        <img :src="`https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg`">
+                                    </clazy-load>
+                                </div>
                                 <div v-else class="item-logo"></div>
                             </div>
                             <div class="item-name">{{ item.name }}</div>
