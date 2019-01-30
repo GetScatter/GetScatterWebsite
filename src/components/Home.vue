@@ -12,6 +12,9 @@
             <p class="dimmed" style="margin-top:2rem">
               Available for Windows, MacOS, and Linux. <br>
               Looking for Mobile? <router-link class="nav-link" to="/vision">It's on our roadmap.</router-link>
+              <br>
+              <br>
+              <b style="font-size: 18px;"><a href="https://github.com/GetScatter" target="_blank">Scatter is Open-Source</a></b>
             </p> 
             <svg id="scrollplz" width="23px" height="52px" viewBox="0 0 23 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
