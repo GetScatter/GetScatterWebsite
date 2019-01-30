@@ -11,8 +11,13 @@
                     <a target="_blank" :href="item.url" class="item-wrapper">
                         <div class="">
                             <div class="item-logo-wrapper">
-                                <div class="item-logo" v-if="item.hasOwnProperty('hasimage')" :style="{ backgroundImage: `url(https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg)` }"></div>
-                                <div v-else class="item-logo"></div>
+                                <clazy-load src="'https://rawgit.com/GetScatter/ScatterApps/master/logos/' + item.applink +'.svg'">
+                                    <img class="item-logo" v-bind:src="'https://rawgit.com/GetScatter/ScatterApps/master/logos/' + item.applink +'.svg'">
+                                    <div slot="placeholder" class="item-logo">
+                                      <i class="fal fa-spinner"></i>
+                                    </div>
+                                    <!-- <div class="item-logo" :style="{ backgroundImage: `url(https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg)` }"></div> -->
+                                </clazy-load>
                             </div>
                             <div class="item-name">{{ item.name }}</div>
                             <div class="item-type">{{ item.type }}</div>
@@ -176,6 +181,7 @@
 
                 .item-logo {
                     height:60px;
+                    line-height:60px;
                     width:60px;
                     background-repeat:no-repeat;
                     background-size: contain;
@@ -183,6 +189,10 @@
                     border-radius:70px;
                     background-size:100%;
                     transition: background-size 0.24s ease-in-out;
+
+                    i {
+                        animation: spin 0.6s infinite;
+                    }
                 }
             }
 
