@@ -2,6 +2,7 @@
     <div class="app-wrapper" :class="{ list: viewType }">
         <input type="text" name="search-component" class="search-component" v-model="searchterms" placeholder="Search" data-aos="fade-up" />
         <div class="col-4" data-aos="fade-up">
+            <pre style="text-align:left;">{{bycategory}}</pre>
             <div class="header-wrap">
                 <h4>{{ searchSetTitle }}</h4>
                 <Toggle v-on:toggle-view-type="setViewTypeClass"></Toggle>
@@ -70,6 +71,13 @@
                 return this.searchSet.filter((item) => {
                     return `${item.name.toLowerCase()} ${item.blockchain.toLowerCase()}`.match(this.searchterms.toLowerCase())
                 })
+            },
+            bycategory(){
+            	return this.filterresults.reduce((acc,x) => {
+            		if(!acc[x.type]) acc[x.type] = [];
+            		acc[x.type].push(x);
+            		return acc;
+                }, {})
             }
         },
         methods:{
