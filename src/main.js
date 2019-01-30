@@ -4,6 +4,7 @@ import './styles.scss'
 import VueInitializer from './vue/VueInitializer';
 import {Routing} from './vue/Routing';
 import Search from './components/reusable/Search';
+import Promoted from './components/reusable/Promoted';
 import SearchFilter from './components/reusable/SearchFilter';
 import Toggle from './components/reusable/Toggle';
 
@@ -91,6 +92,7 @@ class Main {
             {tag:'features-tokenexchange', vue:FeaturesTokenexchange},
             {tag:'feature-menu-link', vue:FeatureMenuLink},
             {tag:'Search', vue:Search},
+            {tag:'Promoted', vue:Promoted},
             {tag:'SearchFilter', vue:SearchFilter},
             {tag:'Toggle', vue:Toggle}
         ];

@@ -195,8 +195,10 @@ h4 {
 }
 
 h5 {
-  font-size:1.8rem;
+  font-size:1.4rem;
   margin-bottom:1rem;
+  line-height:1.8rem;
+  margin-top:0;
   font-weight:700;
   color:$black;
 
@@ -349,8 +351,8 @@ h5 {
   }
 
   &.button-small {
-    padding: .8rem 1.2rem !important;
-    font-size:1.4rem;
+    padding: .6rem .8rem !important;
+    font-size:1.2rem;
   }
 
   &.button-white {
@@ -404,11 +406,11 @@ input {
   @media (max-width: $breakpoint-tablet) {
     display: block;
   }
+}
 
-  img {
-    width: 100%;
-    height: auto;
-  }
+img {
+  width: 100%;
+  height: auto;
 }
 
 .centered-vertically {
@@ -522,6 +524,38 @@ input {
   float:left;
 
   @media (max-width: $breakpoint-tablet) {
+    width:100%;
+    padding:4rem 0;
+  }
+}
+
+.col-80 {
+  padding:0 2rem;
+  width:80%;
+  float:left;
+
+  @media (max-width: $breakpoint-tablet) {
+    width:70%;
+    padding:4rem 0;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    width:100%;
+    padding:4rem 0;
+  }
+}
+
+.col-20 {
+  padding:0 2rem;
+  width:20%;
+  float:left;
+
+  @media (max-width: $breakpoint-tablet) {
+    width:30%;
+    padding:4rem 0;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
     width:100%;
     padding:4rem 0;
   }
@@ -654,6 +688,7 @@ section {
 
   &.body {
     overflow:hidden;
+    padding:0 9rem;
 
     .row {
       margin:3rem auto 6rem;
@@ -672,6 +707,16 @@ section {
         color:$darkgrey;
         margin-bottom:3rem;
       }
+    }
+
+    padding:0 9rem;
+
+    @media (max-width: $breakpoint-small-desktop) {
+      padding:0 3rem;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      padding:0 1.5rem;
     }
 
     .secondary-buttons {
