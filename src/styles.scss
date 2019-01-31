@@ -534,14 +534,14 @@ img {
   width:80%;
   float:left;
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: $breakpoint-small-desktop) {
     width:70%;
-    padding:4rem 0;
+    padding:0rem 2rem;
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: $breakpoint-tablet) {
     width:100%;
-    padding:4rem 0;
+    padding:0rem 0;
   }
 }
 

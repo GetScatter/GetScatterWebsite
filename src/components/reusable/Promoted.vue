@@ -91,6 +91,10 @@
                 width:48%;
                 margin-bottom:3rem;
 
+                @media (max-width: $breakpoint-tablet) {
+                    width:100%;
+                }
+
                 .promoted-app-background {
                     height:240px;
                     border-radius:20px;

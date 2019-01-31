@@ -200,6 +200,10 @@
   text-align: left;
   border-bottom: 2px solid $lightgrey;
 
+  @media (max-width: $breakpoint-tablet) {
+    text-align:center;
+  }
+
   &__item {
     display: inline-block;
     margin: 0 1.5rem;
