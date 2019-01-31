@@ -151,6 +151,14 @@
                     font-weight:bold;
                     color:$black;
                     background-color:white;
+
+                    &.red {
+                        border:3px solid $red;
+                    }
+
+                    &.green {
+                        border:3px solid $green;
+                    }
                 }
             }
 
