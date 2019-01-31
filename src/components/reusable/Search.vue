@@ -13,11 +13,13 @@
                                 </clazy-load>
                             </div>
                             <div v-else class="item-logo"></div>
+                            <div class="item-blockchain">{{ item.blockchain }}</div>
+                            <div class="item-ridl-score green">4.0</div>
                         </div>
-                        <div class="item-name">{{ item.name }}</div>
-                        <div class="item-type">{{ item.type }}</div>
-                        <div class="item-blockchain">{{ item.blockchain }}</div>
-                        <!-- <div class="item-desc" v-if="item.description != ''">{{ item.description.substr(0,60) }}{{ item.description.length > 60 ? '...' : '' }}</div> -->
+                        <div class="item-info">
+                            <div class="item-name">{{ item.name }}</div>
+                            <div v-if="item.description != ''" class="item-type">{{ item.description.substr(0,60) }}{{ item.description.length > 60 ? '...' : '' }}</div>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -81,23 +83,21 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: flex-start;
         }
 
         .app-box {
-            width:25%;
-            float:left;
-            margin:0 auto;
+            width:33.333%;
             position:relative;
-            margin-bottom: 4rem;
-            padding:1rem;
-            border-radius:20px;
+            margin-bottom: 3rem;
+            padding:0 3rem 0 0;
 
-            &:hover {
-                background:$background;
+            @media(max-width:$breakpoint-small-desktop){
+                width:50%;
             }
 
-            @media(max-width:$breakpoint-tablet){
-                width:33.3333%;
+            @media(max-width:$breakpoint-mobile){
+                width:100%;
             }
 
             .item-wrapper{
@@ -106,53 +106,81 @@
 
             .item-logo-wrapper {
                 position:relative;
-                height: 60px;
-                width: 60px;
+                height: 80px;
+                width: 80px;
                 margin: 0 auto;
+                background-color:$background;
+                border-radius:10px 0 6px 10px;;
+                overflow:hidden;
+                float:left;
+                margin:0 1rem 1rem 0;
 
                 .item-logo {
-                    height:60px;
-                    width:60px;
+                    height:80px;
+                    width:80px;
                     background-repeat:no-repeat;
                     background-size: contain;
                     background-position:center;
                     border-radius:70px;
                     background-size:100%;
                     transition: background-size 0.24s ease-in-out;
+                    position:relative;
+
+                }
+
+                .item-blockchain {
+                    position:absolute;
+                    top:0;
+                    right:0;
+                    background:white;
+                    padding:0 0 3px 4px;
+                    border-radius:0 0 0 4px;
+                    font-size:1rem;
+                    font-weight:bold;
+                    color:$black;
+                }
+
+                .item-ridl-score {
+                    border:3px solid $blue;
+                    position:absolute;
+                    right:3px;
+                    bottom:3px;
+                    padding:3px;
+                    border-radius:20px 20px 3px 20px;
+                    font-size:1rem;
+                    font-weight:bold;
+                    color:$black;
+                    background-color:white;
                 }
             }
 
             &:hover .item-logo {
                 background-size:110% !important;
             }
-            
-            .item-name {
-                font-size:1.4rem;
-                font-weight:bold;
-                color:$black;
-                margin:8px 0 6px;
-                white-space:nowrap;
-                overflow:hidden;
-                text-overflow:ellipsis;
-                text-decoration:none !important;
-                font-family: 'Roboto', sans-serif;
-            }
 
-            .item-type {
-                font-size:1rem;
-                color:darken($very-light-blue, 50%);
-                margin:4px;
-                white-space:nowrap;
-                overflow:hidden;
-                text-overflow:ellipsis;
-            }
+            .item-info {
+                text-align:left;
 
-            .item-blockchain {
-                color:darken($very-light-blue, 50%);
-                font-size:1rem;
-                white-space:nowrap;
-                overflow:hidden;
-                text-overflow:ellipsis;
+                .item-name {
+                    font-size:1.4rem;
+                    font-weight:bold;
+                    color:$blue;
+                    margin:8px 0 6px;
+                    white-space:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                    text-decoration:none !important;
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                .item-type {
+                    font-size: 1.2rem;
+                    margin: 0 0 1rem;
+                    text-align: left;
+                    line-height: 1.4em;
+                    opacity: 0.51;
+                    color:$black;
+                }
             }
 
             .item-desc {
@@ -174,52 +202,6 @@
                 }
 
             }
-        }
-
-        &.list {
-            .app-box {
-                width:50%;
-                height:auto;
-                padding:2rem;
-                margin:0;
-                border-radius:0;
-
-                @media (max-width: $breakpoint-mobile) {
-                    width:100%;
-                }
-
-                .item-wrapper {
-                    text-align: left;
-
-                    .item-logo-wrapper {
-                        width:44px;
-                        height:44px;
-                        float:left;
-                        border-radius:6px;
-
-                        .item-logo {
-                            width:44px;
-                            height:44px;
-                        }
-
-                    }
-
-                    .item-name {
-                        margin: 0 0 8px 60px;
-                    }
-
-                    .item-type {
-                        margin: 0 0 8px 60px;
-                    }
-
-                    .item-blockchain {
-                        margin: 0 0 8px 60px;
-                    }
-                }
-
-                
-            }
-            
         }
     }
 
