@@ -41,17 +41,10 @@
            </div> 
         </section>
 
-        <section class="app-categories">
+        <section class="app-categories" v-for="(list, type) in cats">
             <!-- What i'm actually looking for is a series of discrete sections with apps that fall into them -->
-            <h4>Gambling</h4>
-            <section class="single-app">
-                <!-- <div class="item-logo" v-if="item.hasOwnProperty('hasimage')"> -->
-                    <!-- <clazy-load :src="`https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg`"> -->
-                        <!-- <img :src="`https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg`"> -->
-                    <!-- </clazy-load> -->
-                <!-- </div> -->
-                <!-- <div v-else class="item-logo"></div> -->
-            </section>
+            <h4>{{type}}</h4>
+            <Search :search-set="list" without-search="true"  />
         </section>
     </div>
 </template>
@@ -60,7 +53,7 @@
 
     export default {
         name:'Promoted',
-        props:["Apps"],
+        props:["apps"],
         data () {
           return {
             
@@ -70,8 +63,8 @@
 
         },
         computed: {
-            bycategory(){
-                return this.filterresults.reduce((acc,x) => {
+            cats(){
+                return this.apps.reduce((acc,x) => {
                     if(!acc[x.type]) acc[x.type] = [];
                     acc[x.type].push(x);
                     return acc;

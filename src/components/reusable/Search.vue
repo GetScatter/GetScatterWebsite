@@ -1,6 +1,6 @@
 <template>
     <div class="app-wrapper" :class="{ list: viewType }">
-        <input type="text" name="search-component" class="search-component" v-model="searchterms" placeholder="Search" />
+        <input v-if="!withoutSearch" type="text" name="search-component" class="search-component" v-model="searchterms" placeholder="Search" />
         <div class="app-wrap">
             <div class="app-box" v-for="item in filterresults" >
                 <a target="_blank" :href="item.url" class="item-wrapper">
@@ -36,7 +36,7 @@
                 viewType: false
             }
         },
-        props:["searchSet","searchSetTitle"],
+        props:["searchSet","searchSetTitle", "withoutSearch"],
         computed: {
             filterresults: function () {
                 return this.searchSet.filter((item) => {
