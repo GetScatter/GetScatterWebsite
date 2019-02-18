@@ -6,12 +6,13 @@
         </div>
 
         <div id="strategic-partners">
-          <div class="col-2">
+          <div class="col-6">
             <h4 class="white">Scatter-js, our awesome SDK for developers, allows some of your favorite wallets to seamlessly interact with any application who uses our platform.</h4>
             <a class="button button-white" href="mailto:business@get-scatter.com">Add your wallet</a>
-          </div>
-          <div class="col-4">
+            <br><br>
             <div class="partners">
+              <img src="../../assets/mathwallet.png" alt="Math Wallet" class="partner" />
+              <img src="../../assets/sqrl.png" alt="Sqrl" class="partner" />
               <img src="../../assets/meetone.png" alt="MEET.ONE" class="partner" />
               <img src="../../assets/lynx.png" alt="EOS Lynx" class="partner" />
               <img src="../../assets/pocketeos.png" alt="EOS Lynx" class="partner" />
@@ -125,6 +126,12 @@
           flex-wrap:wrap;
           justify-content:space-between;
           align-items:center;
+
+          img {
+            width:auto;
+            max-width:20%;
+            height:auto;
+          }
 
           .partner {
             margin:3rem;

@@ -100,17 +100,13 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-  font-size:12rem;
-  line-height:12rem;
+  font-size:8rem;
+  line-height:9rem;
   margin-bottom:2rem;
   background: $blue-gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @media(max-width:$breakpoint-tablet){
-    font-size:9rem;
-    line-height:9rem;
-  }
   @media(max-width:$breakpoint-mobile){
     font-size:4rem;
     line-height:4rem;
@@ -123,8 +119,8 @@ h1 {
 }
 
 h2 {
-  font-size:8rem;
-  line-height:9rem;
+  font-size:5rem;
+  line-height:6rem;
   margin-bottom:2rem;
   background: $blue-gradient;
   -webkit-background-clip: text;
@@ -147,8 +143,8 @@ h2 {
 }
 
 h3 {
-  font-size:6rem;
-  line-height:6.6rem;
+  font-size:4.4rem;
+  line-height:4.6rem;
   margin-bottom:3rem;
   background: $blue-gradient;
   -webkit-background-clip: text;
