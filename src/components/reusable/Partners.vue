@@ -21,6 +21,7 @@
               <img src="../../assets/nova.png" alt="NOVA" class="partner" />
               <img src="../../assets/imtoken.png" alt="imToken" class="partner" />
               <img src="../../assets/more.png" alt="More" class="partner" />
+              <img src="../../assets/bitkeep.png" alt="Bitkeep" class="partner" />
             </div>
           </div>
         </div>

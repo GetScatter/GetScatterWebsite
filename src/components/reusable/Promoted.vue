@@ -1,45 +1,38 @@
 <template>
     <div class="promoted-wrapper">
         <section class="promoted-apps">
-           <div class="single-app">
-                <a href="" class="promoted-app-background" style="background-image:url(./promos/eosbet.io.jpg)">
+            <div class="single-app">
+                <a href="https://eosbet.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/eosbet.io.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
-                <section class="promoted-app-info">
-                    <div class="ridl-score green">
-                        <span class="ridl-average">
-                            5.0<br>
-                            RIDL
-                        </span>
-                    </div>
-                    <h3 class="promoted-app-title">
-                       EOSBet
-                    </h3>
-                    <div class="promoted-app-desc">
-                       EOSBet offers a fully feeless, trustless, and permissionless gaming architecture that allows users to place bets in EOS at zero cost. 
-                    </div>
-                </section>
-           </div> 
-           <div class="single-app">
-                <a href="" class="promoted-app-background" style="background-image:url(./promos/0xwarriors.io.jpg)">
+            </div>
+            <div class="single-app">
+                <a href="https://pokereos.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/pokereos.io.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
-                <section class="promoted-app-info">
-                    <div class="ridl-score green">
-                        <span class="ridl-average">
-                            5.0<br>
-                            RIDL
-                        </span>
-                    </div>
-                    <h3 class="promoted-app-title">
-                       0xWarriors
-                    </h3>
-                    <div class="promoted-app-desc">
-                       Multi-Blockchain
-                    </div>
-                </section>
-           </div> 
+            </div> 
+            <div class="single-app">
+                <a href="https://dice.one/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/dice.one.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div> 
+            <div class="single-app">
+                <a href="https://eosfish.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/eosfish.io.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div>
+            <div class="single-app">
+                <a href="https://endless.game/dice?invite=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/endless.game.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div> 
+            <div class="single-app">
+                <a href="http://game.pandafun.io/login?invCode=K8YE" class="promoted-app-background" style="background-image:url(./promos/game.pandafun.io.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div> 
         </section>
+
 
         <section class="app-categories" v-for="(list, type) in cats">
             <!-- What i'm actually looking for is a series of discrete sections with apps that fall into them -->
@@ -88,21 +81,22 @@
 
             .single-app {
                 overflow:visible;
-                width:48%;
-                margin-bottom:3rem;
+                width:50%;
+                margin-bottom:2rem;
 
-                @media (max-width: $breakpoint-tablet) {
+                @media (max-width: $breakpoint-mobile) {
                     width:100%;
                 }
 
                 .promoted-app-background {
-                    height:240px;
+                    height:200px;
                     border-radius:20px;
                     background-position:center;
                     background-size: cover;
                     position:relative;
                     display:block;
-                    width:100%;
+                    width:96%;
+                    margin:0 2%;
                     transition:0.12s all ease-in-out;
 
                     &:hover {
@@ -162,7 +156,7 @@
                     .promoted-app-desc {
                         margin-top: 0.4rem;
                         font-size: 1.2rem;
-                        margin:0 0 1rem;
+                        margin:0 1rem 1rem 0;
                         text-align:left;
                         line-height: 1.4em;
                         opacity:0.51;
@@ -175,7 +169,7 @@
 
         .app-categories {
             clear:both;
-            margin:3rem 0;
+            margin:0 0 3rem;
         }   
     }
 

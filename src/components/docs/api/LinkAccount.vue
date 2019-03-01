@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Link Account</h2>
+        <h4>Link Account</h4>
 
         <section class="switcher">
             <section class="switch" v-for="lang in languages" :class="{'active':language === lang}" @click="language = lang">{{lang}}</section>

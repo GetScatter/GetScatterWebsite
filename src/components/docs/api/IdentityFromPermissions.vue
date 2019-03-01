@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Identity From Permissions</h2>
+        <h4>Identity From Permissions</h4>
 
 
       <section class="switcher">

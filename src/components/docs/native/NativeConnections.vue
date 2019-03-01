@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Native Connections</h2>
+        <h4>Native Connections</h4>
         <p>
             Before you can do anything with a user's Scatter you need to create a connection to it's WebSocket server.
             Let's look at how we can do this using standard WebSockets.
@@ -30,7 +30,7 @@ const socket = new WebSocket(`ws://${host}/socket.io/?EIO=3&transport=websocket`
 
         <br><br>
 
-        <h2>When connected</h2>
+        <h4>When connected</h4>
         <p>
             Once the socket is connected ( usually handled in the <b class="code-snippet">socket.onopen</b> method ) you need to send back an ACK ( acknowledgement ) that you have
             connected to the socket which promotes upgrading/handshaking.
@@ -53,7 +53,7 @@ const socket = new WebSocket(`ws://${host}/socket.io/?EIO=3&transport=websocket`
 
         <br><br>
 
-        <h2>In your response handler</h2>
+        <h4>In your response handler</h4>
         <p>
             <b>We haven't set this up yet, but keep this part in mind</b>. Initially you will get back an ACK from Scatter about the handshaking/upgrading.
             You should disregard this response when handling events.

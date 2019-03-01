@@ -14,7 +14,7 @@
                             </div>
                             <div v-else class="item-logo"></div>
                             <div class="item-blockchain">{{ item.blockchain }}</div>
-                            <div class="item-ridl-score green">4.0</div>
+                            <!-- <div class="item-ridl-score green">4.0</div> -->
                         </div>
                         <div class="item-info">
                             <div class="item-name">{{ item.name }}</div>

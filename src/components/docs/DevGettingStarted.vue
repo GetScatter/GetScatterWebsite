@@ -1,8 +1,6 @@
 <template>
     <section class="doc-page">
-        <h2>Getting Started</h2>
-
-        <br>
+        <h4>Getting Started</h4>
         <p>
             <!--<h3>Using ScatterJS</h3>-->
             <!--ScatterJS ( scatter-js ) is an importable JavaScript library for web and desktop applications that allows you to easily interface with Scatter Classic ( extension ), Desktop-->

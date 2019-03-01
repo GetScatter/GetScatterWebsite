@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Create Transaction</h2>
+        <h4>Create Transaction</h4>
         <p>
             This API route accepts arrays of actions to build a transaction with. It's not particularly necessary for web applications because ScatterJS's plugin providers does this under the hood,
             but it's great for native applications with languages that don't yet have blockchain languages wrappers.

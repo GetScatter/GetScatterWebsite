@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Networks?</h2>
+        <h4>Networks?</h4>
         <p>
             Networks in Scatter are used specifically for fetching blockchain accounts from a user's Scatter and initializing signature providers.
             <br><br>
@@ -23,7 +23,7 @@
 };</code></pre>
         </section>
 
-        <h2>What should the Host be?</h2>
+        <h4>What should the Host be?</h4>
         <p>
             A host usually refers to an IP or a domain name. It can also be localhost.<br>
             Here are three examples:
@@ -41,7 +41,7 @@ host:'nodes.get-scatter.com:443',
 </code></pre>
         </section>
 
-        <h2>What should the Port be?</h2>
+        <h4>What should the Port be?</h4>
         <p>
             Ports range from 0 to 65,535, however quite a few of them are reserved. <br>
             The most known and used ports for nodes are going to be <b class="code-snippet">80 ( HTTP )</b> and <b class="code-snippet">443 ( HTTPS/SSL )</b>.
@@ -58,7 +58,7 @@ port:'text',
 </code></pre>
         </section>
 
-        <h2>What should the Protocol be?</h2>
+        <h4>What should the Protocol be?</h4>
         <p>
             You will have to refer to the node's setup to see which protocol to use. You might also be able to infer the protocol from the port, like we showed above.
         </p>
@@ -74,7 +74,7 @@ protocol:null,
 </code></pre>
         </section>
 
-        <h2>What should the Chain ID be?</h2>
+        <h4>What should the Chain ID be?</h4>
         <p>
             You should always be using the <b class="code-snippet">chainId</b>. Chain IDs are a way for Scatter to group accounts together under a single identifier so that
             applications can fetch them without knowing the internal network used to link them.

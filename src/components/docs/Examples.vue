@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Scatter Examples</h2>
+        <h4>Scatter Examples</h4>
         <p>
             Let's go over the basics of using Scatter.
         </p>

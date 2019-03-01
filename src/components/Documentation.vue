@@ -4,11 +4,6 @@
 
             <section class="sidebar" :class="{'show':mobileMenu}">
 
-                <section class="head">
-                    {{menu.head}}
-                    <div></div>
-                </section>
-
                 <section class="links">
                     <doc-menu-link :key="doc.route" v-for="doc in menu.docs" :doc="doc" :active="activeLinks" v-on:clicked="clickedMenuLink"></doc-menu-link>
                 </section>
@@ -125,15 +120,12 @@
         min-height:800px;
 
         .sidebar {
-            /*position: fixed;*/
-            /*left: 0;*/
-            /*top: 80px;*/
-            /*bottom: 0;*/
             float:left;
             overflow-y: auto;
             width: 320px;
             border-right: 1px solid rgba(0, 0, 0, 0.05);
             padding-bottom: 50px;
+            font-size:1.25rem;
 
             @media (max-width:600px){
                 left:-100%;
@@ -149,9 +141,7 @@
             .head {
                 padding:30px;
                 padding-top:0;
-                font-size: 22px;
                 color:$black;
-                font-weight: 600;
 
                 div {
                     margin-top:30px;
@@ -161,15 +151,13 @@
 
             .links {
                 padding:0 30px 0 10px;
-                font-size: 13px;
 
                 .link {
                     cursor: pointer;
                     padding:10px;
 
                     &.active {
-                        font-weight: 800;
-                        background:$very-light-blue;
+                        color:$dark-blue;
                     }
 
                     .icon {
@@ -212,7 +200,6 @@
                 float:left;
                 height:50px;
                 background:$very-light-blue;
-                font-size: 14px;
                 line-height:50px;
                 padding:0 20px;
                 box-shadow:0 1px 0 #fff;
@@ -242,7 +229,6 @@
 
                     i {
                         padding:0 10px;
-                        font-size: 11px;
                     }
 
                     &:not(:last-child){
@@ -254,14 +240,16 @@
                         }
                     }
 
-                    &:last-child {
-                        font-weight: 600;
-                    }
                 }
             }
 
             .doc-page {
                 padding:0 50px 50px;
+                line-height: 2.6rem;
+
+                ul {
+                    padding:3rem;
+                }
 
                 table {
                     min-width:600px;
@@ -275,7 +263,6 @@
                         padding:10px;
                         border-bottom:1px solid rgba(0,0,0,0.1);
                         border-right:1px solid rgba(0,0,0,0.1);
-                        font-size: 18px;
 
                         &:nth-child(1) {
                             min-width: 100px;
@@ -289,16 +276,15 @@
                     thead {
                         padding:10px;
 
-                        td {
-                            font-size: 13px;
-                        }
                     }
                 }
 
                 .code-snippet {
                     padding:5px 10px;
-                    background:$very-light-blue;
-                    color:rgba(0,0,0,0.7);
+                    background:$blue;
+                    color:white;
+                    border-radius:3px;
+                    margin:0 .4rem;
 
                   &.red {
                     background:red;
@@ -315,9 +301,7 @@
                         display:inline-block;
                         height:40px;
                         line-height:37px;
-                        font-size: 13px;
                         padding:0 20px;
-                        font-weight: 600;
 
                         &:first-child {
                             border-right:0;
@@ -347,7 +331,7 @@
                     border-bottom:1px solid rgba(0,0,0,0.05);
 
                     pre {
-                        background:$very-light-blue;
+                        background:lighten($very-light-blue, 6%);
                         padding:20px;
                         border-radius:4px;
                     }

@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Request Signature</h2>
+        <h4>Request Signature</h4>
         <p>
             <b class="red">Request Signature is not available for ScatterJS.</b> This is solely meant for native desktop/mobile applications.<br>
             For Web Applications see <b>Signature Providers</b>.

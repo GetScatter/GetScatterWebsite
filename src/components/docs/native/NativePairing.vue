@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Pairing with Scatter</h2>
+        <h4>Pairing with Scatter</h4>
         <p>
             <b class="red">
                 This is currently optional to provide backwards compatibility, but will become mandatory in future releases of Scatter without notice. Some features such as the action permission
@@ -56,7 +56,7 @@
 
         <br><br>
 
-        <h2>When First Connecting</h2>
+        <h4>When First Connecting</h4>
         <p>
             Let's look at a <b>passthrough</b> pairing for when we're first connecting.
         </p>
@@ -132,7 +132,7 @@ socket.onopen = () => {
 
         <br><br>
 
-        <h2>Putting this into a function</h2>
+        <h4>Putting this into a function</h4>
         <p>
             We're going to use this in multiple places, so it's best to put it into a function.
         </p>
@@ -163,7 +163,7 @@ socket.onopen = () => {
 
         <br><br>
 
-        <h2>Rekeying</h2>
+        <h4>Rekeying</h4>
         <p>
             Sometimes when you try to pair Scatter will send you back a <b class="code-snippet">rekey</b> message telling you that either the user removed the pair/link permissions, or that one
             of your authorization values is out of sync ( appkey, nonce, nextNonce ).

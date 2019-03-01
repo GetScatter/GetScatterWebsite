@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Supported Blockchains</h2>
+        <h4>Supported Blockchains</h4>
         <p>
             Scatter supports multiple blockchains, and this list will often grow. Make sure to check back here for further support.
             <br><br>

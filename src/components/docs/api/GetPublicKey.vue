@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Get Public Key</h2>
+        <h4>Get Public Key</h4>
 
         <section class="switcher">
             <section class="switch" v-for="lang in languages" :class="{'active':language === lang}" @click="language = lang">{{lang}}</section>

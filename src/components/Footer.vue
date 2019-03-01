@@ -42,7 +42,8 @@
   			<div class="col-quarter">
   				<h5>Links</h5>
   				<div class="site-links">
-	  				<router-link to="/founders">founders</router-link>
+	  				<router-link to="/branding">branding assets</router-link>
+                    <router-link to="/founders">founders</router-link>
 	  				<router-link to="/vision">vision</router-link>
 	  				<router-link to="/docs/getting-started">documentation</router-link>
 	  				<!-- <a href="/press">articles</a> -->

@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Promise/Future Resolution</h2>
+        <h4>Promise/Future Resolution</h4>
         <p>
             We need to be able to feed API request responses back to our application. This is a little bit of a hassle when dealing with WebSockets since requests return responses through the
             <b class="code-snippet">socket.onmessage</b> method. It's very possible to do though with a little massaging.

@@ -170,7 +170,7 @@ h4 {
   font-size:2.2rem;
   margin-bottom:3rem;
   font-weight:normal !important;
-  color:$darkgrey;
+  color:$dark-blue;
   line-height:3.4rem;
 
   @media(max-width:$breakpoint-tablet){
@@ -280,6 +280,10 @@ h5 {
 
 .button + .button {
   margin-left:8px;
+
+  @media(max-width:$breakpoint-mobile){
+    margin-left:0px;
+  }
 }
 
 .button {
@@ -300,7 +304,7 @@ h5 {
 
   @media (max-width: $breakpoint-mobile) {
     width:100%;
-    margin:2rem 0;
+    margin:1rem 0;
     text-align: center;
   }
 
