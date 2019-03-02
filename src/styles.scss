@@ -192,8 +192,10 @@ h4 {
 
 h5 {
   font-size:1.4rem;
-  margin-bottom:1rem;
-  line-height:1.8rem;
+  margin-bottom:3rem;
+  line-height:1rem;
+  border-bottom: 1px solid $darkgrey;
+  padding-bottom:2rem;
   margin-top:0;
   font-weight:700;
   color:$black;
@@ -429,6 +431,11 @@ img {
 .single-column {
   width:720px;
   margin:0 auto;
+  overflow: auto;
+
+  svg {
+    width:100%;
+  }
 
   @media (max-width: $breakpoint-tablet) {
     width:90%;
@@ -741,6 +748,10 @@ section {
 #get-started .col-3,
 #get-started .col-6 {
   text-align:center;
+}
+
+#future_is_now {
+  margin-top:6rem;
 }
 
 .code-block {
