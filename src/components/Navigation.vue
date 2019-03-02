@@ -38,10 +38,10 @@
 				<span></span>
 			</a>
 		</header>
-        <div class="ocean">
+        <!-- <div class="ocean">
               <div class="wave"></div>
               <div class="wave"></div>
-        </div>
+        </div> -->
 	</div>
 </template>
 
@@ -376,7 +376,7 @@
 	.mobile-navigation.open a:nth-child(8) { animation-delay: .85s }
 
 	.header {
-		height:172px;
+		height:112px;
 		color: white;
 		overflow:auto;
 

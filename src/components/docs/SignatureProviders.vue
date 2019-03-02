@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Signature providers for Web Applications</h2>
+        <h4>Signature providers for Web Applications</h4>
         <p>
             Each blockchain has it's own signature provider and provides an easy way to set up your application using Scatter as a way to sign transactions instead of having
             users enter their private keys into your applications.
@@ -12,7 +12,7 @@
 
         <br>
         <br>
-        <h5>Using a Proxy Provider</h5>
+        <h4>Using a Proxy Provider</h4>
         Proxy providers allow you to use the <b class="code-snippet">requiredFields</b> object within transaction to get more information from the user
         during your signature requests.
 

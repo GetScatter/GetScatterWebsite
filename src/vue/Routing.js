@@ -10,6 +10,7 @@ import Features from '../components/Features.vue'
 import Connect from '../components/Connect.vue'
 import Download from '../components/Download.vue'
 import Bridge from '../components/Bridge.vue'
+import Branding from '../components/Branding.vue'
 import Careers from '../components/Careers.vue'
 
 
@@ -26,6 +27,7 @@ export const RouteNames = {
     Connect:'connect',
     Download:'download',
     Bridge:'bridge',
+    Branding:'branding',
     Careers:'careers'
 };
 
@@ -42,6 +44,7 @@ const RouteViews = {
     [RouteNames.Connect]:Connect,
     [RouteNames.Download]:Download,
     [RouteNames.Bridge]:Bridge,
+    [RouteNames.Branding]:Branding,
     [RouteNames.Careers]:Careers,
 };
 

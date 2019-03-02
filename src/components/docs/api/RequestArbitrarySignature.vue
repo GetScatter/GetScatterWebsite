@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Request Arbitrary Signature</h2>
+        <h4>Request Arbitrary Signature</h4>
 
         <section class="switcher">
             <section class="switch" v-for="lang in languages" :class="{'active':language === lang}" @click="language = lang">{{lang}}</section>

@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Sending API Requests</h2>
+        <h4>Sending API Requests</h4>
         <p>
             Let's create a method on your Socket Service that interacts with Scatter by sending API requests.
         </p>

@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>What are Identities?</h2>
+        <h4>What are Identities?</h4>
         <p>
             In Scatter Identities are containers for personal data, and authentication / permission mechanisms.
             <br><br>

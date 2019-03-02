@@ -18,9 +18,9 @@
               <div v-if="currentTab === 'explore'">
                 <Promoted :apps="Apps"></Promoted>
               </div>
-              <div v-if="currentTab === 'new'">
+              <!-- <div v-if="currentTab === 'new'">
                 <NewApps :apps="Apps"></NewApps>
-              </div>
+              </div> -->
               <div v-if="currentTab === 'search'">
                 <Search :search-set="Apps" :search-set-title="'Apps'"></Search>
                 <Filter></Filter>
@@ -75,7 +75,7 @@
         Apps: [],
         tabs: [
           { title: 'Explore', value: 'explore' },
-          { title: 'New', value: 'new' },
+          // { title: 'New', value: 'new' },
           { title: 'Search', value: 'search' }
         ],
     currentTab: 'explore',

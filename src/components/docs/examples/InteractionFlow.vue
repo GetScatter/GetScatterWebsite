@@ -1,14 +1,14 @@
 <template>
     <section class="doc-page">
 
-        <h2>Interaction Flow</h2>
+        <h4>Interaction Flow</h4>
         <p>
             Scatter enforces a specific flow for handling user interaction.
             This flow is put in place to protect the user's privacy.
         </p>
         <br><br>
 
-        <h3>Let's take a look at the flow</h3>
+        <h4>Let's take a look at the flow</h4>
         <section class="boxes">
             <figure class="box">Your Dapp</figure>
             <figure class="arrow"><i class="fa fa-long-arrow-right"></i></figure>
@@ -22,7 +22,7 @@
         <br>
         <br>
 
-        <h3>Okay, so what does this actually look like?</h3>
+        <h4>Okay, so what does this actually look like?</h4>
         Let's look at a full example of code that goes through the flow for the EOS blockchain.
         <br><br>
         <section class="code-block">

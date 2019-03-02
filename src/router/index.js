@@ -11,7 +11,7 @@ import vbclass from 'vue-body-class'
 
 Vue.use( Router,vbclass )
 
-console.log(vbclass);
+// console.log(vbclass);
 
 export default new Router({
   routes: [

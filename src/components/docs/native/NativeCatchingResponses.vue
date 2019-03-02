@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Catching Responses</h2>
+        <h4>Catching Responses</h4>
         <p>
             When you send API requests to Scatter it will send you back responses including a unique ID that you specify with the response.
             This allows you to resolve those responses later in a promise/future way.
@@ -59,7 +59,7 @@
 
         <br><br>
 
-        <h2>The Paired Response</h2>
+        <h4>The Paired Response</h4>
         <p>
             This continues the last section about pairing, and allows you to do some logic on your end to finish the pairing process and store the correct values in your
             application only when the request is successful.
@@ -107,7 +107,7 @@
 
         <br><br>
 
-        <h2>The Rekey Response</h2>
+        <h4>The Rekey Response</h4>
         <p>
             This is more of an event than a response, but it's best to handle it here as well. We talked about this a little towards the end of the last section <b>Pairing with Scatter</b>.
             Here's how we actually handle rekeying.
@@ -141,7 +141,7 @@
         <br><br>
         <br><br>
 
-        <h2>The API Response</h2>
+        <h4>The API Response</h4>
         <p>
             This is the handler that will do the bulk of our interaction with Scatter. The only thing we're really doing here is resolving promises that we inserted into the <b class="code-snippet">openRequests</b> array.
         </p>

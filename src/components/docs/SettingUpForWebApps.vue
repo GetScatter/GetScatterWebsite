@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Setting up for Web Applications</h2>
+        <h4>Setting up for Web Applications</h4>
         The easiest way to use Scatter from web and JavaScript applications is to use the official
         <a style="display:inline-block; color:blue; text-decoration: underline" href="https://github.com/GetScatter/scatter-js" target="_blank">Scatter JavaScript SDK</a>.
         <br><br>
@@ -15,7 +15,7 @@
 
         <br><br>
         <br><br>
-        <h3>Installation using NPM</h3>
+        <h4>Installation using NPM</h4>
 
         First you'll need to get the <b class="code-snippet">scatterjs-core</b> package from NPM. This package provides the base API for using Scatter.
         It doesn't come with any way to interact with blockchains so we'll be adding in <b>plugins</b> as well.

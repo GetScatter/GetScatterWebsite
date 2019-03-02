@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h2>Requirable Fields</h2>
+        <h4>Requirable Fields</h4>
         <p>
             You can require specific fields to be given back to your app from a user's Identity on both Identity Requests and Signature Requests.
             <br><br>
