@@ -18,6 +18,7 @@
             <div class="vision-item"><p class="title">Simplifying Scatter for everyday users</p><p class="date">Q4 2018</p></div>
             <div class="vision-item"><p class="title">Tron Blockchain Support</p><p class="date">Q4 2018</p></div>
             <div class="vision-item"><p class="title">RIDL Mainnet Airdrop</p><p class="date">Q4 2018</p></div>
+            <div class="vision-item"><p class="title">Unity3d Scatter SDK</p><p class="date">Q1 2019</p></div>
           </div>
         </div> 
         <div class="row">
@@ -30,14 +31,15 @@
           <div class="col-3 align-left" id="future">
             <div class="vision-line"></div>
             <h4 class="sub-header">Up next for our team</h4>
-            <div class="vision-item"><p class="title">RIDL System on the Testnet</p><p class="date">Q1 2019</p></div>
-            <div class="vision-item"><p class="title">Unity3d Scatter SDK</p><p class="date">Q1 2019</p></div>
-            <div class="vision-item"><p class="title">Scatter Desktop Game Competition</p><p class="date">Q1 2019</p></div>
-            
+            <div class="vision-item"><p class="title">RIDL System on the Testnet</p><p class="date">2019</p></div>
+            <div class="vision-item"><p class="title">Scatter Desktop Game Competition</p><p class="date">2019</p></div>
+            <div class="vision-item"><p class="title">Scatter Marketplace</p><p class="date">2019</p></div>
+
             <h4 class="sub-header">Planned for 2019</h4>
-            <div class="vision-item"><p class="title">Integrated support for more blockchains</p><p class="date">Q1 - Q2 2019</p></div>
-            <div class="vision-item"><p class="title">Scatter Mobile for Android</p><p class="date">Q2 2019</p></div>
-            <div class="vision-item"><p class="title">Scatter Mobile for iOS</p><p class="date">Q2 - Q4 2019</p></div>
+            <div class="vision-item"><p class="title">Scatter Mobile for Android</p><p class="date">2019</p></div>
+            <div class="vision-item"><p class="title">Scatter Bridge</p><p class="date">2019</p></div>
+            <div class="vision-item"><p class="title">Integrated support for more blockchains</p><p class="date">2019</p></div>
+            <div class="vision-item"><p class="title">Scatter Mobile for iOS</p><p class="date">2019(?)</p></div>
             <div class="vision-item"><p class="date">GetScatter reserves the right to update these dates as needed.</p></div>
           </div>
         </div>
