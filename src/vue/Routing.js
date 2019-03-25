@@ -12,6 +12,7 @@ import Download from '../components/Download.vue'
 import Bridge from '../components/Bridge.vue'
 import Branding from '../components/Branding.vue'
 import Careers from '../components/Careers.vue'
+import FiatOnramp from '../components/FiatOnramp.vue'
 
 
 export const RouteNames = {
@@ -28,7 +29,8 @@ export const RouteNames = {
     Download:'download',
     Bridge:'bridge',
     Branding:'branding',
-    Careers:'careers'
+    Careers:'careers',
+	FiatOnramp:'onramp',
 };
 
 const RouteViews = {
@@ -46,6 +48,7 @@ const RouteViews = {
     [RouteNames.Bridge]:Bridge,
     [RouteNames.Branding]:Branding,
     [RouteNames.Careers]:Careers,
+    [RouteNames.FiatOnramp]:FiatOnramp,
 };
 
 const RoutePaths = {
