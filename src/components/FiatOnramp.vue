@@ -32,7 +32,7 @@
 		},
 		computed: {
             moonpaySrcPath(){
-            	return `https://buy.moonpay.io`;
+            	return `https://buy.moonpay.io?apiKey=pk_live_NuTKeMYegyaGK6Puxk7Pn89RbvDgG3P`;
             	// const base = `https://buy-staging.moonpay.io`;
             	// const params = {
 		        //     apiKey:'pk_test_uQlwYQs3jLbrl53VWKv1xW1XZ7eHsr65',
