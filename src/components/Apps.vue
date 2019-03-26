@@ -27,7 +27,7 @@
               </div>
             </div>
           </div>
-          <div class="tools-section">
+          <!-- <div class="tools-section">
             <div class="apps-notice blue">
                 <i class="fal fa-address-card"></i> 
                 <h5>Create your EOS Account</h5>
@@ -50,7 +50,7 @@
                 <a href="https://eostoolkit.io/home"><span class="title">EOS Toolkit</span><span class="desc">Grab your airdrops, manage your EOS account.</span></a>
                 <a href="https://eosvotes.io/"><span class="title">EOS Votes</span><span class="desc">Help decide what EOS will be.</span></a>
             </div>
-        </div>
+        </div> -->
         </div>
       </div>
     </section>
