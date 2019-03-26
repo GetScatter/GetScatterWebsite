@@ -3,7 +3,7 @@
     <section class="body">
       <div class="body-text" data-aos="fade-up">
         <div class="">
-          <div class="col-80">
+          <div>
             
             <tabs
               :tabs="tabs"
@@ -27,7 +27,7 @@
               </div>
             </div>
           </div>
-          <div class="col-20 tools-section">
+          <div class="tools-section">
             <div class="apps-notice blue">
                 <i class="fal fa-address-card"></i> 
                 <h5>Create your EOS Account</h5>
@@ -153,7 +153,6 @@
   }
 
   .apps-notice {
-        overflow:auto;
         text-align:left;
         margin:3rem 0;
 

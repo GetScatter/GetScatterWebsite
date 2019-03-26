@@ -2,6 +2,11 @@
     <div class="promoted-wrapper">
         <section class="promoted-apps">
             <div class="single-app">
+                <a href="https://trustdice.win/faucet?coinbox&ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/trustdice.win.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div> 
+            <div class="single-app">
                 <a href="https://eosbet.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/eosbet.io.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
@@ -16,7 +21,7 @@
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div> 
-            <div class="single-app">
+            <!-- <div class="single-app">
                 <a href="https://eosfish.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/eosfish.io.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
@@ -25,12 +30,7 @@
                 <a href="https://endless.game/dice?invite=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/endless.game.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
-            </div> 
-            <div class="single-app">
-                <a href="http://game.pandafun.io/login?invCode=K8YE" class="promoted-app-background" style="background-image:url(./promos/game.pandafun.io.jpg)">
-                   <div class="promoted-app-blockchain">EOSIO</div>
-                </a>
-            </div> 
+            </div>  -->
         </section>
 
 
@@ -81,7 +81,7 @@
 
             .single-app {
                 overflow:visible;
-                width:50%;
+                width:25%;
                 margin-bottom:2rem;
 
                 @media (max-width: $breakpoint-mobile) {

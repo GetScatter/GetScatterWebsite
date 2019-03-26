@@ -87,7 +87,7 @@
         }
 
         .app-box {
-            width:33.333%;
+            width:25%;
             position:relative;
             margin-bottom: 3rem;
             padding:0 3rem 0 0;
