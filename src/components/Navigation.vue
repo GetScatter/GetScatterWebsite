@@ -165,8 +165,13 @@
 
 	        },
             openMenu() {
-                this.menuOpen = true;
-                this.$emit('openMenu');
+                console.log('click');
+                if(this.menuOpen = true){
+                    this.$emit('closeMenu');
+                } else {
+                    this.menuOpen = true;
+                    this.$emit('openMenu');
+                }
             },
 
             closeMenu() {

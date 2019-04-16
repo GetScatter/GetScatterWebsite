@@ -1,6 +1,11 @@
 <template>
     <div class="promoted-wrapper">
         <section class="promoted-apps">
+           <div class="single-app">
+                <a href="https://dgatepoker.com/?referral=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/dragongatepoker.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div> 
             <div class="single-app">
                 <a href="https://trustdice.win/faucet?coinbox&ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/trustdice.win.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
@@ -11,11 +16,6 @@
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div>
-            <div class="single-app">
-                <a href="https://pokereos.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/pokereos.io.jpg)">
-                   <div class="promoted-app-blockchain">EOSIO</div>
-                </a>
-            </div> 
             <div class="single-app">
                 <a href="https://dice.one/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/dice.one.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
@@ -28,6 +28,11 @@
             </div>
             <div class="single-app">
                 <a href="https://endless.game/dice?invite=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/endless.game.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div>  -->
+            <!-- <div class="single-app">
+                <a href="https://pokereos.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/pokereos.io.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div>  -->

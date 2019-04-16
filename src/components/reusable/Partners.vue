@@ -22,6 +22,7 @@
               <img src="../../assets/imtoken.png" alt="imToken" class="partner" />
               <img src="../../assets/more.png" alt="More" class="partner" />
               <img src="../../assets/bitkeep.png" alt="Bitkeep" class="partner" />
+              <img src="../../assets/buckwallet.png" alt="Buckwallet" class="partner" />
             </div>
           </div>
         </div>
