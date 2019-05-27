@@ -98,7 +98,6 @@
         position:relative;
 
         .button {
-          color:white;
           margin-top:3rem;
         }
 

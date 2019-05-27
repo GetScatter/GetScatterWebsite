@@ -665,7 +665,6 @@ section {
 
   &.body {
     overflow:hidden;
-    padding:0 9rem;
 
     .row {
       margin:3rem auto 6rem;
@@ -686,7 +685,7 @@ section {
       }
     }
 
-    padding:0 9rem;
+    padding:4rem 9rem;
 
     @media (max-width: $breakpoint-small-desktop) {
       padding:0 3rem;
