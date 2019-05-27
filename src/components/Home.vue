@@ -1,14 +1,19 @@
 <template>
   <div id="home">
 
-    <section id="leadin" class="body" data-aos="fade-down">
+    <section id="leadin" class="body" data-aos="fade-in">
+      <section class="meteors">
+        <section class="rotator">
+          <figure class="shooting_star" v-for="i in new Array(40)"></figure>
+        </section>
+      </section>
       <div class="body-text">
         <div class="row">
           <div class="col-6">
-            <h1>It's your blockchain</h1>
-            <h4>Connect to applications on EOS, Ethereum, and Tron. Exchange tokens with ease. Manage your assets safely. All in a simple to use interface.</h4>
-            <router-link class="button button-primary" to="/download">Download Scatter</router-link>
-            <a class="button" href="https://ridl.get-scatter.com/#/">Donate to Scatter</a>
+            <h1>Secure Modern Wallet</h1>
+            <h4>Enabling ownership of digital currencies and assets.</h4>
+            <router-link class="button button-white" to="/download">Download Scatter</router-link>
+            <a class="button button-primary" href="https://ridl.get-scatter.com/#/">Donate to Scatter</a>
             <p class="dimmed" style="margin-top:2rem">
               Available for Windows, MacOS, and Linux. <br>
               Looking for Mobile? <router-link class="nav-link" to="/vision">It's on our roadmap.</router-link>
@@ -16,26 +21,14 @@
             <p>
               <a href="https://github.com/GetScatter" target="_blank">Scatter is Open-Source</a>
             </p>
-            <svg id="scrollplz" width="23px" height="52px" viewBox="0 0 23 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="gs_features_stablecoins-copy" transform="translate(-993.000000, -490.000000)" stroke="#111111">
-                        <g id="Group-22" transform="translate(994.000000, 491.000000)">
-                            <rect id="Rectangle-Copy-16" x="0" y="0" width="21" height="33.5" rx="10.5"></rect>
-                            <rect id="Rectangle-Copy-15" transform="translate(10.500000, 8.750000) scale(-1, 1) translate(-10.500000, -8.750000) " x="9" y="5" width="3" height="7.5" rx="1.5"></rect>
-                            <path d="M10.75,0.5 L10.75,5" id="Path-33-Copy"></path>
-                            <path d="M10.75,36 L10.75,51" id="Path-34-Copy"></path>
-                            <polyline id="Path-35-Copy" points="14.1200372 47.5 10.8100186 50.8100186 7.5 47.5"></polyline>
-                        </g>
-                    </g>
-                </g>
-            </svg>
           </div>
         </div>
 
       </div>
+      <img src="../assets/gs_desktop_apps_explore.jpg" id="example-image" />
     </section>
 
-    <section id="screenshots" data-aos="fade-up">
+    <!-- <section id="screenshots" data-aos="fade-up">
       <carousel-3d :height="480" :width="540">
         <slide :index="0">
           <img src="../assets/screenshot1.png" />
@@ -53,7 +46,7 @@
           <img src="../assets/screenshot4.png" />
         </slide>
       </carousel-3d>
-    </section>
+    </section> -->
 
     <section id="features-mini" class="body">
       <div class="row">
@@ -433,22 +426,44 @@
   
 
   #leadin {
-    background-color:white;
+    background-color:$blue;
+    background-image:url('../assets/gs_mobile_apps_homebg.png');
+    background-position:center;
+    background-size: cover;
     text-align: center;
-    padding:0rem 0rem 18rem;
+    height:800px;
+    position:relative;
 
     @media (max-width: $breakpoint-tablet) {
 
     }
 
+    h1 {
+      margin:0;
+      margin-top:3rem;
+      -webkit-text-fill-color: initial;
+      color:white;
+    }
+
     h4 {
       margin: 0 auto 3rem;
-      max-width: 600px;
       text-align:center;
+      color:white;
     }
 
     p {
       margin:0 0 2rem;
+      color:white;
+
+      a {
+        color:white;
+      }
+    }
+
+    #example-image {
+      margin:-5rem auto 0;
+      max-width:800px;
+      box-shadow: 0 12px 24px 0 rgba(8,79,129,0.44), 0 2px 4px 0 rgba(10,69,100,0.37);
     }
 
   }
@@ -519,5 +534,121 @@
     margin:3rem auto 0;
   }
 
+$shooting-time: 15s;
+
+.meteors {
+
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .rotator {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    transform: rotateZ(145deg);
+  }
+
+  .shooting_star {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    // width: 100px;
+    height: 4px;
+    background: linear-gradient(-45deg, $white, rgba(0, 0, 255, 0));
+    border-radius: 999px;
+    filter: drop-shadow(0 0 6px $white);
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 1px);
+      right: 0;
+      height: 2px;
+      background: linear-gradient(-45deg, rgba(0, 0, 255, 0), $white, rgba(0, 0, 255, 0));
+      transform: translateX(50%) rotateZ(45deg);
+      box-shadow:0 0 10px $white;
+      border-radius: 100%;
+      animation: shining $shooting-time ease-in-out infinite;
+    }
+
+    &::after {
+      @extend .shooting_star::before;
+      transform: translateX(50%) rotateZ(-45deg);
+    }
+
+    @for $i from 1 through 40 {
+      &:nth-child(#{$i}) {
+        $delay: random(9999) + 100ms;
+        top: calc(20% - #{random(1920) - 800px});
+        left: calc(#{random(1) + 0px});
+        animation-delay: $delay;
+        opacity: random(50) / 100 + 0.1;
+
+        $rand:#{random(80)+25};
+        animation:
+                tail #{$rand}s ease-in-out infinite,
+                shooting #{$rand}s ease-in-out infinite;
+
+        &::before,
+        &::after {
+          animation-delay: $delay;
+        }
+      }
+    }
+  }
+
+  @keyframes tail {
+    0% {
+      width: 0;
+    }
+
+    30% {
+      width: 200px;
+    }
+
+    70% {
+      width: 500px;
+    }
+
+    100% {
+      width: 0;
+    }
+  }
+
+  @keyframes shining {
+    0% {
+      width: 0;
+    }
+
+    50% {
+      width: 5px;
+    }
+
+    100% {
+      width: 0;
+    }
+  }
+
+  @keyframes shooting {
+    0% {
+      transform: translateX(-200px);
+    }
+
+    100% {
+      transform: translateX(8000px);
+    }
+  }
+
+}
 
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="app" :class="{'ridl':route === 'ridl'}">
     <Navigation ></Navigation>
-    <section style="background:#fff; margin-top:-1px; padding-top:3rem;">
+    <section style="background:#fff;">
       <transition name="fade" mode="out-in">
         <router-view/>
       </transition>

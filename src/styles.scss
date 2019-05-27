@@ -94,7 +94,7 @@ p {
 }
 
 h1,h2,h3,h4,h5 {
-  font-family:"Roboto",sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight:bold;
   color:$blue;
 }
@@ -288,50 +288,22 @@ h5 {
 
 .button {
   display: inline-block;
-  padding: 1.8rem 3rem;
+  padding: 1.4rem 2rem;
   background: none;
   border: 1px solid $blue;
   border-radius: 5px;
   color: $black;
   text-decoration: none;
-  font-weight: bold;
   position: relative;
   overflow: hidden;
-
-  &.enterprise {
-    border: 1px solid $darkgrey;
-  }
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  font-size:.8em;
 
   @media (max-width: $breakpoint-mobile) {
     width:100%;
     margin:1rem 0;
     text-align: center;
-  }
-
-  &:before,
-  &:after {
-    background: #fff;
-    content: '';
-    position: absolute;
-    z-index: -1;
-  }
-  
-
-  &:after {
-    background-color: $blue;
-    height: 100%;
-    left: -55%;
-    top: 0;
-    transform: skew(50deg);
-    transition-duration: 0.4s;
-    transform-origin: top left;
-    width: 0;
-  }
-
-  &:hover:after {
-    height: 100%;
-    width: 200%;
-    color:white;
   }
 
   @media(max-width:$breakpoint-tablet){
@@ -357,7 +329,8 @@ h5 {
 
   &.button-white {
     border: 1px solid white;
-    color: white;
+    color: $blue;
+    background: white;
   }
 
   &.button-primary {
@@ -369,8 +342,7 @@ h5 {
   }
 
   &:hover {
-    transform:scale(1.02);
-    color:$white;
+    opacity:0.9;
   }
 }
 
