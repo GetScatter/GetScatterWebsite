@@ -67,7 +67,7 @@
         </section>
 
 
-        <section id="Stable_Coins" class="body" data-aos="fade-up" >
+        <!-- <section id="Stable_Coins" class="body" data-aos="fade-up" >
             <div class="body-text">
                 <div class="row">
                     <div class="col-3">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="Token_Exchange" class="body" data-aos="fade-up" >
             <div class="body-text">

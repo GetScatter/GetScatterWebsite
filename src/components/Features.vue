@@ -5,7 +5,7 @@
         <div class="row">
 
           <Overview v-if="$route.params.feature === 'overview'" />
-          <Stablecoins v-if="$route.params.feature === 'stablecoins'" />
+          <!-- <Stablecoins v-if="$route.params.feature === 'stablecoins'" /> -->
           <Assetmanagement v-if="$route.params.feature === 'assetmanagement'" />
           <Hardwarewallets v-if="$route.params.feature === 'hardwarewallets'" />
           <Tokenexchange v-if="$route.params.feature === 'tokenexchange'" />
@@ -23,7 +23,7 @@
 <script>
 
     import Overview from '../components/features/Overview';
-    import Stablecoins from '../components/features/Stablecoins';
+    // import Stablecoins from '../components/features/Stablecoins';
     import Assetmanagement from '../components/features/Assetmanagement';
     import Hardwarewallets from '../components/features/Hardwarewallets';
     import Tokenexchange from '../components/features/Tokenexchange';
@@ -70,7 +70,7 @@
         }},
         components:{
           Overview,
-          Stablecoins,
+          // Stablecoins,
           Assetmanagement,
           Hardwarewallets,
           Tokenexchange

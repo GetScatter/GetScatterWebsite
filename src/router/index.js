@@ -6,7 +6,8 @@ import Ridl from '../components/Ridl'
 import Founders from '../components/Founders'
 import Vision from '../components/Vision'
 import Apps from '../components/Apps'
-import Press from '../components/Press'
+import BlogHome from '../components/BlogHome'
+import BlogPost from '../components/BlogPost'
 import vbclass from 'vue-body-class'
 
 Vue.use( Router,vbclass )
@@ -14,6 +15,7 @@ Vue.use( Router,vbclass )
 // console.log(vbclass);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -42,9 +44,14 @@ export default new Router({
       component: Apps
     },
     {
-      path: '/press',
-      name: 'Press',
-      component: Press
+      path: '/blog/',
+      name: 'blog-home',
+      component: BlogHome
+    },
+    {
+      path: '/blog/:slug',
+      name: 'blog-post',
+      component: BlogPost
     }
   ]
 })

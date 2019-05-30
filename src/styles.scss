@@ -34,7 +34,7 @@
 }
 
 html {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 66.5%;
   box-sizing: border-box;
   @media (max-width:$breakpoint-tablet){
@@ -100,16 +100,14 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-  font-size:8rem;
-  line-height:9rem;
+  font-size:4.052rem;
+  line-height:4.252rem;
   margin-bottom:2rem;
   background: $blue-gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @media(max-width:$breakpoint-mobile){
-    font-size:4rem;
-    line-height:4rem;
     margin-top:0;
   }
 }
@@ -119,8 +117,8 @@ h1 {
 }
 
 h2 {
-  font-size:5rem;
-  line-height:6rem;
+  font-size:3.441rem;
+  line-height:4.341rem;
   margin-bottom:2rem;
   background: $blue-gradient;
   -webkit-background-clip: text;
@@ -132,10 +130,6 @@ h2 {
     -webkit-text-fill-color: transparent;
   }
 
-  @media(max-width:$breakpoint-tablet){
-    font-size:3.2rem;
-    line-height:3.4rem;
-  }
 }
 
 .body-text h2 {
@@ -143,46 +137,25 @@ h2 {
 }
 
 h3 {
-  font-size:4.4rem;
-  line-height:4.6rem;
-  margin-bottom:3rem;
+  font-size:2.153rem;
+  line-height:2.853rem;
+  margin-bottom:1.953rem;
   background: $blue-gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  &.secondary-header {
-    font-size:4rem;
-    line-height:4.4rem;
-  }
-
-  @media(max-width:$breakpoint-tablet){
-    font-size:3rem;
-    line-height:3.2rem;
-  }
 }
 
 .body-text h3 {
-  margin-top:5rem;
+  margin-top:1.953rem;
   text-align:left;
 }
 
 h4 {
-  font-size:2.2rem;
-  margin-bottom:3rem;
-  font-weight:normal !important;
-  color:$black;
-  line-height:3.4rem;
+  font-size:1.763rem;
+  margin-bottom:1.763em;
+  line-height:1.963rem;
 
-  @media(max-width:$breakpoint-tablet){
-    font-size:1.8rem;
-    line-height:2.4rem;
-  }
-
-  @media(max-width:$breakpoint-mobile){
-    font-size:1.4rem;
-    line-height:2rem;
-    margin-top:0;
-  }
 }
 
 .body-text h4 {
@@ -191,16 +164,12 @@ h4 {
 }
 
 h5 {
-  font-size:1.4rem;
-  margin-bottom:3rem;
-  line-height:1rem;
-  margin:2rem 0 1rem;
+  font-size:1.25rem;
+  margin-bottom:1.25rem;
+  line-height:1.25rem;
   font-weight:700;
   color:$black;
 
-  @media(max-width:$breakpoint-tablet){
-    font-size:2rem;
-  }
 }
 
 .body-text h5 {
@@ -381,8 +350,8 @@ input {
 }
 
 img {
-  width: 100%;
   height: auto;
+  margin:0 auto;
 }
 
 .centered-vertically {
