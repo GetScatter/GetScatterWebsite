@@ -370,9 +370,12 @@ img {
 .single-column {
   width:720px;
   margin:0 auto;
-  overflow: auto;
 
   svg {
+    width:100%;
+  }
+
+  img {
     width:100%;
   }
 
