@@ -38,10 +38,6 @@
 				<span></span>
 			</a>
 		</header>
-        <!-- <div class="ocean">
-              <div class="wave"></div>
-              <div class="wave"></div>
-        </div> -->
 	</div>
 </template>
 
@@ -74,12 +70,12 @@
 		                    'Asset_Management',
 		                    'Hardware_Wallets',
 	                    ]
-                    },
+                    }/* ,
                     {
                         id: 3,
                         text: 'bridge',
                         page:'/bridge'
-                    },
+                    }*/,
                     {
                         id: 4,
                         text: 'connect',
@@ -94,6 +90,11 @@
                         id: 6,
                         text: 'vision',
                         page:'/vision'
+                    },
+                    {
+                        id: 7,
+                        text: 'blog',
+                        page:'/blog'
                     }
                 ],
                 isSideBarOpen: false,

@@ -46,6 +46,13 @@
 <style lang="scss">
     @import "../../variables";
 
+    .features_single {
+      img {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 8px 14px 0 rgba(14,105,152,0.12);
+        border-radius: 6px;
+      }
+    }
+
     .single-feature {
       max-width:720px;
       margin:0 auto;

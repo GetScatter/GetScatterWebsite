@@ -2,7 +2,7 @@
     <section>
         <section data-aos="fade-up">
         <div id="strat-pic">
-          <h3>Partnered Wallets</h3>
+          <h1>Partnered Wallets</h1>
         </div>
 
         <div id="strategic-partners">
@@ -63,7 +63,7 @@
           margin: 3rem 0 0;
         }
 
-        h3 {
+        h1 {
           margin:0;
           position:absolute;
           bottom:9rem;

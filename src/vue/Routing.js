@@ -13,6 +13,8 @@ import Bridge from '../components/Bridge.vue'
 import Branding from '../components/Branding.vue'
 import Careers from '../components/Careers.vue'
 import FiatOnramp from '../components/FiatOnramp.vue'
+import BlogHome from '../components/BlogHome.vue'
+import BlogPost from '../components/BlogPost.vue'
 
 
 export const RouteNames = {
@@ -31,6 +33,8 @@ export const RouteNames = {
     Branding:'branding',
     Careers:'careers',
 	FiatOnramp:'onramp',
+    BlogHome:'blog',
+    BlogPost:'blog-post'
 };
 
 const RouteViews = {
@@ -49,12 +53,15 @@ const RouteViews = {
     [RouteNames.Branding]:Branding,
     [RouteNames.Careers]:Careers,
     [RouteNames.FiatOnramp]:FiatOnramp,
+    [RouteNames.BlogHome]:BlogHome,
+    [RouteNames.BlogPost]:BlogPost,
 };
 
 const RoutePaths = {
     [RouteNames.Home]:'/',
     [RouteNames.Docs]:'/docs/:doc',
     [RouteNames.Features]:'/features/:feature',
+    [RouteNames.BlogPost]:'/blog/:slug',
 };
 
 export class Routing {

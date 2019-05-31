@@ -50,7 +50,6 @@ import FeaturesAssetmanagement from './components/features/Assetmanagement.vue'
 import FeaturesTokenexchange from './components/features/Tokenexchange.vue'
 import FeaturesHardwarewallets from './components/features/Hardwarewallets.vue'
 
-
 class Main {
 
     constructor(){

@@ -11,13 +11,12 @@
 			<div class="body-text">
 				<div class="row">
 					<div class="col-6">
-						<h1>Secure Modern Wallet</h1>
-						<h4>Enabling ownership of digital currencies and assets.</h4>
+						<h1>Blockchain made easy</h1>
+						<h4>Enjoy using digital currencies and assets</h4>
 						<router-link class="button button-white" to="/download">Download Scatter</router-link>
 						<a class="button button-primary" href="https://ridl.get-scatter.com/#/">Donate to Scatter</a>
 						<p class="dimmed" style="margin-top:2rem">
-							Available for Windows, MacOS, and Linux. <br>
-							Looking for Mobile? <router-link class="nav-link" to="/vision">It's on our roadmap.</router-link>
+							Available for Windows, MacOS, and Linux.
 						</p>
 						<p>
 							<a href="https://github.com/GetScatter" target="_blank">Scatter is Open-Source</a>
@@ -52,7 +51,7 @@
 		<section id="features-mini" class="body">
 			<div class="row">
 				<div class="col-6">
-					<h3 data-aos="fade-up">What can Scatter do for you?</h3>
+					<h2 data-aos="fade-up">What can Scatter do for you?</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -73,7 +72,7 @@
 					<h5>ScatterApps</h5>
 					<p>We bring you choice.</p>
 				</div>
-				<div class="col-2" data-aos="fade-up">
+				<!-- <div class="col-2" data-aos="fade-up">
 					<router-link to="features/stablecoins">
 						<svg width="236px" height="113px" viewBox="0 0 236 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -92,7 +91,7 @@
 					</router-link>
 					<h5>Stablecoins</h5>
 					<p>We bring you stability.</p>
-				</div>
+				</div> -->
 				<div class="col-2" data-aos="fade-up" data-aos-offset="200">
 					<router-link to="features/tokenexchange">
 						<svg width="176px" height="185px" viewBox="0 0 176 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -172,7 +171,7 @@
 					<h5>RIDL</h5>
 					<p>We bring you trust.</p>
 				</div>
-				<div class="col-2" data-aos="fade-up" data-aos-offset="200">
+				<div class="col-3" data-aos="fade-up" data-aos-offset="200">
 					<router-link to="features/assetmanagement">
 						<svg width="236px" height="128px" viewBox="0 0 236 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<defs>
@@ -246,7 +245,7 @@
 					<h5>Asset management</h5>
 					<p>We bring you freedom.</p>
 				</div>
-				<div class="col-2" data-aos="fade-up" data-aos-offset="200">
+				<div class="col-3" data-aos="fade-up" data-aos-offset="200">
 					<router-link to="features/hardwarewallets">
 						<svg width="193px" height="135px" viewBox="0 0 193 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<defs>
@@ -385,7 +384,7 @@
 
 			<div id="blockchains" class="row padded padded-large" data-aos="fade-up">
 				<div class="col-6">
-					<h3>Developers</h3>
+					<h2>Developers</h2>
 					<h4>Scatter makes it easy to connect your application to EOS, Ethereum, and Tron <strong>and</strong> to our partnered wallets. Just add our widely used <span class="package-name">scatter-js</span> or the innovative <span class="package-name">scatter-sharp</span> ( C# / Unity3d ), select your network and wallet plugins, and off you go.</h4>
 					<p><router-link to="docs/getting-started" class="button">Go to the developer center</router-link></p>
 				</div>
@@ -489,9 +488,9 @@
 
 		h4 {
 			text-align:center;
-			width:80%;
 			margin: 0 auto 3rem;
 			color:#111111;
+			font-weight: normal;
 		}
 
 		.single {

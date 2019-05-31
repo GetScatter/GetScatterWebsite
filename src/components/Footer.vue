@@ -26,7 +26,7 @@
 				        </g>
 				    </g>
 				</svg>
-				<h3>GetScatter Ltd.</h3>
+				<h4>GetScatter Ltd.</h4>
                 <p>Depiro Point, Block A, No.2,<br>
                 Mons. G. Depiro Street, <br>
                 Sliema, SLM 2033 Malta</p>
@@ -131,10 +131,10 @@ export default {
 	min-height:400px;
     padding-top:12rem;
 
-    h3 {
+    h4 {
         color:$black !important;
-        font-size:4rem;
-        margin-top:1rem;
+        font-size:2.4rem;
+        margin:1.7rem 0 1rem;
         background-image:initial;
         -webkit-background-clip: initial;
         -webkit-text-fill-color: initial;

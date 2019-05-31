@@ -8,6 +8,7 @@ import Carousel3d from 'vue-carousel-3d'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import VueClazyLoad from 'vue-clazy-load'
+import {VueMasonryPlugin} from 'vue-masonry';
 
 Vue.productionTip = false;
 Vue.devtools = false
@@ -51,6 +52,7 @@ export default class VueInitializer {
         Vue.use(VueYouTubeEmbed);
         Vue.use(VueCarousel);
         Vue.use(Carousel3d);
+        Vue.use(VueMasonryPlugin)
         AOS.init();
     }
 

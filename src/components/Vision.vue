@@ -65,7 +65,7 @@ export default {
   text-align:center;
 
   #roadmap {
-    margin-top:11rem;
+    margin-top:6.4rem;
   }
 
   .row {
