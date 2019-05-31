@@ -2,7 +2,7 @@
     <div id="blog">
         <section class="body">
           <div class="body-text">
-            <div v-masonry transition-duration="0.3s" item-selector=".item">
+            <div v-masonry transition-duration="0.05s" item-selector=".item">
                 <div v-masonry-tile class="item" v-for="(post,index) in posts" :key="post.slug + '_' + index">
                   <router-link :to="'/blog/' + post.slug">
                     <article class="media">
@@ -43,7 +43,7 @@ import { butter } from '@/buttercms'
       getPosts() {
         butter.post.list({
           page: 1,
-          page_size: 10
+          page_size: 50
         }).then((res) => {
           this.posts = res.data.data
         })
