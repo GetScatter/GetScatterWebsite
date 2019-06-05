@@ -14,10 +14,10 @@
                             </g>
                         </g>
                     </svg>
-                    {{ post.meta.previous_post.title }}
+                    <span>{{ post.meta.previous_post.title }}</span>
                   </router-link>
                   <router-link v-if="post.meta.next_post" :to="/blog/ + post.meta.next_post.slug" class="blog-nav-right">
-                    {{ post.meta.next_post.title }}
+                    <span>{{ post.meta.next_post.title }}</span>
                     <svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Group-19-Copy-2" transform="translate(12.000000, 11.500000) scale(-1, 1) translate(-12.000000, -11.500000) translate(0.000000, 0.500000)" stroke="#00A8FF" stroke-width="2">
@@ -30,7 +30,6 @@
                 </div>
                 <p><img v-bind:src="post.data.featured_image" /></p>
                 <h2>{{ post.data.title }}</h2>
-                <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
                 <div v-html="post.data.body"></div>
               </div>
             </div>
@@ -80,12 +79,23 @@
           overflow:auto;
 
           .blog-nav-left {
-            float:left;
-            font-size:1.4rem;
-            font-family: 'Poppins', sans-serif;
-            font-weight:bold;
-            font-size:.8em;
-            text-decoration:none;
+
+            @media (max-width: $breakpoint-tablet) {
+              display:none;
+            }
+
+            span {
+              float:left;
+              font-size:1.4rem;
+              font-family: 'Poppins', sans-serif;
+              font-weight:bold;
+              font-size:.8em;
+              text-decoration:none;
+              width:calc(50% - 26px);
+              text-overflow:ellipsis;
+              white-space:nowrap;
+              overflow:hidden;
+            }
 
             svg {
               float:left;
@@ -96,15 +106,31 @@
           }
 
           .blog-nav-right {
-            float:right;
-            font-size:1.4rem;
-            font-family: 'Poppins', sans-serif;
-            font-weight:bold;
-            font-size:.8em;
-            text-decoration:none;
+
+            @media (max-width: $breakpoint-tablet) {
+              display:none;
+            }
+
+            span{
+              float:left;
+              text-align:right;
+              font-size:1.4rem;
+              font-family: 'Poppins', sans-serif;
+              font-weight:bold;
+              font-size:.8em;
+              text-decoration:none;
+              width:calc(50% - 26px);
+              text-overflow:ellipsis;
+              white-space:nowrap;
+              overflow:hidden;
+
+
+            }
+            
 
             svg {
               float:right;
+              display:inline;
               width: 18px;
               height: 18px;
               margin-left:8px;
@@ -118,6 +144,20 @@
             width:100%;
           }
 
+        }
+
+        h4 {
+          margin-bottom:1rem;
+          font-size:.9em;
+          color:$darkgrey;
+        }
+
+        .postList {
+          margin: 0 2rem 3rem;
+
+          li {
+            margin-bottom:1rem;
+          }
         }
         
     }
