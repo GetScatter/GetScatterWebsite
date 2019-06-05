@@ -1,72 +1,69 @@
 <template>
     <div class="blog-post">
-        <section class="body">
-          <div class="body-text">
-            <div class="row">
-              <div class="single-column blockchains_body" data-aos="fade-up">
-                <div class="blog-nav">
-                  <router-link v-if="post.meta.previous_post" :to="/blog/ + post.meta.previous_post.slug" class="blog-nav-left">
-                    <svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Group-19" transform="translate(0.500000, 0.500000)" stroke="#00A8FF" stroke-width="2">
-                                <polyline id="Path-3-Copy-2" stroke-linecap="round" stroke-linejoin="round" transform="translate(6.500000, 11.000000) rotate(90.000000) translate(-6.500000, -11.000000) " points="-4 5 7 17 17 5"></polyline>
-                                <path d="M2,11.5 L24,11.5" id="Path-8"></path>
-                            </g>
-                        </g>
-                    </svg>
-                    <span>{{ post.meta.previous_post.title }}</span>
-                  </router-link>
-                  <router-link v-if="post.meta.next_post" :to="/blog/ + post.meta.next_post.slug" class="blog-nav-right">
-                    <span>{{ post.meta.next_post.title }}</span>
-                    <svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Group-19-Copy-2" transform="translate(12.000000, 11.500000) scale(-1, 1) translate(-12.000000, -11.500000) translate(0.000000, 0.500000)" stroke="#00A8FF" stroke-width="2">
-                                <polyline id="Path-3-Copy-2" stroke-linecap="round" stroke-linejoin="round" transform="translate(6.500000, 11.000000) rotate(90.000000) translate(-6.500000, -11.000000) " points="-4 5 7 17 17 5"></polyline>
-                                <path d="M2,11.5 L24,11.5" id="Path-8"></path>
-                            </g>
-                        </g>
-                    </svg>
-                  </router-link>
+        <section class="body" v-if="post && post.meta">
+            <div class="body-text">
+                <div class="row">
+                    <div class="single-column blockchains_body" data-aos="fade-up">
+                        <div class="blog-nav">
+                            <router-link v-if="post.meta.previous_post" :to="/blog/ + post.meta.previous_post.slug" class="blog-nav-left">
+                                <svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Group-19" transform="translate(0.500000, 0.500000)" stroke="#00A8FF" stroke-width="2">
+                                            <polyline id="Path-3-Copy-2" stroke-linecap="round" stroke-linejoin="round" transform="translate(6.500000, 11.000000) rotate(90.000000) translate(-6.500000, -11.000000) " points="-4 5 7 17 17 5"></polyline>
+                                            <path d="M2,11.5 L24,11.5" id="Path-8"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>{{ post.meta.previous_post.title }}</span>
+                            </router-link>
+                            <router-link v-if="post.meta.next_post" :to="/blog/ + post.meta.next_post.slug" class="blog-nav-right">
+                                <span>{{ post.meta.next_post.title }}</span>
+                                <svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Group-19-Copy-2" transform="translate(12.000000, 11.500000) scale(-1, 1) translate(-12.000000, -11.500000) translate(0.000000, 0.500000)" stroke="#00A8FF" stroke-width="2">
+                                            <polyline id="Path-3-Copy-2" stroke-linecap="round" stroke-linejoin="round" transform="translate(6.500000, 11.000000) rotate(90.000000) translate(-6.500000, -11.000000) " points="-4 5 7 17 17 5"></polyline>
+                                            <path d="M2,11.5 L24,11.5" id="Path-8"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </router-link>
+                        </div>
+                        <p><img v-bind:src="post.data.featured_image" /></p>
+                        <h2>{{ post.data.title }}</h2>
+                        <div v-html="post.data.body"></div>
+                    </div>
                 </div>
-                <p><img v-bind:src="post.data.featured_image" /></p>
-                <h2>{{ post.data.title }}</h2>
-                <div v-html="post.data.body"></div>
-              </div>
             </div>
-          </div>
         </section>
     </div>
 </template>
 
 <script>
-  import { butter } from '@/buttercms'
-  export default {
-    name: 'blog-post',
-    data() {
-      return {
-        post: {}
-      }
-    },
-    methods: {
-      getPost() {
-        butter.post.retrieve(this.$route.params.slug)
-          .then((res) => {
-            console.log(res.data)
-            this.post = res.data
-          }).catch((res) => {
-            console.log(res)
-          })
-      }
-    },
-    watch: {
-      $route(to, from) {
-        this.getPost()
-      }
-    },
-    created() {
-      this.getPost()
-    }
-  }
+	import { butter } from '@/buttercms'
+	export default {
+		name: 'blog-post',
+		data() {
+			return {
+				post: {}
+			}
+		},
+		methods: {
+			getPost() {
+				butter.post.retrieve(this.$route.params.slug)
+					.then((res) => {
+						this.post = res.data
+					}).catch((res) => {})
+			}
+		},
+		watch: {
+			$route(to, from) {
+				this.getPost()
+			}
+		},
+		created() {
+			this.getPost()
+		}
+	}
 </script>
 
 <style lang="scss">
@@ -75,98 +72,91 @@
     .blog-post {
 
         .blog-nav {
-          margin:0 0 3rem;
-          overflow:auto;
+            margin:0 0 3rem;
+            overflow:auto;
 
-          .blog-nav-left {
+            .blog-nav-left {
 
-            @media (max-width: $breakpoint-tablet) {
-              display:none;
+                @media (max-width: $breakpoint-tablet) {
+                    display:none;
+                }
+
+                span {
+                    float:left;
+                    font-size:1.4rem;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight:bold;
+                    font-size:.8em;
+                    text-decoration:none;
+                    width:calc(50% - 26px);
+                    text-overflow:ellipsis;
+                    white-space:nowrap;
+                    overflow:hidden;
+                }
+
+                svg {
+                    float:left;
+                    width: 18px;
+                    height: 18px;
+                    margin-right:8px;
+                }
             }
 
-            span {
-              float:left;
-              font-size:1.4rem;
-              font-family: 'Poppins', sans-serif;
-              font-weight:bold;
-              font-size:.8em;
-              text-decoration:none;
-              width:calc(50% - 26px);
-              text-overflow:ellipsis;
-              white-space:nowrap;
-              overflow:hidden;
+            .blog-nav-right {
+
+                @media (max-width: $breakpoint-tablet) {
+                    display:none;
+                }
+
+                span{
+                    float:left;
+                    text-align:right;
+                    font-size:1.4rem;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight:bold;
+                    font-size:.8em;
+                    text-decoration:none;
+                    width:calc(50% - 26px);
+                    text-overflow:ellipsis;
+                    white-space:nowrap;
+                    overflow:hidden;
+
+
+                }
+
+
+                svg {
+                    float:right;
+                    display:inline;
+                    width: 18px;
+                    height: 18px;
+                    margin-left:8px;
+                }
             }
-
-            svg {
-              float:left;
-              width: 18px;
-              height: 18px;
-              margin-right:8px;
-            }
-          }
-
-          .blog-nav-right {
-
-            @media (max-width: $breakpoint-tablet) {
-              display:none;
-            }
-
-            span{
-              float:left;
-              text-align:right;
-              font-size:1.4rem;
-              font-family: 'Poppins', sans-serif;
-              font-weight:bold;
-              font-size:.8em;
-              text-decoration:none;
-              width:calc(50% - 26px);
-              text-overflow:ellipsis;
-              white-space:nowrap;
-              overflow:hidden;
-
-
-            }
-            
-
-            svg {
-              float:right;
-              display:inline;
-              width: 18px;
-              height: 18px;
-              margin-left:8px;
-            }
-          }
         }
 
         p {
 
-          img {
-            width:100%;
-          }
+            img {
+                width:100%;
+            }
 
         }
 
         h4 {
-          margin-bottom:1rem;
-          font-size:.9em;
-          color:$darkgrey;
-        }
-
-        .imageCaption {
-          font-size:11px;
-          opacity:0.6;
-          text-align:center;
-          margin:1rem 0 3rem;
+            margin-bottom:1rem;
+            font-size:.9em;
+            color:$darkgrey;
         }
 
         .postList {
-          margin: 0 2rem 3rem;
+            margin: 0 2rem 3rem;
 
-          li {
-            margin-bottom:1rem;
-          }
+            li {
+                margin-bottom:1rem;
+            }
         }
-        
+
     }
 
 
