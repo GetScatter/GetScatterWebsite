@@ -152,6 +152,13 @@
           color:$darkgrey;
         }
 
+        .imageCaption {
+          font-size:11px;
+          opacity:0.6;
+          text-align:center;
+          margin:1rem 0 3rem;
+        }
+
         .postList {
           margin: 0 2rem 3rem;
 

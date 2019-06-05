@@ -651,9 +651,10 @@ section {
         max-width:90%;
       }
 
-      p {
+      p, li {
         color:$darkgrey;
         margin-bottom:3rem;
+        line-height: 2.4rem;
       }
     }
 
