@@ -61,74 +61,89 @@ import { butter } from '@/buttercms'
     #blog {
 
         .item {
-            width:25%;
-            margin-top:3rem;
-            padding:0 1rem;
-
-            @media(max-width:$breakpoint-tablet){
-              width:33.3333%;
-            }
-
-            @media(max-width:$breakpoint-mobile){
-              width:100%;
-            }
+            width:33.3333%;
+            padding:1rem;
 
             a {
-              text-decoration:none;
+                text-decoration:none;
             }
 
             article {
-              margin-bottom:3rem;
-            }
+                border:1px solid rgba(0,0,0,.12);
+                width:100%;
+                padding:1.5rem;
+                border-radius:$radius;
 
-            &:hover {
-              figure {
-                img {
-                  opacity:0.4;
+                @media(max-width:$breakpoint-tablet){
+                  width:50%;
                 }
-              }
 
-              svg {
-                opacity:1;
-              }
+                @media(max-width:$breakpoint-mobile){
+                  width:100%;
+                }
+
+                a {
+                  text-decoration:none;
+                }
+
+                article {
+                  margin-bottom:3rem;
+                }
+
+                &:hover {
+                  figure {
+                    img {
+                      opacity:0.4;
+                    }
+                  }
+
+                  svg {
+                    opacity:1;
+                  }
+                }
+
+                figure {
+                  position:relative;
+                  background:$blue;
+
+                  img {
+                    transition: opacity 0.12s ease-in-out;
+                  }
+
+                  svg {
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    opacity:0;
+                    transition: opacity 0.12s ease-in-out;
+                    z-index:0;
+                    margin-top:-6px;
+                    margin-left:-22px;
+                  }
+
+                }
+
+                .single-image {
+                  width:100%;
+                }
+
+                h4 {
+                  margin-bottom:1rem;
+                }
+
+                p {
+                  text-decoration:none;
+                  color:$black;
+                  border-bottom:0;
+                  font-size:0.8em;
+                  opacity:0.7;
+                }
+
+                &:hover {
+                    border:1px solid $blue;
+                }
             }
-
-            figure {
-              position:relative;
-              background:$blue;
-
-              img {
-                transition: opacity 0.12s ease-in-out;
-              }
-
-              svg {
-                position:absolute;
-                top:50%;
-                left:50%;
-                opacity:0;
-                transition: opacity 0.12s ease-in-out;
-                z-index:0;
-                margin-top:-6px;
-                margin-left:-22px;
-              }
-
-            }
-
-            .single-image {
-              width:100%;
-            }
-
-            h4 {
-              margin-bottom:1rem;
-            }
-
-            p {
-              text-decoration:none;
-              color:$black;
-              border-bottom:0;
-              font-size:0.8em;
-              opacity:0.7;
-            }
+            
 
         }
         

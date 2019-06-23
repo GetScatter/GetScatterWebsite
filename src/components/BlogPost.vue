@@ -140,22 +140,39 @@
     .blog-post {
 
         .blog-nav {
-            margin:0 0 3rem;
-            overflow:auto;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background: rgba(255,255,255,0.96);
+            border-top:1px solid rgba(0,0,0,0.12);
 
             .blog-nav-left {
                 float:left;
                 font-size:1.4rem;
                 font-family: 'Poppins', sans-serif;
                 font-weight:bold;
-                font-size:.8em;
+                font-size:.6em;
+                line-height:1.72rem;
                 text-decoration:none;
+
+                @media(max-width:$breakpoint-tablet){
+                    width:50%;
+                    whitespace:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                }
 
                 svg {
                     float:left;
                     width: 18px;
                     height: 18px;
                     margin-right:8px;
+
+                    @media(max-width:$breakpoint-tablet){
+                        display:none;
+                    }
                 }
             }
 
@@ -164,14 +181,27 @@
                 font-size:1.4rem;
                 font-family: 'Poppins', sans-serif;
                 font-weight:bold;
-                font-size:.8em;
+                font-size:.6em;
+                line-height:1.72rem;
                 text-decoration:none;
+                text-align:right;
+
+                @media(max-width:$breakpoint-tablet){
+                    width:50%;
+                    whitespace:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                }
 
                 svg {
                     float:right;
                     width: 18px;
                     height: 18px;
                     margin-left:8px;
+
+                    @media(max-width:$breakpoint-tablet){
+                        display:none;
+                    }
                 }
             }
         }
@@ -180,8 +210,14 @@
 
             img {
                 width:100%;
+                border-radius:20px;
             }
 
+        }
+
+        li {
+            margin: 0 0 2rem 2rem;
+            line-height: 1.4em;
         }
 
     }
