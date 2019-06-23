@@ -2,7 +2,7 @@
     <div id="blog">
         <section class="body">
             <div class="body-text">
-                <div v-masonry transition-duration="0.3s" item-selector=".item">
+                <div v-masonry transition-duration="0s" item-selector=".item">
                     <div v-masonry-tile origin-left="true" class="item" v-for="(post,index) in posts" :key="post.slug + '_' + index">
                         <div class="wrapper">
                             <router-link :to="'/blog/' + post.slug">
