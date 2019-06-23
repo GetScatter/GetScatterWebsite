@@ -650,20 +650,21 @@ section {
         max-width:90%;
       }
 
-      p {
+      p, li {
         color:$darkgrey;
         margin-bottom:3rem;
+        line-height: 2.4rem;
       }
     }
 
     padding:4rem 9rem;
 
     @media (max-width: $breakpoint-small-desktop) {
-      padding:0 3rem;
+      padding:3rem 2rem;
     }
 
     @media (max-width: $breakpoint-tablet) {
-      padding:0 1.5rem;
+      padding:1.5rem;
     }
 
     .secondary-buttons {
