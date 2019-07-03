@@ -2,7 +2,7 @@
     <div class="promoted-wrapper">
         <section class="promoted-apps">
            <div class="single-app">
-                <a href="https://dgatepoker.com/?referral=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/dragongatepoker.jpg)">
+                <a href="https://bethash.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/bethash.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div> 
