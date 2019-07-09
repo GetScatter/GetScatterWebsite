@@ -14,7 +14,7 @@
 						<h1>Blockchain made easy</h1>
 						<h4>Enjoy using digital currencies and assets</h4>
 						<router-link class="button button-white" to="/download">Download Scatter</router-link>
-						<a class="button button-primary" href="https://ridl.get-scatter.com/#/">Donate to Scatter</a>
+						<!--<a class="button button-primary" href="https://ridl.get-scatter.com/#/">Donate to Scatter</a>-->
 						<p class="dimmed" style="margin-top:2rem">
 							Available for Windows, MacOS, and Linux.
 						</p>
