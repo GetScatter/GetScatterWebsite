@@ -11,7 +11,6 @@
 
             <router-link to="/careers">careers</router-link>
 			<a href="https://support.get-scatter.com" title="Get the help you need">support</a>
-			<a href="https://medium.com/getscatter" title="Press">press</a>
 			<figure class="mobile-close" id="mobileclose" @click="closeMenu">
 				<span></span>
 			</figure>

@@ -126,6 +126,9 @@
                     transition: background-size 0.24s ease-in-out;
                     position:relative;
 
+                    img {
+                        width:100%;
+                    }
                 }
 
                 .item-blockchain {
