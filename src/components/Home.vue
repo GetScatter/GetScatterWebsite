@@ -11,8 +11,8 @@
 			<div class="body-text">
 				<div class="row">
 					<div class="col-6">
-						<h1>Blockchain made easy</h1>
-						<h4>Enjoy using digital currencies and assets</h4>
+						<h1>Scatter Meteoric</h1>
+						<h4>A wallet for your digital currencies and assets</h4>
 						<router-link class="button button-white" to="/download">Download Scatter</router-link>
 						<!--<a class="button button-primary" href="https://ridl.get-scatter.com/#/">Donate to Scatter</a>-->
 						<p class="dimmed" style="margin-top:2rem">
@@ -466,6 +466,10 @@
 			box-shadow: 0 12px 24px 0 rgba(8,79,129,0.44), 0 2px 4px 0 rgba(10,69,100,0.37);
 			position: relative;
 			z-index:2;
+
+			@media (max-width: $breakpoint-small-desktop) {
+                width:90%;
+            }
 		}
 
 	}

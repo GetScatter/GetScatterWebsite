@@ -2,6 +2,27 @@
     <div class="promoted-wrapper">
         <section class="promoted-apps">
            <div class="single-app">
+                <a href="https://decentium.org" class="promoted-app-background" style="background-image:url(./promos/decentium.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div> 
+            <div class="single-app">
+                <a href="https://www.hirevibes.io/" class="promoted-app-background" style="background-image:url(./promos/hirevibes.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div> 
+            <div class="single-app">
+                <a href="https://prospectors.io" class="promoted-app-background" style="background-image:url(./promos/prospectors.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div>
+            <div class="single-app">
+                <a href="https://bloks.io/" class="promoted-app-background" style="background-image:url(./promos/bloks.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div> 
+
+           <div class="single-app">
                 <a href="https://bethash.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/bethash.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
@@ -90,12 +111,20 @@
                 width:25%;
                 margin-bottom:2rem;
 
+                @media (max-width: $breakpoint-small-desktop) {
+                    width:33.3333%;
+                }
+
+                @media (max-width: $breakpoint-tablet) {
+                    width:50%;
+                }
+
                 @media (max-width: $breakpoint-mobile) {
                     width:100%;
                 }
 
                 .promoted-app-background {
-                    height:200px;
+                    height:180px;
                     border-radius:20px;
                     background-position:center;
                     background-size: cover;
