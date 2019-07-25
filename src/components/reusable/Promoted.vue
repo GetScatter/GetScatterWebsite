@@ -21,11 +21,11 @@
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div>
-            <div class="single-app">
+<!--             <div class="single-app">
                 <a href="https://bloks.io/" class="promoted-app-background" style="background-image:url(./promos/bloks.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
-            </div> 
+            </div>  -->
 
            <div class="single-app">
                 <a href="https://bethash.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/bethash.jpg)">
