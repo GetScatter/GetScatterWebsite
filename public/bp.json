@@ -1,0 +1,52 @@
+{
+  "producer_account_name": "vote4scatter",
+  "org": {
+    "candidate_name": "Scatter",
+    "website": "https://get-scatter.com",
+    "code_of_conduct":"https://get-scatter.com/coc",
+    "ownership_disclosure":"https://get-scatter.com/ownership",
+    "email":"business@get-scatter.com",
+    "branding":{
+      "logo_256":"https://get-scatter.com/logo_256.png",
+      "logo_1024":"https://get-scatter.com/logo_1024.png",
+      "logo_svg":"https://get-scatter.com/logo.svg",
+      "guidelines":"https://get-scatter.com/branding"
+    },
+    "location": {
+      "name": "Malta",
+      "country": "MT",
+      "latitude": 35.9375,
+      "longitude": 14.3754
+    },
+    "social": {
+      "twitter": "Get_Scatter",
+      "github":"GetScatter",
+      "telegram": "Scatter"
+    }
+  },
+  "nodes": [
+    {
+      "location": {
+        "name": "",
+        "country": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "node_type": "producer",
+      "p2p_endpoint": "",
+      "api_endpoint": "",
+      "ssl_endpoint": ""
+    },
+    {
+      "location": {
+        "name": "",
+        "country": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "node_type": "full",
+      "api_endpoint": "http://mainnet.get-scatter.com",
+      "ssl_endpoint": "https://mainnet.get-scatter.com"
+    }
+  ]
+}
