@@ -27,26 +27,39 @@
   "nodes": [
     {
       "location": {
-        "name": "",
-        "country": "",
-        "latitude": 0,
-        "longitude": 0
+        "name": "Germany-Finland",
+        "country": "FI",
+        "latitude": 60.341611,
+        "longitude": 25.021454
+      },
+      "node_type": "full",
+      "history_type":  "none",
+      "api_endpoint": "http://mainnet.get-scatter.com",
+      "ssl_endpoint": "https://mainnet.get-scatter.com"
+    },
+    {
+      "location": {
+        "name": "Germany-Finland",
+        "country": "FI",
+        "latitude": 60.341611,
+        "longitude": 25.021454
+      },
+      "node_type": "seed",
+      "p2p_endpoint": "mainnet.get-scatter.com:9876",
+      "bnet_endpoint": ""
+    },
+    {
+      "location": {
+        "name": "Germany",
+        "country": "FI",
+        "latitude": 60.341611,
+        "longitude": 25.021454
       },
       "node_type": "producer",
       "p2p_endpoint": "",
       "api_endpoint": "",
+      "bnet_endpoint": "",
       "ssl_endpoint": ""
-    },
-    {
-      "location": {
-        "name": "",
-        "country": "",
-        "latitude": 0,
-        "longitude": 0
-      },
-      "node_type": "full",
-      "api_endpoint": "http://mainnet.get-scatter.com",
-      "ssl_endpoint": "https://mainnet.get-scatter.com"
     }
   ]
 }
