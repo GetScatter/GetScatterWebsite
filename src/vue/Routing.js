@@ -15,6 +15,7 @@ import Careers from '../components/Careers.vue'
 import FiatOnramp from '../components/FiatOnramp.vue'
 import BlogHome from '../components/BlogHome.vue'
 import BlogPost from '../components/BlogPost.vue'
+import Vote from '../components/Vote.vue'
 
 
 export const RouteNames = {
@@ -34,7 +35,8 @@ export const RouteNames = {
     Careers:'careers',
 	FiatOnramp:'onramp',
     BlogHome:'blog',
-    BlogPost:'blog-post'
+    BlogPost:'blog-post',
+	Vote:'vote',
 };
 
 const RouteViews = {
@@ -55,6 +57,7 @@ const RouteViews = {
     [RouteNames.FiatOnramp]:FiatOnramp,
     [RouteNames.BlogHome]:BlogHome,
     [RouteNames.BlogPost]:BlogPost,
+    [RouteNames.Vote]:Vote,
 };
 
 const RoutePaths = {

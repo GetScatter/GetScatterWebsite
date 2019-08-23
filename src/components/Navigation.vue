@@ -55,6 +55,11 @@
                     },
                     {
                         id: 1,
+                        text: 'vote',
+                        page:'/vote'
+                    },
+                    {
+                        id: 1,
                         text: 'apps',
                         page:'/apps'
                     },
