@@ -2,15 +2,21 @@
     <div class="promoted-wrapper">
         <section class="promoted-apps">
            <div class="single-app">
+                <a href="https://big.game/home?code=qiyuebisheng" class="promoted-app-background" style="background-image:url(./promos/biggame.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div>
+           <div class="single-app">
                 <a href="https://www.bluebet.one/index.html?channel=301" class="promoted-app-background" style="background-image:url(./promos/eosbluebet.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div> 
-           <div class="single-app">
+            
+           <!-- <div class="single-app">
                 <a href="https://decentium.org" class="promoted-app-background" style="background-image:url(./promos/decentium.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
-            </div> 
+            </div> --> 
             <div class="single-app">
                 <a href="https://www.hirevibes.io/" class="promoted-app-background" style="background-image:url(./promos/hirevibes.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
