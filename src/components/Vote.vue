@@ -226,7 +226,7 @@
 					return this.commitVote(null, proxies.includes(voterInfo.proxy) ? voterInfo.proxy : randomProxy);
 				}
 
-				if(voterInfo.producers.length >= 20){
+				if(voterInfo.producers.length >= 30){
 					this.producers = voterInfo.producers;
 					// Triggers UI change, don't need to return an error.
 					return;
