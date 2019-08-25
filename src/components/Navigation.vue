@@ -30,7 +30,7 @@
 				</svg>
 			</a>
 			<nav>
-				<router-link class="spacing" v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{routes.text}}</router-link>
+				<router-link class="spacing" v-for="routes in links" v-bind:key="routes.page" :to="`${routes.page}`">{{routes.text}}</router-link>
 				<a class="spacing" href="https://support.get-scatter.com" title="Get the help you need">support</a>
 			</nav>
 			<a class="mobile-nav" id="mobilenav" @click="openMenu">
@@ -49,22 +49,18 @@
             	subLink:null,
                 links: [
                     {
-                        id: 0,
                         text: 'home',
                         page:'/'
                     },
                     {
-                        id: 1,
                         text: 'vote',
                         page:'/vote'
                     },
                     {
-                        id: 1,
                         text: 'apps',
                         page:'/apps'
                     },
                     {
-                        id: 2,
                         text: 'features',
                         page:'/features/overview',
 	                    subs:[
@@ -81,22 +77,18 @@
                         page:'/bridge'
                     }*/,
                     {
-                        id: 4,
                         text: 'connect',
                         page:'/connect'
                     },
                     {
-                        id: 5,
                         text: 'developer',
                         page:'/docs/getting-started'
                     },
                     {
-                        id: 6,
                         text: 'vision',
                         page:'/vision'
                     },
                     {
-                        id: 7,
                         text: 'blog',
                         page:'/blog'
                     }
