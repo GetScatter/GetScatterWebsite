@@ -75,7 +75,7 @@
 			<div class="flex-row">
 				<div class="half">
 					<h3>Scatter Desktop</h3>
-					<p>The desktop wallet you trust and love, this one really needs no explanation.</p>
+					<p>The desktop wallet you trust and love, which we've invested hundreds of man hours into building. It is a safe and secure place to manage your keys and the accounts that are associated with them.</p>
 				</div>
 				<div class="half with-image">
 					<img src="../assets/scatter_desktop.png">
@@ -88,14 +88,14 @@
 				</div>
 				<div class="half">
 					<h3>Scatter Extension</h3>
-					<p>Though we've now closed this down temporarily in favor of Desktop, it would be tragic not to mention the first ever EOS wallet (preceding all others by 6 months) which helped launch the mainnet.</p>
+					<p>Though we've now closed this down in favor of Scatter Desktop, it would be tragic not to mention the first ever EOS wallet (preceding all others by 6 months) which helped launch the mainnet.</p>
 				</div>
 			</div>
 
 			<div class="flex-row">
 				<div class="half">
 					<h3>Reputation and Identity Layer</h3>
-					<p>Our reputation & identity solution which helps keep you safe, and is <a href="https://ridl.network" target="_blank">currently in testing phases</a> and integrated into Scatter 11+.</p>
+					<p>Our reputation &amp; identity solution which helps keep you safe, and is <a href="https://ridl.network" target="_blank">currently in testing phases</a> and integrated into Scatter 11+.</p>
 				</div>
 				<div class="half with-image">
 					<img src="../assets/ridl.png">
