@@ -99,6 +99,8 @@ class Main {
         ];
 
         new VueInitializer(Routing.routes(), components);
+
+
     }
 
 }
