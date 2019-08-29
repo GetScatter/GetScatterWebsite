@@ -44,11 +44,11 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color:$background;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background 0.2s ease-in-out;
   overflow-x: hidden;
+  padding-bottom:8rem;
 }
 
 #app {
@@ -74,15 +74,15 @@ body {
 
 /* Typography */
 
-a {
-  color: $dark-blue;
-  transition: 0.08s linear;
-  transition-property: color, transform;
+// a {
+//   color: $blue;
+//   transition: 0.08s linear;
+//   transition-property: color, transform;
 
-  &:hover {
-    color: darken($dark-blue, 20%);
-  }
-}
+//   &:hover {
+//     color: darken($blue, 10%);
+//   }
+// }
 
 p {
   margin: 0 0 2rem 0;
@@ -100,15 +100,15 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-  font-size:4.052rem;
-  line-height:4.252rem;
-  margin-bottom:2rem;
-  background: $blue-gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size:$font-size-huge;
+  line-height:calc(#{$font-size-huge} * 1.1);
+  margin-bottom:calc(#{$font-size-huge} * 0.25);
 
   @media(max-width:$breakpoint-mobile){
     margin-top:0;
+    font-size:calc(#{$font-size-huge} * 0.7);
+    line-height:calc(#{$font-size-huge} * 0.8);
+    margin-bottom:calc(#{$font-size-huge} * 0.25);
   }
 }
 
@@ -117,19 +117,12 @@ h1 {
 }
 
 h2 {
-  font-size:3.441rem;
-  line-height:4.341rem;
-  margin-bottom:2rem;
+  font-size:$font-size-large;
+  line-height:calc(#{$font-size-large} * 2);
+  margin-bottom:calc(#{$font-size-large} * 2);
   background: $blue-gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  &.enterprise {
-    background: $enterprise-gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
 }
 
 .body-text h2 {
@@ -137,13 +130,10 @@ h2 {
 }
 
 h3 {
-  font-size:2.153rem;
-  line-height:2.853rem;
+  font-size:$font-size-medium;
+  line-height:calc(#{$font-size-medium} * 2);
   margin-bottom:1.953rem;
-  background: $blue-gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  color:$grey;
 }
 
 .body-text h3 {
@@ -152,10 +142,9 @@ h3 {
 }
 
 h4 {
-  font-size:1.763rem;
-  margin-bottom:1.763em;
-  line-height:2.963rem;
-
+  font-size:$font-size-standard;
+  line-height:calc(#{$font-size-standard} * 2);
+  margin-bottom:calc(#{$font-size-standard} * 2);
 }
 
 .body-text h4 {
@@ -164,10 +153,9 @@ h4 {
 }
 
 h5 {
-  font-size:1.25rem;
-  margin-bottom:1.25rem;
-  line-height:1.25rem;
-  font-weight:700;
+  font-size:$font-size-small;
+  line-height:calc(#{$font-size-small} * 2);
+  margin-bottom:calc(#{$font-size-small} * 2);
   color:$black;
 
 }
@@ -256,28 +244,26 @@ h5 {
 }
 
 .button {
-  cursor: pointer;
   display: inline-block;
-  padding: 1.4rem 2rem;
-  background: none;
+  padding: 20px 40px;
+  background-color: $blue;
   border: 1px solid $blue;
-  border-radius: 5px;
-  color: $black;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: $white;
   text-decoration: none;
   position: relative;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
   font-weight:bold;
-  font-size:.8em;
+  font-size:$font-size-standard;
+  box-shadow: 0 10px 44px 0 rgba(7,153,255,0.39);
+  transition:background-color 0.12s ease-in-out;
 
   @media (max-width: $breakpoint-mobile) {
     width:100%;
     margin:1rem 0;
     text-align: center;
-  }
-
-  @media(max-width:$breakpoint-tablet){
-    padding: 1.5rem 2rem !important;
   }
 
   &.button-text {
@@ -287,32 +273,26 @@ h5 {
     position:relative;
   }
 
-  &.button-large {
-    padding: 2rem 3.8rem !important;
-    font-size:2rem;
-  }
-
   &.button-small {
     padding: .6rem .8rem !important;
     font-size:1.2rem;
   }
 
   &.button-white {
-    border: 1px solid white;
     color: $blue;
-    background: white;
-  }
+    background-color: $white;
+    border-color: $white;
 
-  &.button-primary {
-    background-color: $blue !important;
-    color: $white !important;
     &:hover {
-
+      color:darken($blue, 5%);
+      border-color: darken($white, 5%);
+      background-color:darken($white, 5%);
     }
   }
 
   &:hover {
-    opacity:0.9;
+    color:white;
+    background-color:darken($blue, 5%);
   }
 }
 
@@ -322,10 +302,40 @@ input {
 
 /* Layout */
 
+.full-width {
+  max-width:1020px;
+  margin:0 auto;
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction:column;
+  }
+}
+
+.half-width {
+  width:45%;
+  margin:0 2.55%;
+
+  @media (max-width: $breakpoint-tablet) {
+    width:80%;
+    margin: 0rem 10%;
+  }
+
+}
+
+.standard-padding {
+  padding:$standard-padding 0 0;
+
+  @media (max-width: $single-column) {
+    padding:4rem 0;
+  }
+
+}
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 70rem;
+  margin:0 auto;
 }
 
 .row {
