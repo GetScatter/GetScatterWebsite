@@ -9,6 +9,7 @@
 				</section>
 			</section>
 
+            <router-link to="/wallets">wallets</router-link>
             <router-link to="/careers">careers</router-link>
 			<a href="https://support.get-scatter.com" title="Get the help you need">support</a>
 			<figure class="mobile-close" id="mobileclose" @click="closeMenu">
