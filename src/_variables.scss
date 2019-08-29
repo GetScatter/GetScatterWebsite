@@ -1,19 +1,38 @@
+// Responsive breakpoints
 $breakpoint-mobile:        600px;
-$breakpoint-tablet:        768px;
+$breakpoint-tablet:        920px;
 $breakpoint-small-desktop: 1200px;
 $breakpoint-large-desktop: 1600px;
+$single-column:            1020px;
+
+// Colors
 $background:               #F8F8FA;
 $very-light-blue:          #E6E6EB;
-$blue:                     #00A8FF;
+$blue:                     #0799FF;
 $dark-blue:                #39ADFF;
 $white:                    #ffffff;
 $darkgrey:                 #252729;
+$grey:                     #818C96;
 $lightgrey:                #F1F1F2;
 $black:                    #111111;
 $red:                      #F54040;
 $green:                    #7ED321;
 $radius:                   3px;
 
+// Padding
+$standard-padding:         12rem;
+
+// Fonts
+$font-size-enormous:        88px;
+$font-size-huge:            52px;
+$font-size-large:           32px;
+$font-size-big:             18px;
+$font-size-medium:          16px;
+$font-size-standard:        13px;
+$font-size-small:           12px;
+$font-size-tiny:            10px;
+
+// Gradients
 $blue-gradient:             linear-gradient(to right, $blue, darken($dark-blue, 25%) 70%);
 $dark-blue-gradient:        linear-gradient(-180deg, #2C2F3E 0%, #484C60 100%);
 $enterprise-gradient:       linear-gradient(to right, darken($lightgrey, 45%), darken($darkgrey, 25%) 70%);
