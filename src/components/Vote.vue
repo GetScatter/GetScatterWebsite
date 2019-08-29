@@ -24,17 +24,7 @@
 						fully believe in a broader ecosystem which includes many options with many different structures, each suited best for individual projects.
 					</figure>
 
-
-
-
-
-
-
-
-
-					<!---------- VOTE BOX -------------->
-					<!---------- VOTE BOX -------------->
-					<!---------- VOTE BOX -------------->
+					<!-- VOTE BOX -->
 					<section class="vote-box">
 						<section v-if="error">
 							<figure class="error">{{error}}</figure>
@@ -74,38 +64,73 @@
 
 				</section>
 
-
-
-
-
-
-
-
-
 			</section>
 
 			<section class="row">
-				<section class="single-column">
-					<h2>Need a recap about some of our live contributions?</h2>
-
-					<ul>
-						<li><b>Scatter Desktop</b> - The desktop wallet you trust and love, this one really needs no explanation.</li>
-						<li><b>Scatter Extension</b> - Though we've now closed this down temporarily in favor of Desktop, it would be tragic not to mention the first ever EOS wallet (preceding all others by 6 months) which helped launch the mainnet.</li>
-						<li><b>ScatterJS</b> - The JavaScript library that hundreds of web applications use to allow users to connect to 15+ wallets (not just ours) on multiple blockchains. Even wrappers like Block.one's UAL and EOS New York's Transit use/support ScatterJS.</li>
-						<li><b>RIDL</b> - Our reputation & identity solution which helps keep you safe, and is <a href="https://ridl.network" target="_blank">currently in testing phases</a> and integrated into Scatter 11+.</li>
-						<li><b>Scatter Sharp & EOS Sharp</b> - The C# libraries that Unity3d games are using to build blockchain enabled games.</li>
-						<li><b>WalletPack</b> - A JavaScript library for creating multi-blockchain wallets. This is what we're now using to run Scatter wallets.</li>
-						<li><b>Tokenwrap</b> - A JavaScript library that wraps various EOSIO based NFT tokens and allows developers easy setup and usage on their apps.</li>
-						<li><b>Morpheos</b> - A JavaScript library that helps EOSIO JavaScript libraries support both eosjs1 and eosjs2.</li>
-						<li><b>Watcheosio</b> - A tiny lightweight JavaScript watcher for EOSIO chains.</li>
-					</ul>
-
-					<p>
-						There's many more things we've done which aren't technological achievements; like contests, bounty programs, cross chain and no-chain developer outreach, fud-fighting,
-						community moderation, and lots more.
-					</p>
+				<section class="single-column" style="text-align:center;">
+					<h2>Scatter's ecosystem contributions</h2>
 				</section>
 			</section>
+
+			<div class="flex-row">
+				<div class="half">
+					<h3>Scatter Desktop</h3>
+					<p>The desktop wallet you trust and love, this one really needs no explanation.</p>
+				</div>
+				<div class="half with-image">
+					<img src="../assets/scatter_desktop.png">
+				</div>
+			</div>
+
+			<div class="flex-row">
+				<div class="half with-image">
+					<img src="../assets/scatter_extension.jpg">
+				</div>
+				<div class="half">
+					<h3>Scatter Extension</h3>
+					<p>Though we've now closed this down temporarily in favor of Desktop, it would be tragic not to mention the first ever EOS wallet (preceding all others by 6 months) which helped launch the mainnet.</p>
+				</div>
+			</div>
+
+			<div class="flex-row">
+				<div class="half">
+					<h3>Reputation and Identity Layer</h3>
+					<p>Our reputation & identity solution which helps keep you safe, and is <a href="https://ridl.network" target="_blank">currently in testing phases</a> and integrated into Scatter 11+.</p>
+				</div>
+				<div class="half with-image">
+					<img src="../assets/ridl.png">
+				</div>
+			</div>
+
+			<div class="flex-row thirds">
+				<div class="third">
+					<h3>ScatterJS</h3>
+					<p>The JavaScript library that hundreds of web applications use to allow users to connect to 15+ wallets (not just ours) on multiple blockchains. Even wrappers like Block.one's UAL and EOS New York's Transit use/support ScatterJS.</p>
+				</div>
+				<div class="third">
+					<h3>Scatter Sharp &amp; EOS Sharp</h3>
+					<p>The C# libraries that Unity3d games are using to build blockchain enabled games.</p>
+				</div>
+				<div class="third">
+					<h3>WalletPack</h3>
+					<p>A JavaScript library for creating multi-blockchain wallets. This is what we're now using to run Scatter wallets.</p>
+				</div>
+			</div>
+
+			<div class="flex-row thirds">
+				<div class="third">
+					<h3>Tokenwrap</h3>
+					<p>A JavaScript library that wraps various EOSIO based NFT tokens and allows developers easy setup and usage on their apps.</p>
+				</div>
+				<div class="third">
+					<h3>Morpheos</h3>
+					<p>A JavaScript library that helps EOSIO JavaScript libraries support both eosjs1 and eosjs2.</p>
+				</div>
+				<div class="third">
+					<h3>Watcheosio</h3>
+					<p>A tiny lightweight JavaScript watcher for EOSIO chains.</p>
+				</div>
+			</div>
 
 			<section class="single-column">
 				<h2>Tell us what we can be doing better</h2>
@@ -381,6 +406,18 @@
 			border:1px solid $blue;
 			padding:25px;
 			border-radius:4px;
+		}
+
+		.half {
+
+			img {
+				border-radius:6px;
+                box-shadow: 0 10px 20px 0 rgba(7,83,123,0.19);
+			}
+
+			h3 {
+				margin-top:0;
+			}
 		}
 	}
 

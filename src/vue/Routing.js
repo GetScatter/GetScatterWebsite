@@ -16,6 +16,7 @@ import FiatOnramp from '../components/FiatOnramp.vue'
 import BlogHome from '../components/BlogHome.vue'
 import BlogPost from '../components/BlogPost.vue'
 import Vote from '../components/Vote.vue'
+import Wallet from '../components/Wallet.vue'
 
 
 export const RouteNames = {
@@ -37,6 +38,7 @@ export const RouteNames = {
     BlogHome:'blog',
     BlogPost:'blog-post',
 	Vote:'vote',
+    Wallet:'wallet',
 };
 
 const RouteViews = {
@@ -58,6 +60,7 @@ const RouteViews = {
     [RouteNames.BlogHome]:BlogHome,
     [RouteNames.BlogPost]:BlogPost,
     [RouteNames.Vote]:Vote,
+    [RouteNames.Wallet]:Wallet,
 };
 
 const RoutePaths = {

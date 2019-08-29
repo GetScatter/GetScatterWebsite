@@ -4,43 +4,43 @@
             <section class="lead-content">
                 <div class="container">
                     <h1>
-                        Scatter<br>Bridge
+                        Scatter<br>Meteoric
                     </h1>
                     <h3>
-                        A single sign-on experience for blockchain networks.
+                        A wallet for your digital currencies and assets.
                     </h3>
-                    <a href="http://bridge.get-scatter.com" alt="Get Started" class="button">Get started</a>
-                    <p class="low-key">We only use your social account for recovery and key regeneration. Make sure to turn on 2FA for your social account to increase your security level.</p>
+                    <router-link to="/download" alt="Get Started" class="button">Download Scatter Desktop</router-link>
+                    <p class="low-key">Available for Windows, MacOS, and Linux. <a href="https://github.com/GetScatter">Scatter is Open-Source</a></p>
                 </div>
             </section>
             <section class="lead-images">
                 <div class="web-image">
-                    <img src="../assets/scatter_simple_apps.png">
+                    <img src="../assets/scatter_desktop.png">
                 </div>
-                <div class="mobile-image">
+                <!-- <div class="mobile-image">
                     <img src="../assets/mobile_scatter_simple_exchange_dark.png">
-                </div>
+                </div> -->
             </section>
         </section>
         <section class="full-width" id="to-do" data-aos="fade-up">
-            <section class="half-width" id="meteoric">
-                <h3>Prefer the advanced version?</h3>
-                <h5>Download Scatter Desktop</h5>
-                <img src="../assets/screenshot2.png">
-                <a href="http://bridge.get-scatter.com" alt="Download Desktop" class="button button-small">Download Desktop</a>
+            <section class="half-width" id="bridge">
+                <h3>Scatter Bridge</h3>
+                <h5>Our web wallet is coming soon</h5>
+                <img src="../assets/scatter_simple_apps.png">
+                <a href="https://mailchi.mp/get-scatter.com/scatterbridge" alt="Sign up to be notified" class="button button-small">Sign up to be notified</a>
             </section>
-            <section class="half-width" id="mobile">
-                <h3>Scatter Mobile</h3>
-                <h5>Coming soon</h5>
-                <img src="../assets/scatter_mobile.png">
-                <a href="" alt="Sign up to be notified" class="button button-small">Sign up to be notified</a>
+            <section class="half-width" id="vote">
+                <h3>Vote for Scatter</h3>
+                <h5>Our block producer canditate is live</h5>
+                <img src="../assets/vote.png">
+                <router-link to="/vote" class="button button-small">Learn more</router-link>
             </section>
         </section>
         <section class="full-width standard-padding" id="blockchain-for-everyone" data-aos="fade-up">
             <section class="half-width">
                 <h1>Blockchain for everyone</h1>
                 <h3>Connecting to decentralized apps is hard. Most people don’t have the time to learn all the concepts necessary to make it safe to store their assets digitally. Let us show you how easy it can be.</h3>
-                <router-link to="/products/bridge" alt="Learn more about Bridge" class="button">LEARN MORE</router-link>
+                <router-link to="/bridge" alt="Learn more about Bridge" class="button">LEARN MORE ABOUT BRIDGE</router-link>
             </section>
             <section class="half-width">
                 <img src="../assets/scatter_simple_start_people.png">
@@ -53,7 +53,7 @@
             <section class="half-width">
                 <h1>Empowering Developers</h1>
                 <h3>We’re certain that your users will love how slick, sleek, and simple Scatter Bridge is to use. Our SDKs are straightforward to integrate into your web, mobile, Unity, and Unreal applications.</h3>
-                <router-link to="https://developers.get-scatter.com" alt="READ OUR DOCUMENTATION" class="button">READ OUR DOCUMENTATION</router-link>
+                <router-link to="/docs/getting-started" alt="READ OUR DOCUMENTATION" class="button">READ OUR DOCUMENTATION</router-link>
             </section>
         </section>
         <section class="full-width standard-padding" id="card-set" data-aos="fade-up">
@@ -61,7 +61,7 @@
                 <h1 class="huge">Super simple.</h1>
                 <div class="card">
                     <img src="../assets/card_cart.png">
-                    <h3>Our Marketplace makes obtaining digital assets super easy</h3>
+                    <h3>Our Marketplace will make obtaining digital assets easy</h3>
                     <p>We believe in a future that empowers developers and users to create real digital economies as alternatives to the advertising heavy options availabe today.</p>
                 </div>
                 <div class="card">
@@ -73,8 +73,8 @@
             <section class="half-width">
                 <div class="card">
                     <img src="../assets/card_wallet.png">
-                    <h3>Keyless non-custodial access to blockchain accounts</h3>
-                    <p>Our patent-pending solution means that your keys are never stored on our servers and are easy to recover using your social media accounts. No more keys to manage, just easy access.</p>
+                    <h3>Keep your private keys safe</h3>
+                    <p>If you are not in control of your private keys, then you are not in control of your assets. Scatter makes sure that your accounts are secure and your keys are never exposed by only allowing signed transactions.</p>
                 </div>
                 <div class="card">
                     <img src="../assets/card_identity.png">
@@ -175,11 +175,13 @@
             }
 
             .web-image {
-                height: 100vh;
+                height: calc(100vh - 112px);
                 position: absolute;
-                top: 5vh;
+                top: 0;
                 right: 0;
                 width: 50vw;
+                display:flex;
+            	align-items:center;
 
                 @media (max-width: $single-column) {
                     width: 100%;
@@ -189,7 +191,7 @@
                     overflow:hidden;
                     border-radius:6px;
                     box-shadow: 0 10px 20px 0 rgba(7,83,123,0.19);
-                    height:60vh;
+                    height:40%;
                     position: absolute;
                     right: 0;
                     max-width: 100%;
@@ -224,7 +226,7 @@
         padding-top:8rem;
     }
 
-    #meteoric {
+    #bridge {
         height:320px;
         text-align:center;
         background:$blue;
@@ -258,6 +260,7 @@
         h3 {
             color:white;
             margin-bottom:0rem;
+            font-size:22px;
         }
 
         h5 {
@@ -291,11 +294,13 @@
         }
     }
 
-    #mobile {
+    #vote {
         height:320px;
         text-align:center;
         border-radius:20px;
-        background-image: linear-gradient(180deg, #DDF1FF 0%, #FFFFFF 100%);
+        background:$blue;
+        border-radius:20px;
+        background-image:url('../assets/gs_mobile_apps_homebg.png');
         padding:4rem 0;
         position:relative;
         overflow:hidden;
@@ -313,16 +318,17 @@
             left:0;
             right:0;
             bottom:0;
-            background-image: linear-gradient(180deg, rgba(255,255,255,0) 0%, #FFFFFF 100%);
+            background-image: linear-gradient(180deg, rgba($blue,0) 0%, rgba($blue,0.5) 100%);
         }
 
         h3 {
-            color:$blue;
+            color:white;
             margin-bottom:0rem;
+            font-size:22px;
         }
 
         h5 {
-            color:$darkgrey;
+            color:white;
             opacity:0.44;
         }
 
@@ -338,6 +344,8 @@
             left:8rem;
             right:8rem;
             bottom:2rem;
+            background:white;
+            color:$blue;
             max-width: calc(100% - 16rem);
             transition:all 0.12s ease-in-out;
 

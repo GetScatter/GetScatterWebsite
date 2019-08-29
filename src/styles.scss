@@ -74,15 +74,15 @@ body {
 
 /* Typography */
 
-// a {
-//   color: $blue;
-//   transition: 0.08s linear;
-//   transition-property: color, transform;
+a {
+  color: $blue;
+  transition: 0.08s linear;
+  transition-property: color, transform;
 
-//   &:hover {
-//     color: darken($blue, 10%);
-//   }
-// }
+  &:hover {
+    color: darken($blue, 10%);
+  }
+}
 
 p {
   margin: 0 0 2rem 0;
@@ -118,11 +118,9 @@ h1 {
 
 h2 {
   font-size:$font-size-large;
-  line-height:calc(#{$font-size-large} * 2);
-  margin-bottom:calc(#{$font-size-large} * 2);
-  background: $blue-gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  line-height:calc(#{$font-size-large} * 1.2);
+  margin-bottom:$font-size-large;
+  color:$blue;
 }
 
 .body-text h2 {
@@ -130,10 +128,10 @@ h2 {
 }
 
 h3 {
-  font-size:$font-size-medium;
+  font-size:$font-size-big;
   line-height:calc(#{$font-size-medium} * 2);
   margin-bottom:1.953rem;
-  color:$grey;
+  color:$blue;
 }
 
 .body-text h3 {
@@ -341,7 +339,7 @@ input {
 .row {
   clear:both;
   display: block;
-  overflow:hidden;
+  overflow:visible;
   margin:4rem auto;
 
   @media (max-width: $breakpoint-tablet) {
@@ -357,6 +355,62 @@ input {
 
   @media (max-width: $breakpoint-tablet) {
     display: block;
+  }
+}
+
+.flex-row {
+  display:flex;
+  align-items:center;
+  margin:12rem auto;
+  max-width: 1080px;
+
+  &.thirds {
+    align-items:flex-start;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 4rem 0;
+    margin:0 6rem;
+  }
+
+  .half {
+    width:50%;
+
+    @media (max-width: $breakpoint-tablet) {
+      width:100%;
+    }
+
+    &.with-image {
+      @media (max-width: $breakpoint-tablet) {
+        display:none;
+      }
+    }
+
+    img {
+
+      @media (max-width: $breakpoint-tablet) {
+        display:none;
+      }
+
+      width:80%;
+      margin:0 10%;
+    }
+  }
+
+  .third {
+    width:33.3333%;
+
+    @media (max-width: $breakpoint-tablet) {
+      width:100%;
+    }
+
+    display:flex;
+    flex-direction:column;
+    padding-right:4rem;
+
+    h3 {
+      margin-top:0;
+    }
   }
 }
 

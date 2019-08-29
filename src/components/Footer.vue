@@ -23,7 +23,7 @@
         <span>
             The power to safely manage your digital life
         </span>
-        <a href="http://bridge.get-scatter.com" alt="Get Started" class="button">Get started</a>
+        <router-link to="/download" class="button">Download Scatter Desktop</router-link>
     </section>
     <section class="body">
         Copyright © 2017-2019 GetScatter, Ltd.

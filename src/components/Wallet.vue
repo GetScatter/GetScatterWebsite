@@ -14,62 +14,62 @@
                     <div class="col-6">
                         <table>
                             <tr>
-                                <td><img src="../assets/mathwallet.png" alt="Math Wallet" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/mathwallet.png" alt="Math Wallet" class="partner" /></div></td>
                                 <td>Math Wallet</td>
                                 <td><a class="button button-small" href="https://www.mathwallet.org/en/">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/sqrl.png" alt="Sqrl" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/sqrl.png" alt="Sqrl" class="partner" /></div></td>
                                 <td>SQRL</td>
                                 <td><a class="button button-small" href="https://telosfoundation.io/downloads">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/meetone.png" alt="MEET.ONE" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/meetone.png" alt="MEET.ONE" class="partner" /></div></td>
                                 <td>MEET.ONE</td>
                                 <td><a class="button button-small" href="https://meet.one/">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/lynx.png" alt="EOS Lynx" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/lynx.png" alt="EOS Lynx" class="partner" /></div></td>
                                 <td>Lynx</td>
                                 <td><a class="button button-small" href="https://eoslynx.com/">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/pocketeos.png" alt="PocketEOS" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/pocketeos.png" alt="PocketEOS" class="partner" /></div></td>
                                 <td>PocketEOS</td>
                                 <td><a class="button button-small" href="http://pocketeos.com/">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/tokenpocket.png" alt="TokenPocket" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/tokenpocket.png" alt="TokenPocket" class="partner" /></div></td>
                                 <td>TokenPocket</td>
                                 <td><a class="button button-small" href="https://www.tokenpocket.pro/">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/bitpie.png" alt="More" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/bitpie.png" alt="More" class="partner" /></div></td>
                                 <td>BitPie</td>
                                 <td><a class="button button-small" href="https://bitpie.com/">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/nova.png" alt="NOVA" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/nova.png" alt="NOVA" class="partner" /></div></td>
                                 <td>NOVA</td>
                                 <td><a class="button button-small" href="https://eosnova.io/">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/imtoken.png" alt="imToken" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/imtoken.png" alt="imToken" class="partner" /></div></td>
                                 <td>imToken</td>
                                 <td><a class="button button-small" href="https://www.mathwallet.org/en/">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/more.png" alt="More" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/more.png" alt="More" class="partner" /></div></td>
                                 <td>More</td>
                                 <td><a class="button button-small" href="https://www.mathwallet.org/en/">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/bitkeep.png" alt="Bitkeep" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/bitkeep.png" alt="Bitkeep" class="partner" /></div></td>
                                 <td>BitKeep</td>
                                 <td><a class="button button-small" href="https://www.mathwallet.org/en/">Learn more</a></td>
                             </tr>
                             <tr>
-                                <td><img src="../assets/buckwallet.png" alt="Buckwallet" class="partner" /></td>
+                                <td><div class="image-wrap"><img src="../assets/buckwallet.png" alt="Buckwallet" class="partner" /></div></td>
                                 <td>Buckwallet</td>
                                 <td><a class="button button-small" href="https://www.mathwallet.org/en/">Learn more</a></td>
                             </tr>
@@ -104,14 +104,22 @@
         }
 
         td:nth-child(1) {
-            background:$blue;
-            width:200px;
+            width:140px;
             text-align:center;
 
-            img {
-                margin:0 auto;
-                max-width: 80%;
-                max-height:60px;
+            .image-wrap {
+                background:$blue;
+                width:120px;
+                height:120px;
+                border-radius:20px;
+                display:flex;
+                align-items:center;
+
+                img {
+                    margin:15px;
+                    width:100%;
+                    height:auto;
+                }
             }
         }
 
