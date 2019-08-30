@@ -23,7 +23,7 @@
             </section>
         </section>
         <section class="full-width" id="to-do" data-aos="fade-up">
-            <section class="half-width" id="bridge">
+            <section class="half-width" id="bridge-box">
                 <h3>Scatter Bridge</h3>
                 <h5>Our web wallet is coming soon</h5>
                 <img src="../assets/scatter_simple_apps.png">
@@ -226,7 +226,7 @@
         padding-top:8rem;
     }
 
-    #bridge {
+    #bridge-box {
         height:320px;
         text-align:center;
         background:$blue;

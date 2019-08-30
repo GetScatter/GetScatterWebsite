@@ -4,6 +4,7 @@
 		<section class="body-text" data-aos="fade-up" >
 			<section class="row">
 				<section class="single-column">
+					<img src="../assets/love.png" class="loveme">
 					<h2>Scatter is a community</h2>
 					<h4>
 						We're not just a part of your lives, you're a part of ours.
@@ -332,6 +333,13 @@
 	@import "../variables";
 
 	.vote {
+
+		.loveme {
+			max-width:100%;
+			margin:0 auto 4rem;
+			display:block;
+		}
+
 		h3 {
 			margin-top:50px;
 		}
