@@ -103,32 +103,54 @@
 				</div>
 			</div>
 
+			<div class="flex-row">
+				<div class="half with-image">
+					<img src="../assets/mobile.png">
+				</div>
+				<div class="half">
+					<h3>Scatter Mobile</h3>
+					<p>For all your blockchain needs on the go, Scatter Mobile provides a safe, smooth experience. We are expecting to release this in Q4 2019.</p>
+				</div>
+			</div>
+
 			<div class="flex-row thirds">
 				<div class="third">
+					<img src="../assets/scatterjs.png">
 					<h3>ScatterJS</h3>
+					<a href="https://github.com/GetScatter/scatter-js/" class="button button-default button-small">Learn more</a>
 					<p>The JavaScript library that hundreds of web applications use to allow users to connect to 15+ wallets (not just ours) on multiple blockchains. Even wrappers like Block.one's UAL and EOS New York's Transit use/support ScatterJS.</p>
 				</div>
 				<div class="third">
+					<img src="../assets/scattersharp.png">
 					<h3>Scatter Sharp &amp; EOS Sharp</h3>
+					<a href="https://github.com/GetScatter/scatter-sharp" class="button button-default button-small">Learn more</a>
 					<p>The C# libraries that Unity3d games are using to build blockchain enabled games.</p>
 				</div>
 				<div class="third">
+					<img src="../assets/walletpack.png">
 					<h3>WalletPack</h3>
+					<a href="https://github.com/GetScatter/walletpack/" class="button button-default button-small">Learn more</a>
 					<p>A JavaScript library for creating multi-blockchain wallets. This is what we're now using to run Scatter wallets.</p>
 				</div>
 			</div>
 
 			<div class="flex-row thirds">
 				<div class="third">
+					<img src="../assets/tokenwrap.png">
 					<h3>Tokenwrap</h3>
+					<a href="https://github.com/GetScatter/tokenwrap/" class="button button-default button-small">Learn more</a>
 					<p>A JavaScript library that wraps various EOSIO based NFT tokens and allows developers easy setup and usage on their apps.</p>
 				</div>
 				<div class="third">
+					<img src="../assets/morpheos.png">
 					<h3>Morpheos</h3>
+					<a href="https://github.com/GetScatter/morpheos/" class="button button-default button-small">Learn more</a>
 					<p>A JavaScript library that helps EOSIO JavaScript libraries support both eosjs1 and eosjs2.</p>
 				</div>
 				<div class="third">
+					<img src="../assets/watcheosio.png">
 					<h3>Watcheosio</h3>
+					<a href="https://github.com/GetScatter/watcheosio/" class="button button-default button-small">Learn more</a>
 					<p>A tiny lightweight JavaScript watcher for EOSIO chains.</p>
 				</div>
 			</div>
@@ -425,6 +447,25 @@
 
 			h3 {
 				margin-top:0;
+			}
+		}
+
+		.flex-row {
+
+			&.thirds {
+
+				a {
+					display:inline-block;
+					width: 50%;
+					text-align: center;
+					margin: 0 0 2rem 0;
+				}
+
+				img {
+					margin-bottom:2rem;
+					border-radius:6px;
+                	box-shadow: 0 10px 20px 0 rgba(7,83,123,0.19);
+				}
 			}
 		}
 	}

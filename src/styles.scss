@@ -272,19 +272,21 @@ h5 {
   }
 
   &.button-small {
-    padding: .6rem .8rem !important;
-    font-size:1.2rem;
+    padding: .34rem .6rem !important;
+    font-size:1rem;
   }
 
-  &.button-white {
+  &.button-white,
+  &.button-default {
     color: $blue;
-    background-color: $white;
+    background-color:darken($white, 5%);
     border-color: $white;
+    box-shadow:none;
 
     &:hover {
       color:darken($blue, 5%);
-      border-color: darken($white, 5%);
-      background-color:darken($white, 5%);
+      border-color: darken($white, 8%);
+      background-color:darken($white, 8%);
     }
   }
 
@@ -366,6 +368,10 @@ input {
 
   &.thirds {
     align-items:flex-start;
+
+    img {
+      width:100%;
+    }
   }
 
   @media (max-width: $breakpoint-tablet) {
