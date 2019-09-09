@@ -369,6 +369,11 @@ input {
   &.thirds {
     align-items:flex-start;
 
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;    
+      margin-bottom:4rem;
+    }
+
     img {
       width:100%;
     }
@@ -376,7 +381,7 @@ input {
 
   @media (max-width: $breakpoint-tablet) {
     padding: 4rem 0;
-    margin:0 6rem;
+    margin:0rem;
   }
 
   .half {
@@ -405,14 +410,15 @@ input {
 
   .third {
     width:33.3333%;
-
-    @media (max-width: $breakpoint-tablet) {
-      width:100%;
-    }
-
     display:flex;
     flex-direction:column;
     padding-right:4rem;
+
+    @media (max-width: $breakpoint-tablet) {
+      width:100%;
+      padding-right:0;
+      margin-bottom:4rem;
+    }
 
     h3 {
       margin-top:0;

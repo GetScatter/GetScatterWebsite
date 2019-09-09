@@ -295,7 +295,7 @@
 			&:active,
 			&.router-link-exact-active {
 				color: white;
-				background:#blue;
+				background:$blue;
                 background-image:$blue-gradient;
 			}
 		}
@@ -468,6 +468,8 @@
 			top:30px;
 			z-index:1000;
             background:white;
+            border-radius:50%;
+            height:44px;
 
             * {
                 transition:all 0.22s ease-in-out;
