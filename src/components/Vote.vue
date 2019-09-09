@@ -118,7 +118,7 @@
 					<img src="../assets/scatterjs.png">
 					<h3>ScatterJS</h3>
 					<a href="https://github.com/GetScatter/scatter-js/" class="button button-default button-small">Learn more</a>
-					<p>The JavaScript library that hundreds of web applications use to allow users to connect to 15+ wallets (not just ours) on multiple blockchains. Even wrappers like Block.one's UAL and EOS New York's Transit use/support ScatterJS.</p>
+					<p>The JavaScript library that hundreds of web applications use to allow users to connect to <router-link to="/wallets">15+ wallets</router-link> (not just ours) on multiple blockchains. Even wrappers like Block.one's UAL and EOS New York's Transit use/support ScatterJS.</p>
 				</div>
 				<div class="third">
 					<img src="../assets/scattersharp.png">
@@ -454,7 +454,7 @@
 
 			&.thirds {
 
-				a {
+				a.button {
 					display:inline-block;
 					width: 50%;
 					text-align: center;
