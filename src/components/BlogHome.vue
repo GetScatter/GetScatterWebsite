@@ -1,9 +1,19 @@
 <template>
     <div id="blog">
-        <section class="body">
+        <section class="post-column">
+            <div class="single-post" v-for="(post,index) in posts" :key="post.slug + '_' + index">
+                <span class="post-title">{{ post.title }}</span>
+                <span class="post-date">{{ post.published }}</span>
+                <span class="post-blurb">{{ post.summary }}</span>
+                <router-link :to="'/blog/' + post.slug" class="post-cta button button-primary">Read the article</router-link>
+                <img class="post-image" v-if="post.featured_image" :src="post.featured_image" alt="">
+                <img class="post-image" v-else src="http://via.placeholder.com/250x250" alt="">
+            </div>
+        </section>
+        <!-- <section class="body">
             <div class="body-text">
-                <div v-masonry transition-duration="0s" item-selector=".item">
-                    <div v-masonry-tile origin-left="true" class="item" v-for="(post,index) in posts" :key="post.slug + '_' + index">
+                <div class="single-column">
+                    <div class="single-column item" v-for="(post,index) in posts" :key="post.slug + '_' + index">
                         <div class="wrapper">
                             <router-link :to="'/blog/' + post.slug">
                                 <article class="media">
@@ -26,7 +36,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
     </div>
 </template>
 
@@ -64,92 +74,75 @@
 
     #blog {
 
-        .item {
-            width:33.3333%;
-            padding:1rem;
+        .post-column {
+          width:720px;
+          margin:0 auto;
 
-            a {
-                text-decoration:none;
-            }
+          @media (max-width: $breakpoint-tablet) {
+            width:90%;
+            padding:4rem 0;
+          }
 
-            article {
-                border:1px solid rgba(0,0,0,.12);
-                width:100%;
-                padding:1.5rem;
-                border-radius:$radius;
-
-                @media(max-width:$breakpoint-tablet){
-                    width:50%;
-                }
-
-                @media(max-width:$breakpoint-mobile){
-                    width:100%;
-                }
-
-                a {
-                    text-decoration:none;
-                }
-
-                article {
-                    margin-bottom:3rem;
-                }
-
-                &:hover {
-                    figure {
-                        img {
-                            opacity:0.4;
-                        }
-                    }
-
-                    svg {
-                        opacity:1;
-                    }
-                }
-
-                figure {
-                    position:relative;
-                    background:$blue;
-
-                    img {
-                        transition: opacity 0.12s ease-in-out;
-                    }
-
-                    svg {
-                        position:absolute;
-                        top:50%;
-                        left:50%;
-                        opacity:0;
-                        transition: opacity 0.12s ease-in-out;
-                        z-index:0;
-                        margin-top:-6px;
-                        margin-left:-22px;
-                    }
-
-                }
-
-                .single-image {
-                    width:100%;
-                }
-
-                h4 {
-                    margin-bottom:1rem;
-                }
-
-                p {
-                    text-decoration:none;
-                    color:$black;
-                    border-bottom:0;
-                    font-size:0.8em;
-                    opacity:0.7;
-                }
-
-                &:hover {
-                    border:1px solid $blue;
-                }
-            }
-
-
+          @media (max-width: $breakpoint-mobile) {
+            width:100%;
+            padding:0;
+          }
         }
+
+        .single-post {
+            margin-bottom:8rem;
+            position:relative;
+
+            .post-title {
+                font-size:$font-size-large;
+                line-height:$font-size-large;
+                font-family: 'Poppins', sans-serif;
+                font-weight:bold;
+                width:70%;
+                display:block;
+                margin-bottom:$font-size-large;
+                position:relative;
+                z-index:1;
+            }
+
+            .post-date {
+                font-size:$font-size-standard;
+                line-height:$font-size-standard;
+                font-family: 'Poppins', sans-serif;
+                font-weight:bold;
+                opacity:0.5;
+                width:50%;
+                display:block;
+                margin-bottom:$font-size-standard;
+            }
+
+            .post-blurb {
+                font-size:$font-size-standard;
+                line-height:1.8rem;
+                font-family: 'Roboto', sans-serif;
+                font-weight:normal;
+                opacity:0.8;
+                width:50%;
+                display:block;
+                margin-bottom:2rem;
+            }
+
+            img.post-image {
+                object-fit: cover;
+                height:65%;
+                width:40%;
+                position:absolute;
+                right:0;
+                bottom:0;
+                z-index:0;
+                border-radius:6px;
+                box-shadow: 0 10px 20px 0 rgba(7,83,123,0.19);
+            }
+        }
+
+        
+
+        
 
     }
 

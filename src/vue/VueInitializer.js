@@ -1,4 +1,4 @@
-import Vue from 'vue/dist/vue'
+import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueHighlightJS from 'vue-highlightjs'
 import App from '../App.vue'
@@ -8,7 +8,7 @@ import Carousel3d from 'vue-carousel-3d'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import VueClazyLoad from 'vue-clazy-load'
-import {VueMasonryPlugin} from 'vue-masonry';
+import {store} from '../store'
 
 Vue.productionTip = false;
 Vue.devtools = false
@@ -52,7 +52,6 @@ export default class VueInitializer {
         Vue.use(VueYouTubeEmbed);
         Vue.use(VueCarousel);
         Vue.use(Carousel3d);
-        Vue.use(VueMasonryPlugin)
         AOS.init();
     }
 
@@ -78,7 +77,8 @@ export default class VueInitializer {
             created () {
                 AOS.init()
             },
-            template:'<App/>'
+            template:'<App/>',
+            store
         });
         app.$mount('#scatter');
     }
