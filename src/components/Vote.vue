@@ -34,7 +34,7 @@
 
 						<section v-else-if="!voted">
 							<section v-if="!producers">
-								<figure @click="vote" class="button button-large">{{voting ? 'Please Wait' : 'Vote for us'}}</figure>
+								<figure @click="vote" class="button button-large" :class="{'disabled':voting}">{{voting ? 'Please Wait' : 'Vote for us'}}</figure>
 								<p style="font-size: 11px;">For those wishing to vote elsewhere, our BP name is <u><b>vote4scatter</b></u></p>
 							</section>
 
@@ -66,6 +66,9 @@
 				</section>
 
 			</section>
+
+			<br>
+			<br>
 
 			<section class="row">
 				<section class="single-column" style="text-align:center;">
@@ -396,10 +399,15 @@
 			}
 
 			.button {
+				cursor: pointer;
 				max-width:400px;
 				width:100%;
 				padding: 3rem 3.8rem !important;
 				font-size:3rem;
+
+				&.disabled {
+					cursor: not-allowed;
+				}
 			}
 
 			.error {
