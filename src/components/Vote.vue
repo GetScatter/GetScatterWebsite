@@ -47,7 +47,7 @@
 
 								<section class="producers">
 									<figure class="producer" @click="commitVote(producer)" v-for="producer in producers">
-										{{producer}} {{selected[producer]}}
+										{{producer}}
 									</figure>
 								</section>
 							</section>
@@ -222,8 +222,6 @@
 			async vote(){
 				if(this.voting) return;
 				this.voting = true;
-				this.selected = {};
-				this.producer = null;
 				this.voted = false;
 				this.error = false;
 				this.producers = null;
@@ -345,11 +343,6 @@
 				'setScatter'
 			])
 		},
-		watch:{
-			['selected'](){
-				console.log('changed', this.selected);
-			}
-		}
 	}
 </script>
 
