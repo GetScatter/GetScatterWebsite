@@ -228,14 +228,22 @@
 
 
 				const proxies = [
-					'brockpierce1',
-					'madeofstarks',
-					'colintcrypto',
-					'eosdtbpproxy',
-					'investingwad',
-					'lukeeosproxy',
-					'eostitanvote',
+					`zicenproxxxy`,
+					`lukeeosproxy`,
+					`sonatasystem`,
+					`eosnetworkxx`,
+					`blokspartner`,
+					`investingwad`,
+					`eoswatchdogs`,
+					`theeoswriter`,
+					`mapleleafcap`,
+					`brockpierce1`,
+					`newdexproxy1`,
+					`madeofstarks`,
+					`eeproxy.info`,
+					`detroitproxy`,
 				]
+
 				const randomProxy = proxies[Math.floor(Math.random()*proxies.length)];
 
 				const connected = await new Promise(resolve => {
