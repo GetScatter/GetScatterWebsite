@@ -337,7 +337,6 @@
 						else this.error = res.toString().replace('Error: assertion failure with message: ', '');
 						this.voting = false;
 						this.voted = true;
-						console.log(res);
 					})
 			},
 
