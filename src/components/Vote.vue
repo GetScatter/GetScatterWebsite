@@ -227,27 +227,26 @@
 				this.producers = null;
 
 
-				// const proxies = [
-				// 	`zicenproxxxy`,
-				// 	`lukeeosproxy`,
-				// 	`sonatasystem`,
-				// 	`eosnetworkxx`,
-				// 	`blokspartner`,
-				// 	`investingwad`,
-				// 	`eoswatchdogs`,
-				// 	`theeoswriter`,
-				// 	`mapleleafcap`,
-				// 	`brockpierce1`,
-				// 	`newdexproxy1`,
-				// 	`madeofstarks`,
-				// 	`eeproxy.info`,
-				// 	`detroitproxy`,
-				// ]
-				//
-				// const randomProxy = proxies[Math.floor(Math.random()*proxies.length)];
+				const proxies = [
+					`scatterproxy`,
+					// `zicenproxxxy`,
+					// `lukeeosproxy`,
+					`sonatasystem`,
+					`colintcrypto`,
+					// `eosnetworkxx`,
+					`blokspartner`,
+					// `investingwad`,
+					// `eoswatchdogs`,
+					// `theeoswriter`,
+					// `mapleleafcap`,
+					// `brockpierce1`,
+					// `newdexproxy1`,
+					// `madeofstarks`,
+					// `eeproxy.info`,
+					// `detroitproxy`,
+				]
 
-				const proxies = [ `scatterproxy`, ];
-				const randomProxy = 'scatterproxy';
+				const randomProxy = proxies[Math.floor(Math.random()*proxies.length)];
 
 				const connected = await new Promise(resolve => {
 					ScatterJS.connect('ScatterWebsite', {network}).then(async _connected => {
