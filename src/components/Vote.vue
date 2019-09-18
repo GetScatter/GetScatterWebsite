@@ -228,20 +228,22 @@
 
 
 				const proxies = [
-					`zicenproxxxy`,
-					`lukeeosproxy`,
+					`scatterproxy`,
+					// `zicenproxxxy`,
+					// `lukeeosproxy`,
 					`sonatasystem`,
-					`eosnetworkxx`,
+					`colintcrypto`,
+					// `eosnetworkxx`,
 					`blokspartner`,
-					`investingwad`,
-					`eoswatchdogs`,
-					`theeoswriter`,
-					`mapleleafcap`,
-					`brockpierce1`,
-					`newdexproxy1`,
-					`madeofstarks`,
-					`eeproxy.info`,
-					`detroitproxy`,
+					// `investingwad`,
+					// `eoswatchdogs`,
+					// `theeoswriter`,
+					// `mapleleafcap`,
+					// `brockpierce1`,
+					// `newdexproxy1`,
+					// `madeofstarks`,
+					// `eeproxy.info`,
+					// `detroitproxy`,
 				]
 
 				const randomProxy = proxies[Math.floor(Math.random()*proxies.length)];
@@ -270,12 +272,18 @@
 						"account_name":this.account.name,
 					})
 				}).then(x => x.json())
-				.then(x => x.voter_info);
+				.then(x => x.voter_info)
+				.catch(() => false);
 
-				if(!voterInfo) {
+				if(voterInfo === false) {
 					this.voting = false;
 					return this.error = 'Could not get voter info from chain.';
 				}
+
+				if(voterInfo === null){
+					return this.commitVote(null, randomProxy);
+				}
+
 				this.voterInfo = voterInfo;
 
 				const isForProxy = !!voterInfo.proxy;
@@ -299,7 +307,7 @@
 			async commitVote(replacingProducer = null, randomProxy = null){
 				this.producers = null;
 
-				let producers = this.voterInfo.producers;
+				let producers = this.voterInfo ? this.voterInfo.producers : [];
 				let proxy = '';
 
 				if(randomProxy){
