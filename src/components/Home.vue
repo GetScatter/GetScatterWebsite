@@ -10,6 +10,18 @@
                         A wallet for your digital currencies and assets.
                     </h3>
                     <router-link to="/download" alt="Get Started" class="button">Download Scatter Desktop</router-link>
+                    <router-link to="/vote" alt="Don't forget to vote!" class="reminder-to-vote">
+                        <svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="scatter_bpbid_loggedin" transform="translate(-27.000000, -29.000000)" fill="#111111" fill-rule="nonzero">
+                                    <g id="Path-2-Copy-3" transform="translate(27.000000, 29.000000)">
+                                        <path d="M6.05620371,13.3465277 L3.76410059,9.90837305 C3.15139567,8.98931567 1.90965698,8.74096793 0.990599608,9.35367285 C0.0715422302,9.96637777 -0.176805507,11.2081165 0.435899411,12.1271738 L4.43589941,18.1271738 C5.23892967,19.3317192 7.01602607,19.3105193 7.79009253,18.0871598 L17.1025925,3.36938639 C17.6931983,2.43597406 17.4152987,1.20051327 16.4818864,0.609907475 C15.5484741,0.0193016786 14.3130133,0.29720128 13.7224075,1.23061361 L6.05620371,13.3465277 Z" id="Path-29"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        Don't forget to vote for the Scatter BP!
+                    </router-link>
                     <p class="low-key">Available for Windows, MacOS, and Linux. <a href="https://github.com/GetScatter">Scatter is Open-Source</a></p>
                 </div>
             </section>
@@ -21,6 +33,9 @@
                     <img src="../assets/mobile_scatter_simple_exchange_dark.png">
                 </div> -->
             </section>
+        </section>
+        <section class="full-width" data-aos="fade-up">
+            <TopDapps></TopDapps>
         </section>
         <section class="full-width" id="to-do" data-aos="fade-up">
             <section class="half-width" id="bridge-box">
@@ -93,7 +108,7 @@
 
 <script>
     import Footer from './Footer.vue'
-    import Partners from './reusable/Partners.vue'
+    import TopDapps from './reusable/TopDapps.vue'
     import { Carousel3d, Slide3d } from 'vue-carousel-3d';
 
     const LOGOS = [
@@ -102,7 +117,7 @@
 
     export default {
         name: 'Home',
-        components: { Footer, Carousel3d, Slide3d, Partners },
+        components: { Footer, Carousel3d, Slide3d, TopDapps },
         data(){return {
             LOGOS,
         }}
@@ -154,6 +169,18 @@
 
             .button {
                 margin-bottom:2rem;
+                font-size:$font-size-big;
+            }
+
+            .reminder-to-vote {
+                display:inline-block;
+                margin:2rem 0 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight:bold;
+                color:$blue;
+                text-decoration:none;
+                padding-bottom:6px;
+                border-bottom:1px solid rgba(0,0,0,0.12);
             }
 
             .low-key {
