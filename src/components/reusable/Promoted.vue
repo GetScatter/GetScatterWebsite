@@ -13,7 +13,7 @@
             </div>  -->
             
            <div class="single-app">
-                <a href="https://decentium.org" class="promoted-app-background" style="background-image:url(./promos/decentium.jpg)">
+                <a href="https://eosbet.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/eosbet.io.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div> 
@@ -27,11 +27,11 @@
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div>
-<!--             <div class="single-app">
-                <a href="https://bloks.io/" class="promoted-app-background" style="background-image:url(./promos/bloks.jpg)">
+            <div class="single-app">
+                <a href="https://cryptomaniaslots.com/?ref=scatterrefer&utm_source=scatter.com/apps&utm_medium=banner&utm_campaign=blck" class="promoted-app-background" style="background-image:url(./promos/cryptomania.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
-            </div>  -->
+            </div> 
 
            <div class="single-app">
                 <a href="https://bethash.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/bethash.jpg)">
@@ -43,11 +43,7 @@
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div> 
-            <div class="single-app">
-                <a href="https://eosbet.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/eosbet.io.jpg)">
-                   <div class="promoted-app-blockchain">EOSIO</div>
-                </a>
-            </div>
+            
             <div class="single-app">
                 <a href="https://dice.one/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/dice.one.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
