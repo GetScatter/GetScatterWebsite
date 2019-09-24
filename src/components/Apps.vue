@@ -69,6 +69,11 @@
   import Tabs from 'vue-tabs-with-active-line';
 
   export default {
+    metaInfo: {
+      title: "This is Home page",    meta: [
+        { name: "description", content: "Learn coding with our free tutorials" },      { name: "keywords", content: "react,vue,angular" }      //you can also add open graph tags here
+      ]
+    },
     name: 'Apps',
     data () {
       return {

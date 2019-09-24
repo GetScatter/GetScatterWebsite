@@ -120,7 +120,13 @@
         components: { Footer, Carousel3d, Slide3d, TopDapps },
         data(){return {
             LOGOS,
-        }}
+        }},
+        metaInfo() {
+          return {
+            title: "test",
+          };
+        },
+
     }
 
 </script>
