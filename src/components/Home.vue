@@ -204,7 +204,7 @@
             @media (max-width: $single-column) {
                 width: 80%;
                 padding:4rem 0;
-                height:90vh;
+                height:50vh;
             }
 
             .web-image {
@@ -218,6 +218,7 @@
 
                 @media (max-width: $single-column) {
                     width: 100%;
+                    height: calc(50vh - 112px);
                 }
 
                 img {

@@ -3,22 +3,22 @@
         <h3>Popular Apps</h3>
         <section class="promoted-apps">
            <div class="single-app">
-                <a href="https://big.game/home?code=offer.bg" class="promoted-app-background" style="background-image:url(./promos/biggame.jpg)">
+                <a href="https://eosbet.io/?ref=scatterrefer&utm_campaign=eos+bet+standard" class="promoted-app-background" style="background-image:url(./promos/eosbet.io.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div>  
+           <div class="single-app">
+                <a href="https://mycryptovegas.io/?ref=354625577968&utm_campaign=crypto+vegas+slot+wars" class="promoted-app-background" style="background-image:url(./promos/mycryptovegas.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div>
-           <div class="single-app">
-                <a href="https://eosbet.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/eosbet.io.jpg)">
+            <div class="single-app">
+                <a href="https://www.hirevibes.io/?utm_campaign=hirevibes+standard" class="promoted-app-background" style="background-image:url(./promos/hirevibes.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div> 
             <div class="single-app">
-                <a href="https://www.hirevibes.io/" class="promoted-app-background" style="background-image:url(./promos/hirevibes.jpg)">
-                   <div class="promoted-app-blockchain">EOSIO</div>
-                </a>
-            </div> 
-            <div class="single-app">
-                <a href="https://prospectors.io" class="promoted-app-background" style="background-image:url(./promos/prospectors.jpg)">
+                <a href="https://prospectors.io?ref=scatterrefer&utm_campaign=prospectors+standard" class="promoted-app-background" style="background-image:url(./promos/prospectors.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div>
@@ -29,18 +29,18 @@
             </div> 
 
            <div class="single-app">
-                <a href="https://bethash.io/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/bethash.jpg)">
+                <a href="https://bethash.io/?ref=scatterrefer&utm_campaign=bethash+standard" class="promoted-app-background" style="background-image:url(./promos/bethash.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div> 
             <div class="single-app">
-                <a href="https://trustdice.win/faucet?coinbox&ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/trustdice.win.jpg)">
+                <a href="https://trustdice.win/faucet?coinbox&ref=scatterrefer&utm_campaign=trustdice+standard" class="promoted-app-background" style="background-image:url(./promos/trustdice.win.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div> 
             
             <div class="single-app">
-                <a href="https://dice.one/?ref=scatterrefer" class="promoted-app-background" style="background-image:url(./promos/dice.one.jpg)">
+                <a href="https://dice.one/?ref=scatterrefer&utm_campaign=dice+standard" class="promoted-app-background" style="background-image:url(./promos/dice.one.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div>
@@ -81,7 +81,7 @@
 
     .promoted-wrapper {
 
-        margin:2rem 2rem 0;
+        padding:0rem 4rem 0;
         width:100%;
 
         .promoted-apps {
