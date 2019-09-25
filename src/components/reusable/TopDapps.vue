@@ -7,6 +7,11 @@
                    <div class="promoted-app-blockchain">EOSIO</div>
                 </a>
             </div>  
+            <div class="single-app">
+                <a href="https://dappspinach.io?channel=scat&utm_campaign=spinach+standard" class="promoted-app-background" style="background-image:url(./promos/dappspinach.io.jpg)">
+                   <div class="promoted-app-blockchain">EOSIO</div>
+                </a>
+            </div>  
            <div class="single-app">
                 <a href="https://mycryptovegas.io/?ref=354625577968&utm_campaign=crypto+vegas+slot+wars" class="promoted-app-background" style="background-image:url(./promos/mycryptovegas.jpg)">
                    <div class="promoted-app-blockchain">EOSIO</div>
