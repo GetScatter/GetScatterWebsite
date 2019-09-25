@@ -99,7 +99,7 @@
 
             .single-app {
                 overflow:visible;
-                width:25%;
+                width:33.33333%;
                 margin-bottom:2rem;
 
                 @media (max-width: $breakpoint-small-desktop) {
@@ -115,7 +115,7 @@
                 }
 
                 .promoted-app-background {
-                    height:180px;
+                    height:240px;
                     border-radius:20px;
                     background-position:center;
                     background-size: cover;
