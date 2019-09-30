@@ -1,5 +1,6 @@
 <template>
     <div class="promoted-wrapper">
+        <h3>Popular Apps</h3>
         <section class="promoted-apps">
            <div class="single-app">
                 <a href="https://eosbet.io/?ref=scatterrefer&utm_campaign=eos+bet+standard" class="promoted-app-background" style="background-image:url(./promos/eosbet.io.jpg)">
@@ -50,12 +51,6 @@
             </div>
         </section>
 
-
-        <section class="app-categories" v-for="(list, type) in cats">
-            <!-- What i'm actually looking for is a series of discrete sections with apps that fall into them -->
-            <h4>{{type}} <span>{{total}}</span></h4>
-            <Search :search-set="list" without-search="true"  />
-        </section>
     </div>
 </template>
 
@@ -90,6 +85,10 @@
 @import "../../variables";
 
     .promoted-wrapper {
+
+        padding:0rem 4rem 0;
+        width:100%;
+
         .promoted-apps {
             overflow:visible;
             display:flex;
@@ -99,7 +98,7 @@
 
             .single-app {
                 overflow:visible;
-                width:33.33333%;
+                width:50%;
                 margin-bottom:2rem;
 
                 @media (max-width: $breakpoint-small-desktop) {
@@ -115,7 +114,7 @@
                 }
 
                 .promoted-app-background {
-                    height:240px;
+                    height:180px;
                     border-radius:20px;
                     background-position:center;
                     background-size: cover;

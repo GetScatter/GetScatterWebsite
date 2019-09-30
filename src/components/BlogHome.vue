@@ -6,8 +6,10 @@
                 <span class="post-date">{{ post.published }}</span>
                 <span class="post-blurb">{{ post.summary }}</span>
                 <router-link :to="'/blog/' + post.slug" class="post-cta button button-primary">Read the article</router-link>
-                <img class="post-image" v-if="post.featured_image" :src="post.featured_image" alt="">
-                <img class="post-image" v-else src="http://via.placeholder.com/250x250" alt="">
+                <router-link :to="'/blog/' + post.slug">
+                  <img class="post-image" v-if="post.featured_image" :src="post.featured_image" alt="">
+                  <img class="post-image" v-else src="http://via.placeholder.com/250x250" alt="">
+                </router-link>
             </div>
         </section>
         <!-- <section class="body">
@@ -85,13 +87,19 @@
 
           @media (max-width: $breakpoint-mobile) {
             width:100%;
-            padding:0;
+            padding:0 4rem;
           }
         }
 
         .single-post {
             margin-bottom:8rem;
             position:relative;
+            margin-top:0px;
+
+            @media (max-width: $breakpoint-mobile) {
+              margin-top:240px;
+              margin-bottom:320px;
+            }
 
             .post-title {
                 font-size:$font-size-large;
@@ -103,6 +111,10 @@
                 margin-bottom:$font-size-large;
                 position:relative;
                 z-index:1;
+
+                @media (max-width: $breakpoint-mobile) {
+                  width:100%;
+                }
             }
 
             .post-date {
@@ -114,6 +126,10 @@
                 width:50%;
                 display:block;
                 margin-bottom:$font-size-standard;
+
+                @media (max-width: $breakpoint-mobile) {
+                  width:100%;
+                }
             }
 
             .post-blurb {
@@ -125,18 +141,30 @@
                 width:50%;
                 display:block;
                 margin-bottom:2rem;
+
+                @media (max-width: $breakpoint-mobile) {
+                  width:100%;
+                }
             }
 
             img.post-image {
                 object-fit: cover;
-                height:65%;
                 width:40%;
+                height:65%;
                 position:absolute;
+                top:initial;
                 right:0;
                 bottom:0;
                 z-index:0;
                 border-radius:6px;
                 box-shadow: 0 10px 20px 0 rgba(7,83,123,0.19);
+
+                @media (max-width: $breakpoint-mobile) {
+                  top:-240px;
+                  bottom:initial;
+                  height:200px;
+                  width:100%;
+                }
             }
         }
 
