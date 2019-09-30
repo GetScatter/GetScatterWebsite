@@ -22,7 +22,10 @@
                         </svg>
                         Don't forget to vote for the Scatter BP!
                     </router-link>
-                    <p class="low-key">Available for Windows, MacOS, and Linux. <a href="https://github.com/GetScatter">Scatter is Open-Source</a></p>
+                    <p class="low-key">
+                        Available for Windows, MacOS, and Linux.<br>
+                        <a href="https://github.com/GetScatter">Scatter is Open-Source</a>
+                    </p>
                 </div>
             </section>
             <section class="lead-images">
