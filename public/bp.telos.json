@@ -1,0 +1,68 @@
+{
+  "producer_account_name": "vote4scatter",
+  "producer_public_key": "Key: EOS7Ka19knMCLy6g6WUzsokatVcAgm8Z56nwFSJy3Fb3o4eQxYjVt",
+  "org": {
+    "candidate_name": "Scatter",
+    "website": "https://get-scatter.com",
+    "code_of_conduct":"https://get-scatter.com/coc",
+    "ownership_disclosure":"https://get-scatter.com/ownership",
+    "email":"business@get-scatter.com",
+    "branding":{
+      "logo_256":"https://get-scatter.com/logo_256.png",
+      "logo_1024":"https://get-scatter.com/logo_1024.png",
+      "logo_svg":"https://get-scatter.com/logo.svg",
+      "guidelines":"https://get-scatter.com/branding"
+    },
+    "location": {
+      "name": "Malta",
+      "country": "MT",
+      "latitude": 35.9375,
+      "longitude": 14.3754
+    },
+    "social": {
+      "twitter": "Get_Scatter",
+      "github":"GetScatter",
+      "telegram": "Scatter",
+      "reddit":"Scatter/",
+      "youtube":"UCPOh7hDos3ySrMGk-fS7zug"
+    }
+  },
+  "nodes": [
+    {
+      "location": {
+        "name": "Germany-Finland",
+        "country": "FI",
+        "latitude": 60.341611,
+        "longitude": 25.021454
+      },
+      "node_type": "full",
+      "history_type":  "none",
+      "api_endpoint": "http://telos.get-scatter.com",
+      "ssl_endpoint": "https://telos.get-scatter.com"
+    },
+    {
+      "location": {
+        "name": "Germany-Finland",
+        "country": "FI",
+        "latitude": 60.341611,
+        "longitude": 25.021454
+      },
+      "node_type": "seed",
+      "p2p_endpoint": "telos.get-scatter.com:9876",
+      "bnet_endpoint": ""
+    },
+    {
+      "location": {
+        "name": "Germany",
+        "country": "FI",
+        "latitude": 60.341611,
+        "longitude": 25.021454
+      },
+      "node_type": "producer",
+      "p2p_endpoint": "",
+      "api_endpoint": "",
+      "bnet_endpoint": "",
+      "ssl_endpoint": ""
+    }
+  ]
+}
