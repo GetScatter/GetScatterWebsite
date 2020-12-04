@@ -12,7 +12,7 @@
     "aos": "^3.0.0-beta.6",
     "buttercms": "^1.1.4",
     "eosjs": "^20.0.0",
-    "highlight.js": "^9.15.6",
+    "highlight.js": "^10.4.1",
     "vivus": "^0.4.4",
     "vue": "^2.6.10",
     "vue-body-class": "^2.0.0-beta.2",
